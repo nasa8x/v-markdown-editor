@@ -8,6 +8,21 @@
     "prod": "webpack --env=prod --progress --profile --colors",
     "dev": "webpack --env=dev --progress --profile --colors"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasa8x/v-markdown-edtitor.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nasa8x/v-markdown-edtitor/issues"
+  },
+  "homepage": "https://github.com/nasa8x/v-markdown-edtitor#readme",
+  "keywords": [
+    "markdown editor",
+    "vue markdown editor",
+    "vuejs markdown editor",
+    "bootstrap markdown editor"
+  ],
   "dependencies": {
     "codemirror": "^5.31.0",
     "jquery": "^3.2.1",
