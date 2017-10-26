@@ -31,7 +31,7 @@ Bootstrap 4 & Fontawesome
 
 <template>
     <div class="container">
-        <markdown-edtitor :options="options"></markdown-edtitor>
+        <markdown-editor :options="options"></markdown-editor>
     </div>
 </template>
 
@@ -69,7 +69,7 @@ Bootstrap 4 & Fontawesome
 
 <template>
     <div class="container">
-        <markdown-edtitor v-model="value"></markdown-edtitor>
+        <markdown-editor v-model="value"></markdown-editor>
     </div>
 </template>
 
