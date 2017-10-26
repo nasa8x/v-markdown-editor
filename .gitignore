@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+
+build
+.vscode
+*.log
+*.rar
+*.zip
+.svn/*
+obj/*
+*.bak
+config.js
+**/env/prod.js
+note.txt
