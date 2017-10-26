@@ -10,14 +10,14 @@
 
         <!-- clipboard modal -->
         <slot name="clipboard">
-            <div class="modal fade" :id="uid('modal-clipboard')" aria-hidden="true" role="dialog" tabindex="-1">
+            <div class="modal fade" :id="uid('modal-clipboard')" data-backdrop="false" aria-labelledby="v-md-editor-modal-clipboard-label" aria-hidden="true" role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
-                            <h3 class="modal-title">Html to Markdown</h3>
+                            <h3 class="modal-title" id="v-md-editor-modal-clipboard-label">Html to Markdown</h3>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
@@ -39,14 +39,14 @@
 
         <!-- image modal -->
         <slot name="image">
-            <div class="modal fade" :id="uid('modal-image')" aria-hidden="true" role="dialog" tabindex="-1">
+            <div class="modal fade" :id="uid('modal-image')" data-backdrop="false" aria-labelledby="v-md-editor-modal-image-label" aria-hidden="true" role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
-                            <h3 class="modal-title">Image</h3>
+                            <h3 class="modal-title" id="v-md-editor-modal-image-label">Image</h3>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
@@ -84,14 +84,14 @@
 
         <!-- link modal -->
         <slot name="image">
-            <div class="modal fade" :id="uid('modal-link')" aria-hidden="true" role="dialog" tabindex="-1">
+            <div class="modal fade" :id="uid('modal-link')" data-backdrop="false" aria-labelledby="v-md-editor-modal-link-label" aria-hidden="true" role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
-                            <h3 class="modal-title">Link</h3>
+                            <h3 class="modal-title" id="v-md-editor-modal-link-label">Link</h3>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
