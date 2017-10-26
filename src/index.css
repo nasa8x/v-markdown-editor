@@ -65,6 +65,11 @@
     z-index: 9;
 }
 
-.v-md-container .modal{
-    z-index: 1099
+
+.modal:nth-of-type(even) {
+    z-index: 1072 !important;
 }
+.modal-backdrop.in:nth-of-type(even) {
+    z-index: 1071 !important;
+}
+    
