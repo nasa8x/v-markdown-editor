@@ -217,7 +217,7 @@
                     'heading': {
                         title: 'Heading',
                         className: "fa fa-header",
-                        cmd: 'head',
+                        cmd: 'heading',
                         hotkey: 'Ctrl-H'
                     },
 
@@ -312,9 +312,10 @@
         },
 
         watch: {
-            // options() {
-            //     this.build();
-            // },
+            value(val) {
+                if (val === this.editor.getValue()) return;
+                this.editor.setValue(val);
+            },
         },
 
         computed: {
@@ -558,7 +559,7 @@
                         break;
 
 
-                    case 'head':
+                    case 'heading':
                         ed.replaceSelection('\n### ' + text);
                         break;
 
@@ -696,13 +697,13 @@
                             _t.command($(this).attr('data-cmd'));
                         });
 
-                        if (obj.hotkey) {
-                            _t.shortcuts[obj.hotkey] = function () {
-                                //_t.command(obj.cmd);
-                                btn.trigger('click');
-                                // _t.obj(obj.cmd).trigger('click');
-                            }
-                        }
+                        // if (obj.hotkey) {
+                        //     _t.shortcuts[obj.hotkey] = function () {
+                        //         //_t.command(obj.cmd);
+                        //         btn.trigger('click');
+                        //         // _t.obj(obj.cmd).trigger('click');
+                        //     }
+                        // }
 
                         group.append(btn);
 

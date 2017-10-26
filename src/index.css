@@ -64,3 +64,7 @@
     height: auto !important;
     z-index: 9;
 }
+
+.v-md-container .modal{
+    z-index: 1099
+}
