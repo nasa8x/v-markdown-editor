@@ -10,14 +10,15 @@
 
         <!-- clipboard modal -->
         <slot name="clipboard">
-            <div class="modal fade" :id="uid('modal-clipboard')" data-backdrop="false" aria-labelledby="v-md-editor-modal-clipboard-label" aria-hidden="true" role="dialog" tabindex="-1">
+            <div class="modal fade" :id="uid('modal-clipboard')" data-backdrop="false" aria-labelledby="v-md-editor-modal-clipboard-label"
+                aria-hidden="true" role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div class="modal-header">                          
+                            <h4 class="modal-title" id="v-md-editor-modal-clipboard-label">Html to Markdown</h4>
+                            <button type="button" class="close" @click="hideModal('modal-clipboard')" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
-                            <h3 class="modal-title" id="v-md-editor-modal-clipboard-label">Html to Markdown</h3>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
@@ -27,8 +28,8 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" @click="toMarkdown" class="btn btn-primary">Convert</button>
+                            <button type="button" class="btn btn-outline-secondary" @click="hideModal('modal-clipboard')">Close</button>
+                            <button type="button" @click="toMarkdown" class="btn btn-outline-primary">Convert</button>
                         </div>
 
                     </div>
@@ -39,14 +40,15 @@
 
         <!-- image modal -->
         <slot name="image">
-            <div class="modal fade" :id="uid('modal-image')" data-backdrop="false" aria-labelledby="v-md-editor-modal-image-label" aria-hidden="true" role="dialog" tabindex="-1">
+            <div class="modal fade" :id="uid('modal-image')" data-backdrop="false" aria-labelledby="v-md-editor-modal-image-label" aria-hidden="true"
+                role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div class="modal-header">                           
+                            <h4 class="modal-title" id="v-md-editor-modal-image-label">Image</h4>
+                            <button type="button" class="close" @click="hideModal('modal-image')" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
-                            <h3 class="modal-title" id="v-md-editor-modal-image-label">Image</h3>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
@@ -71,8 +73,8 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" @click="drawImage"> Ok </button>
+                            <button type="button" class="btn btn-outline-secondary" @click="hideModal('modal-image')">Close</button>
+                            <button type="button" class="btn btn-outline-primary" @click="drawImage"> Ok </button>
                         </div>
 
                     </div>
@@ -84,14 +86,15 @@
 
         <!-- link modal -->
         <slot name="image">
-            <div class="modal fade" :id="uid('modal-link')" data-backdrop="false" aria-labelledby="v-md-editor-modal-link-label" aria-hidden="true" role="dialog" tabindex="-1">
+            <div class="modal fade" :id="uid('modal-link')" data-backdrop="false" aria-labelledby="v-md-editor-modal-link-label" aria-hidden="true"
+                role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div class="modal-header">                          
+                            <h4 class="modal-title" id="v-md-editor-modal-link-label">Link</h4>
+                            <button type="button" class="close" @click="hideModal('modal-link')" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
-                            <h3 class="modal-title" id="v-md-editor-modal-link-label">Link</h3>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
@@ -116,8 +119,8 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" @click="drawLink"> Ok </button>
+                            <button type="button" class="btn btn-outline-secondary" @click="hideModal('modal-link')">Close</button>
+                            <button type="button" class="btn btn-outline-primary" @click="drawLink"> Ok </button>
                         </div>
 
                     </div>
@@ -176,6 +179,10 @@
                 required: false
             },
 
+            buttonClass: {
+                type: String,
+                default: 'btn btn-outline-secondary'
+            },
             options: {
                 type: Object,
                 default: function () {
@@ -303,6 +310,7 @@
                     styleSelectedText: true,
                     lineWrapping: true,
                     indentWithTabs: true,
+                    autoRefresh:true,
                     tabSize: 2,
                     indentUnit: 2
                 },
@@ -313,8 +321,10 @@
 
         watch: {
             value(val) {
-                if (val === this.editor.getValue()) return;
-                this.editor.setValue(val);
+                if (val != this.editor.getValue()){
+                    this.editor.setValue(val);
+                }
+                
             },
         },
 
@@ -525,11 +535,7 @@
             },
             command(key) {
 
-                var ed = this.editor;
-                var start, end;
-
-                var startPoint = ed.getCursor("start");
-                var endPoint = ed.getCursor("end");
+                var ed = this.editor;               
                 var text = ed.getSelection();
                 var stat = this.state();
 
@@ -637,7 +643,7 @@
                         title: title,
                         url: url
                     });
-                    this.obj('modal-image').modal('hide');
+                   this.hideModal('modal-image');
 
                 } else {
                     this.obj('image-alert').fadeIn();
@@ -654,7 +660,9 @@
                         title: title,
                         url: url
                     });
-                    this.obj('modal-link').modal('hide');
+                   
+                    this.hideModal('modal-link');
+                    
 
                 } else {
                     this.obj('link-alert').fadeIn();
@@ -664,13 +672,15 @@
 
             toMarkdown() {
                 var html = this.obj('clipboard-text').val();
-
                 var text = Markdown.parse(html);
-
                 this.editor.replaceSelection(text);
                 this.editor.focus();
 
-                this.obj('modal-clipboard').modal('hide');
+                this.hideModal('modal-clipboard');
+            },
+
+            hideModal(n) {
+                this.obj(n).modal('hide');
             },
 
             build() {
@@ -687,13 +697,13 @@
                     return !_t.isEmpty(w);
                 });
 
-                var group = $('<div class="btn-group mr-5" role="group"></div>');
+                var group = $('<div class="btn-group mr-3" role="group"></div>');
                 var toolbar = _t.obj('toolbar');
                 for (var i = 0; i < btns.length; i++) {
                     var btn = btns[i];
                     var obj = _t.buttons[btn];
                     if (obj) {
-                        btn = $(_t.format('<button type="button" id="%s-%s" data-cmd="%s" title="%s" class="btn btn-outline btn-secondary %s"><i class="%s" aria-hidden="true"></i></button>', _t.id, btn, obj.cmd, obj.title, obj.ready ? 'ready' : '', obj.className)).on('click', function () {
+                        btn = $(_t.format('<button type="button" id="%s-%s" data-cmd="%s" title="%s" class="%s %s"><i class="%s" aria-hidden="true"></i></button>', _t.id, btn, obj.cmd, obj.title, _t.buttonClass, obj.ready ? 'ready' : '', obj.className)).on('click', function () {
                             _t.command($(this).attr('data-cmd'));
                         });
 
@@ -711,7 +721,7 @@
 
                     if (btn === '|' || i == btns.length - 1) {
                         toolbar.append(group);
-                        group = $('<div class="btn-group mr-5" role="group"></div>');
+                        group = group.clone().empty();
                     }
 
                 }
@@ -722,6 +732,7 @@
                 _t.editor.on("change", function (ed) {
                     //_t.editor.save();                    
                     _t.$emit('input', ed.getValue());
+                    //_t.value = ed.getValue();
                 });
 
                 _t.editor.on("cursorActivity", function () {

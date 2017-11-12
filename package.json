@@ -1,12 +1,12 @@
 {
   "name": "v-markdown-editor",
   "description": "Markdown Editor component for Vue.js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Nasa Nguyen <nasa8x@gmail.com>",
   "main": "src/index.js",
   "scripts": {
-    "prod": "webpack --env=prod --progress --profile --colors",
-    "dev": "webpack --env=dev --progress --profile --colors"
+    "prod": "webpack --env=prod --progress --colors",
+    "dev": "webpack --env=dev --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -23,13 +23,18 @@
     "vuejs markdown editor",
     "bootstrap markdown editor"
   ],
-  "dependencies": {
-    "codemirror": "^5.31.0",
-    "jquery": "^3.2.1",
+  "dependencies": {   
+    "codemirror": "^5.31.0",    
     "markdown-it": "^8.4.0",
-    "markdownparser": "^1.0.2"
+    "markdownparser": "^1.0.7"    
   },
   "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.7",
+    "vue-router": "^3.0.1",
+    "vuejs": "^2.0.6",
+    "vuex": "^3.0.1",
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -40,17 +45,17 @@
     "clean-webpack-plugin": "^0.1.17",
     "copy-webpack-plugin": "^4.1.0",
     "css-loader": "^0.28.7",
-    "extract-text-webpack-plugin": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.0.0",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.28.0",
     "json-loader": "*",
-    "node-sass": "*",
+    "node-sass": "^4.6.1",
     "sass-loader": "*",
     "style-loader": "*",
     "url-loader": "^0.6.2",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.5.3",
     "webpack": "^3.6.0",
     "webpack-node-externals": "*",
     "webpack-obfuscator": "^0.11.2"

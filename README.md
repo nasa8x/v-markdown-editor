@@ -1,9 +1,9 @@
 Markdown Editor component for Vue.js
 
 
-## Preview
+## Demo
 
-[Markdown Editor](https://i.imgur.com/H1wlhUq.png)
+[Markdown Editor](https://nasa8x.github.io/v-markdown-editor/dist/demo)
 
 ## Install
 
