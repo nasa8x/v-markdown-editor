@@ -1,12 +1,13 @@
 {
   "name": "v-markdown-editor",
   "description": "Markdown Editor component for Vue.js",
-  "version": "1.0.7",
-  "author": "Nasa Nguyen <nasa8x@gmail.com>",
-  "main": "src/index.js",
+  "version": "1.0.8",
+  "author": "Nasa8x",
+  "main": "./dist/index.js",
   "scripts": {
-    "prod": "webpack --env=prod --progress --colors",
-    "dev": "webpack --env=dev --progress --colors"
+    "dev": "cross-env NODE_ENV=development webpack --progress --watch --colors",
+    "prod": "cross-env NODE_ENV=production webpack -p --watch --progress --colors",
+    "start": "node ./dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,51 +24,44 @@
     "vuejs markdown editor",
     "bootstrap markdown editor"
   ],
-  "dependencies": {   
-    "codemirror": "^5.31.0",    
-    "markdown-it": "^8.4.0",
-    "markdownparser": "^1.0.7"    
+  "dependencies": {
+    "codemirror": "^5.42.0",
+    "jquery": "^3.3.1",
+    "markdown-it": "^8.4.2",
+    "markdownparser": "^1.0.8",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
-    "bootstrap": "^4.0.0-beta.2",
-    "jquery": "^3.2.1",
-    "popper.js": "^1.12.7",
-    "vue-router": "^3.0.1",
-    "vuejs": "^2.0.6",
-    "vuex": "^3.0.1",
-    "babel": "^6.23.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-es2015": "*",
-    "babel-preset-stage-2": "*",
-    "babel-runtime": "^6.26.0",
-    "clean-webpack-plugin": "^0.1.17",
-    "copy-webpack-plugin": "^4.1.0",
-    "css-loader": "^0.28.7",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.0.0",
-    "html-loader": "^0.5.1",
-    "html-webpack-plugin": "^2.28.0",
-    "json-loader": "*",
-    "node-sass": "^4.6.1",
-    "sass-loader": "*",
-    "style-loader": "*",
-    "url-loader": "^0.6.2",
-    "vue-loader": "^13.5.0",
-    "vue-template-compiler": "^2.5.3",
-    "webpack": "^3.6.0",
-    "webpack-node-externals": "*",
-    "webpack-obfuscator": "^0.11.2"
-  },
-  "babel": {
-    "presets": [
-      [
-        "es2015"
-      ],
-      [
-        "stage-2"
-      ]
-    ]
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-externals-plugin": "^3.8.0",
+    "html-webpack-plugin": "^3.0.6",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.10.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.4.2",
+    "vue-ssr-webpack-plugin": "^3.0.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
   }
 }

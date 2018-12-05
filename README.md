@@ -1,9 +1,11 @@
 Markdown Editor component for Vue.js
 
+![Markdown Editor Preview](https://i.imgur.com/Bcr3Xhk.png)
+
 
 ## Demo
 
-[Markdown Editor](https://nasa8x.github.io/v-markdown-editor/dist/demo)
+[Markdown Editor](https://nasa8x.github.io/v-markdown-editor/dist/www)
 
 ## Install
 
@@ -12,6 +14,8 @@ npm install v-markdown-editor
 ```
 
 ```js
+import 'v-markdown-editor/dist/index.css';
+
 import Vue from 'vue'
 import Editor from 'v-markdown-editor'
 
@@ -119,3 +123,5 @@ Bootstrap 4 & Fontawesome
 
 ```
 
+## Donate
+[![](https://i.imgur.com/z0p6RvA.png)](http://vrl.to/ec5cfbae)[![](https://i.imgur.com/bEUNBGz.png)](http://vrl.to/ec5cfbae)

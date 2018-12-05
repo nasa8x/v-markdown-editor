@@ -73,7 +73,7 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary" @click="hideModal('modal-image')">Close</button>
+                            <button type="button" class="btn btn-outline-secondary float-left" @click="hideModal('modal-image')">Close</button>
                             <button type="button" class="btn btn-outline-primary" @click="drawImage"> Ok </button>
                         </div>
 
@@ -85,7 +85,7 @@
 
 
         <!-- link modal -->
-        <slot name="image">
+        <slot name="link">
             <div class="modal fade" :id="uid('modal-link')" data-backdrop="false" aria-labelledby="v-md-editor-modal-link-label" aria-hidden="true"
                 role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
@@ -119,7 +119,7 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary" @click="hideModal('modal-link')">Close</button>
+                            <button type="button" class="btn btn-outline-secondary float-left" @click="hideModal('modal-link')">Cancel</button>
                             <button type="button" class="btn btn-outline-primary" @click="drawLink"> Ok </button>
                         </div>
 
@@ -203,65 +203,65 @@
 
                     'bold': {
                         title: 'Bold',
-                        className: 'fa fa-bold',
+                        className: 'far fa-bold',
                         cmd: 'bold',
                         hotkey: 'Ctrl-B'
                     },
 
                     'italic': {
                         title: 'Italic',
-                        className: "fa fa-italic",
+                        className: "far fa-italic",
                         cmd: 'italic',
                         hotkey: 'Ctrl-I'
                     },
 
                     "strikethrough": {
                         cmd: "strikethrough",
-                        className: "fa fa-strikethrough",
+                        className: "far fa-strikethrough",
                         title: "Strikethrough"
                     },
 
                     'heading': {
                         title: 'Heading',
-                        className: "fa fa-header",
+                        className: "far fa-heading",
                         cmd: 'heading',
                         hotkey: 'Ctrl-H'
                     },
 
                     'code': {
                         title: 'Code',
-                        className: "fa fa-code",
+                        className: "far fa-code",
                         cmd: 'code',
                         hotkey: 'Ctrl-X'
                     },
                     'quote': {
                         title: 'Quote',
-                        className: "fa fa-quote-left",
+                        className: "far fa-quote-left",
                         cmd: 'quote',
                         hotkey: 'Ctrl-Q'
                     },
                     'link': {
                         title: 'Link',
-                        className: "fa fa-link",
+                        className: "far fa-link",
                         cmd: 'link',
                         hotkey: 'Ctrl-K'
                     },
                     'image': {
                         title: 'Image',
-                        className: "fa fa-picture-o",
+                        className: "far fa-image",
                         cmd: 'image',
                         hotkey: 'Ctrl-P'
                     },
                     "fullscreen": {
                         cmd: "fullscreen",
-                        className: "fa fa-arrows-alt no-disable no-mobile",
+                        className: "far fa-arrows-alt no-disable no-mobile",
                         title: "Toggle Fullscreen",
                         hotkey: 'F11',
                         ready: true
                     },
                     "preview": {
                         cmd: "preview",
-                        className: "fa fa-eye no-disable",
+                        className: "far fa-eye no-disable",
                         title: "Toggle Preview",
                         hotkey: 'Ctrl-P',
                         ready: true
@@ -269,34 +269,34 @@
 
                     "clipboard": {
                         cmd: "clipboard",
-                        className: "fa fa-clipboard",
+                        className: "far fa-clipboard",
                         title: "Copy & Markdown Format",
                         hotkey: 'Ctrl-V'
                     },
 
                     "undo": {
                         cmd: "undo",
-                        className: "fa fa-undo",
+                        className: "far fa-undo",
                         title: "Undo",
                         hotkey: 'Ctrl-Z'
                     },
 
                     "redo": {
                         cmd: "redo",
-                        className: "fa fa-repeat",
+                        className: "far fa-repeat",
                         title: "Redo",
                         hotkey: 'Ctrl-Y'
                     },
 
                     "bullist": {
                         cmd: "bullist",
-                        className: "fa fa-list-ul",
+                        className: "far fa-list-ul",
                         title: "Generic List",
 
                     },
                     "numlist": {
                         cmd: "numlist",
-                        className: "fa fa-list-ol",
+                        className: "far fa-list-ol",
                         title: "Numbered List"
                     },
 

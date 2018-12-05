@@ -68,3 +68,10 @@
 .v-md-container .modal{
     z-index: 1080 !important;
 }
+
+.v-md-container .modal .btn{
+    min-width: 90px;
+}
+.float-left{
+    float: left !important;
+}
