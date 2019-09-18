@@ -7,6 +7,8 @@
                 <h4>Markdown Editor component for Vue.js</h4>
             </header>
 
+            <h2><a href="https://morioh.com">Social Network for Developers</a></h2>
+
 
             <div class="form-group">
                 <markdown-editor v-model="value"></markdown-editor>
