@@ -313,10 +313,10 @@
                     theme: "elegent",
                     lineNumbers: true,
                     styleActiveLine: false,
-                    styleSelectedText: false,
+                    styleSelectedText: true,
                     lineWrapping: true,
                     indentWithTabs: true,
-                    autoRefresh: false,
+                    autoRefresh: true,
                     tabSize: 2,
                     indentUnit: 2
                 },
@@ -469,6 +469,8 @@
 
                 var types = stat.type.split(" ");
 
+                console.log(types);
+
                 var ret = {},
                     data, text;
                 for (var i = 0; i < types.length; i++) {
@@ -492,9 +494,9 @@
                         ret.strikethrough = true;
                     } else if (data === "comment") {
                         ret.code = true;
-                    } else if (data === "link") {
+                    } else if (data === "link" || data === "url") {
                         ret.link = true;
-                    } else if (data === "tag") {
+                    } else if (data === "image") {
                         ret.image = true;
                     } else if (data.match(/^header(\-[1-6])?$/)) {
                         ret[data.replace("header", "heading")] = true;
@@ -760,14 +762,14 @@
                     //_t.value = ed.getValue();
                 });
 
-                // _t.editor.on("cursorActivity", function () {
-                //     var stat = _t.state();
+                _t.editor.on("cursorActivity", function () {
+                    var stat = _t.state();
 
-                //     _t.obj('toolbar').find('.btn.active:not(.ready)').removeClass('active');
-                //     Object.keys(stat).forEach(key => {
-                //         _t.obj(key).addClass('active');
-                //     });
-                // });
+                    _t.obj('toolbar').find('.btn.active:not(.ready)').removeClass('active');
+                    Object.keys(stat).forEach(key => {
+                        _t.obj(key).addClass('active');
+                    });
+                });
 
                 _t.__rendered = true;
 
