@@ -13,11 +13,12 @@
 
 
             <div class="form-group">
-                <markdown-editor v-model="value"></markdown-editor>
+                <markdown-editor ref="md" v-model="value"></markdown-editor>
             </div>
 
             <div class="form-group">
                 <button @click="val" class="btn btn-primary">Change</button>
+                <button @click="replace" class="btn btn-primary">Handle</button>
             </div>
 
 
@@ -27,39 +28,18 @@
 
             <div class="form-group">
                 <markdown-editor
-                    toolbar="bold italic heading | image link | numlist bullist code quote | preview fullscreen"
-                    buttonClass="btn btn-sm btn-outline-success"></markdown-editor>
+                    toolbar="bold italic heading | image link | numlist bullist code quote | preview fullscreen upload"
+                    buttonClass="btn btn-default" :extend="custom"></markdown-editor>
             </div>
 
 
             <div class="form-group">
-                <button @click="showModal()" class="btn btn-primary">Show Modal</button>
+                <markdown-editor buttonClass="btn btn-sm btn-success"></markdown-editor>
             </div>
+
 
         </div>
 
-
-        <div class="modal" id="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                 
-                    <markdown-editor></markdown-editor>
-
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
 
         <footer>
 
@@ -90,7 +70,15 @@
     export default {
         data() {
             return {
-                value: 'Hello world'
+                value: 'Hello world',
+
+                custom: {
+                    'upload': {
+                        cmd: 'upload',
+                        className: 'fas fa-upload',
+                        title: 'Upload File'
+                    }
+                }
             }
         },
 
@@ -99,11 +87,25 @@
                 this.value = "jjkjlkjljlkjlkjlkjlkj"
             },
 
+
+
             showModal() {
 
                 $('#modal').modal('show');
 
+            },
+
+            replace() {
+                this.$refs.md.editor.replaceSelection("Handle editor");
             }
+        },
+
+
+        created() {
+            this.$root.$on('markdown-editor:upload', function (md) {
+                md.drawImage({ url: 'https://i.imgur.com/CbCXhBe.png', title: 'this image title' });
+            });
+
         }
 
 

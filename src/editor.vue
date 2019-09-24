@@ -1,139 +1,18 @@
 <template>
     <div :class="['v-md-container', css]" :id="uid('container')">
-        <div :id="uid('toolbar')" class="v-md-toolbar"></div>
+        <div :id="uid('toolbar')" class="v-md-toolbar">
+            <div class="btn-group mr-3" role="group" v-for="group in toolbars">
+                <button type="button" :id="uid(i.id)" :title="i.title" :class="[buttonClass, {'ready': i.ready}]"
+                    v-on:click="command(i.cmd)" v-for="i in group"><i :class="i.className"
+                        aria-hidden="true"></i></button>
+            </div>
+        </div>
         <div class="v-md-wrapper">
             <textarea :id="uid('input')" v-model="value" :style="styles" :name="name"></textarea>
-            <div class="v-md-preview" :id="uid('html-preview')">
+            <div class="v-md-preview" :id="uid('html-preview')" v-if="preview" v-html="html">
             </div>
         </div>
 
-
-        <!-- clipboard modal -->
-        <slot name="clipboard">
-            <div class="modal fade" :id="uid('modal-clipboard')" data-backdrop="false"
-                aria-labelledby="v-md-editor-modal-clipboard-label" aria-hidden="true" role="dialog" tabindex="-1">
-                <div class="modal-dialog modal-center">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="v-md-editor-modal-clipboard-label">Html to Markdown</h4>
-                            <button type="button" class="close" @click="hideModal('modal-clipboard')"
-                                aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <textarea class="form-control clipboard-text" :id="uid('clipboard-text')"></textarea>
-                            </div>
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary"
-                                @click="hideModal('modal-clipboard')">Close</button>
-                            <button type="button" @click="toMarkdown" class="btn btn-outline-primary">Convert</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </slot>
-        <!-- End Modal -->
-
-        <!-- image modal -->
-        <!-- <slot name="image">
-            <div class="modal fade" :id="uid('modal-image')" data-backdrop="false"
-                aria-labelledby="v-md-editor-modal-image-label" aria-hidden="true" role="dialog" tabindex="-1">
-                <div class="modal-dialog modal-center">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="v-md-editor-modal-image-label">Image</h4>
-                            <button type="button" class="close" @click="hideModal('modal-image')" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>Image title</label>
-                                <input class="form-control" placeholder="Image title" :id="uid('img-title')" />
-                            </div>
-
-                            <div class="form-group">
-                                <label>Source</label>
-                                <input class="form-control" placeholder="http://" :id="uid('img-src')" />
-                            </div>
-
-
-                            <div class="alert alert-danger alert-dismissible" style="display:none" role="alert"
-                                :id="uid('image-alert')">
-                                <span>Image source is invalid!</span>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary float-left"
-                                @click="hideModal('modal-image')">Close</button>
-                            <button type="button" class="btn btn-outline-primary" @click="drawImage"> Ok </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </slot> -->
-        <!-- End Modal -->
-
-
-        <!-- link modal -->
-        <!-- <slot name="link">
-            <div class="modal fade" :id="uid('modal-link')" data-backdrop="false"
-                aria-labelledby="v-md-editor-modal-link-label" aria-hidden="true" role="dialog" tabindex="-1">
-                <div class="modal-dialog modal-center">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="v-md-editor-modal-link-label">Link</h4>
-                            <button type="button" class="close" @click="hideModal('modal-link')" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>Link title</label>
-                                <input class="form-control" placeholder="Link title" :id="uid('link-title')" />
-                            </div>
-
-                            <div class="form-group">
-                                <label>Source</label>
-                                <input class="form-control" placeholder="http://" :id="uid('link-src')" />
-                            </div>
-
-
-                            <div class="alert alert-danger alert-dismissible" style="display:none" role="alert"
-                                :id="uid('link-alert')">
-                                <span>Link is invalid!</span>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary float-left"
-                                @click="hideModal('modal-link')">Cancel</button>
-                            <button type="button" class="btn btn-outline-primary" @click="drawLink"> Ok </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </slot> -->
-        <!-- End Modal -->
     </div>
 </template>
 
@@ -145,11 +24,10 @@
     import './index.css';
 
 
-    import $ from 'jquery';
+
     import Markdown from 'markdownparser';
     import MarkdownIt from 'markdown-it';
     import CodeMirror from 'codemirror';
-
     import 'codemirror/addon/display/fullscreen.js';
     import 'codemirror/mode/markdown/markdown.js';
     import 'codemirror/mode/gfm/gfm.js';
@@ -173,39 +51,15 @@
             },
             toolbar: {
                 type: String,
-                default: 'clipboard redo undo | bold italic strikethrough heading | image link | numlist bullist code quote | preview fullscreen'
+                default: 'clean redo undo | bold italic strikethrough heading | image link | numlist bullist code quote | preview fullscreen'
             },
-            name: {
-                type: String,
-                default: 'html'
-            },
-            value: {
-                type: String,
-                default: '',
-                required: false
-            },
+            extend: {
+                type: Object
 
-            buttonClass: {
-                type: String,
-                default: 'btn btn-outline-secondary'
             },
-            options: {
+            buttons: {
                 type: Object,
-                default: function () {
-                    return {
-
-                    };
-                }
-            },
-        },
-
-        data() {
-            return {
-                id: 'v-md-editor-' + new Date().getTime(),
-                editor: null,
-                preview: false,
-
-                buttons: {
+                default: {
 
                     'bold': {
                         title: 'Bold',
@@ -280,6 +134,12 @@
                         hotkey: 'Ctrl-V'
                     },
 
+                    "clean": {
+                        cmd: "clean",
+                        className: "fas fa-remove-format",
+                        title: "Clean html format"
+                    },
+
                     "undo": {
                         cmd: "undo",
                         className: "far fa-undo",
@@ -304,11 +164,30 @@
                         cmd: "numlist",
                         className: "far fa-list-ol",
                         title: "Numbered List"
-                    },
+                    }
+
+                }
+            },
+            name: {
+                type: String,
+                default: 'html'
+            },
+            value: {
+                type: String,
+                default: '',
+                required: false
+            },
+
+            buttonClass: {
+                type: String,
+                default: 'btn btn-outline-secondary'
+            },
 
 
-                },
-                defaults: {
+
+            options: {
+                type: Object,
+                default: {
                     mode: 'gfm',
                     theme: "elegent",
                     lineNumbers: true,
@@ -319,7 +198,17 @@
                     autoRefresh: true,
                     tabSize: 2,
                     indentUnit: 2
-                },
+                }
+            },
+        },
+
+        data() {
+            return {
+                id: 'v-md-editor-' + new Date().getTime(),
+                editor: null,
+                preview: false,
+                html: '',
+                toolbars: [],
                 shortcuts: {},
 
             }
@@ -340,7 +229,8 @@
                     width: isNaN(this.width) ? this.width : this.width + '%',
                     height: isNaN(this.height) ? this.height : this.height + '%'
                 }
-            }
+            },
+
         },
 
         methods: {
@@ -362,7 +252,7 @@
                 return this.format('%s-%s', this.id, name);
             },
             obj(name) {
-                return $('#' + this.uid(name));
+                return jQuery('#' + this.uid(name));
             },
 
             _toggleBlock(type, start, end) {
@@ -469,7 +359,7 @@
 
                 var types = stat.type.split(" ");
 
-                console.log(types);
+                // console.log(types);
 
                 var ret = {},
                     data, text;
@@ -542,11 +432,24 @@
                 ed.focus();
 
             },
+
+            drawImage(obj) {
+                var stat = this.state();
+                this._replaceSelection(stat.image, ["![#title#](", '#url# "#title#")'], obj);
+            },
+
+            drawLink(obj) {
+                var stat = this.state();
+                this._replaceSelection(stat.link, ['[#title#]', '(#url# "#title#")'], obj);
+            },
+
             command(key) {
 
                 var ed = this.editor;
                 var text = ed.getSelection();
                 var stat = this.state();
+
+                this.$root.$emit('markdown-editor:' + key, this);
 
                 switch (key) {
                     case 'undo':
@@ -587,10 +490,7 @@
 
                         var url = prompt("Please enter image url", "https://");
                         if (this.isUrl(url)) {
-                            this._replaceSelection(stat.image, ["![#title#](", '#url# "#title#")'], {
-                                title: "This is image title",
-                                url: url
-                            });
+                            this.drawImage({ title: "This is image title", url: url });
                         }
                         break;
 
@@ -599,11 +499,9 @@
 
                         var url = prompt("Please enter link", "https://");
                         if (this.isUrl(url)) {
-                            var title = !this.isEmpty(text)? text: url;
-                            this._replaceSelection(stat.link, ['[#title#]', '(#url# "#title#")'], {
-                                title: title,
-                                url: url
-                            });
+                            var title = !this.isEmpty(text) ? text : url;
+                            this.drawLink({ title: title, url: url });
+
                         }
 
                         break;
@@ -626,21 +524,9 @@
 
                     case 'preview':
 
-                        var md = new MarkdownIt({
-                            html: true,
-                            linkify: true,
-                            typographer: true,
-                            breaks: true,
-                            quotes: '“”‘’',
-                            langPrefix: 'language-',  // CSS language prefix for fenced blocks. Can be useful for external highlighters. 
-                            highlight: function (str, lang) {
-                                return '<pre class="hljs" data-lang="' + lang + '"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
-                            }
-                        });
-                        var txt = md.render(ed.getValue());
+                        var md = new MarkdownIt({ typographer: true, breaks: true, quotes: '“”‘’' });
 
-                        this.obj('html-preview').html(txt).toggle();
-                        this.obj('preview').toggleClass('active');
+                        this.html = md.render(ed.getValue());
                         this.preview ^= true;
 
                         this.obj('toolbar').find('.btn:not(".ready")').prop('disabled', this.preview);
@@ -655,62 +541,30 @@
 
                         break;
 
+                    case 'clean':
+                        text = Markdown.parse(text);
+                        ed.replaceSelection(text);
+
+                        break;
+
                 }
 
                 ed.focus();
 
             },
 
-            // drawImage() {
-            //     var url = this.obj('img-src').val();
-            //     var title = this.obj('img-title').val();
-            //     if (this.isUrl(url)) {
-            //         var stat = this.state();
-            //         this._replaceSelection(stat.image, ["![#title#](", '#url# "#title#")'], {
-            //             title: title,
-            //             url: url
-            //         });
-            //         this.hideModal('modal-image');
-
-            //     } else {
-            //         this.obj('image-alert').fadeIn();
-            //     }               
-
-            // },
-
-            // drawLink() {
-            //     var url = this.obj('link-src').val();
-            //     var title = this.obj('link-title').val();
-            //     if (this.isUrl(url)) {
-            //         var stat = this.state();
-            //         this._replaceSelection(stat.link, ['[#title#]', '(#url# "#title#")'], {
-            //             title: title,
-            //             url: url
-            //         });
-
-            //         this.hideModal('modal-link');
 
 
-            //     } else {
-            //         this.obj('link-alert').fadeIn();
-            //     }
 
-            // },
-
-            toMarkdown() {
-                var html = this.obj('clipboard-text').val();
-                var text = Markdown.parse(html);
-                this.editor.replaceSelection(text);
-                this.editor.focus();
-
-                this.hideModal('modal-clipboard');
-            },
-
-            hideModal(n) {
-                this.obj(n).modal('hide');
-            },
 
             build() {
+
+                if (!jQuery) {
+
+                    console.error("Must required jQuery!");
+                    return;
+                }
+
                 if (this.isEmpty(this.toolbar)) {
                     console.error("You must set toolbar!");
                     return;
@@ -720,40 +574,31 @@
 
                 var _t = this;
 
+                this.buttons = Object.assign(this.buttons, this.extend);
+
                 var btns = _t.toolbar.toLowerCase().split(/(\s)/).filter(function (w) {
                     return !_t.isEmpty(w);
                 });
 
-                var group = $('<div class="btn-group mr-3" role="group"></div>');
-                var toolbar = _t.obj('toolbar');
+
+                var group = [];
                 for (var i = 0; i < btns.length; i++) {
                     var btn = btns[i];
                     var obj = _t.buttons[btn];
                     if (obj) {
-                        btn = $(_t.format('<button type="button" id="%s-%s" data-cmd="%s" title="%s" class="%s %s"><i class="%s" aria-hidden="true"></i></button>', _t.id, btn, obj.cmd, obj.title, _t.buttonClass, obj.ready ? 'ready' : '', obj.className)).on('click', function () {
-                            _t.command($(this).attr('data-cmd'));
-                        });
-
-                        // if (obj.hotkey) {
-                        //     _t.shortcuts[obj.hotkey] = function () {
-                        //         //_t.command(obj.cmd);
-                        //         btn.trigger('click');
-                        //         // _t.obj(obj.cmd).trigger('click');
-                        //     }
-                        // }
-
-                        group.append(btn);
+                        // obj.cmd = typeof obj.cmd ==='function'? obj.cmd: this.command(obj.cmd);
+                        obj.id = btn;
+                        group.push(obj);
 
                     }
-
                     if (btn === '|' || i == btns.length - 1) {
-                        toolbar.append(group);
-                        group = group.clone().empty();
+                        this.toolbars.push(group);
+                        group = [];
                     }
-
                 }
-                //console.log( _t.shortcuts);
-                var o = Object.assign({}, { extraKeys: _t.shortcuts, initialValue: _t.value }, _t.defaults, _t.options);
+
+
+                var o = Object.assign({}, { extraKeys: _t.shortcuts, initialValue: _t.value }, _t.options);
                 var el = document.getElementById(_t.id + '-input');
                 _t.editor = CodeMirror.fromTextArea(el, o);
                 _t.editor.on("change", function (ed) {
@@ -768,6 +613,7 @@
                     _t.obj('toolbar').find('.btn.active:not(.ready)').removeClass('active');
                     Object.keys(stat).forEach(key => {
                         _t.obj(key).addClass('active');
+
                     });
                 });
 

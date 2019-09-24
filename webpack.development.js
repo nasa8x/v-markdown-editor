@@ -291,7 +291,7 @@ module.exports = function (env) {
                         {
                             module: 'fonts',
                             entry: [
-                                '//l.allcdn.org/fa/v5.3.1/css/all.min.css'
+                                '//l.allcdn.org/fa/v5.12.2/css/all.min.css'
                             ],
                         },
 

@@ -1,4 +1,4 @@
-Vue Markdown Editor component for Vue.js
+# Vue Markdown Editor component for Vue.js
 
 ☞ [How to Create a Chrome Extension with Vue.js](https://morioh.com/p/0169fb660bae)
 
@@ -7,11 +7,11 @@ Vue Markdown Editor component for Vue.js
 ![Markdown Editor Preview](https://i.imgur.com/Bcr3Xhk.png)
 
 
-## Demo
+### Demo
 
 [Markdown Editor](https://nasa8x.github.io/v-markdown-editor/dist/www)
 
-## Install
+### Install
 
 ```js
 npm install v-markdown-editor
@@ -98,7 +98,7 @@ Bootstrap 4 & Fontawesome
 </script>
 ```
 
-## Toolbar
+### Toolbar
 
 
 ```js
@@ -113,8 +113,86 @@ Bootstrap 4 & Fontawesome
 
 ```
 
+### add custom button
 
-## Custom submit form input name
+
+```js
+
+<template>
+    <div class="container">
+       <markdown-editor toolbar="bold italic heading | image link | numlist bullist code quote | preview fullscreen | upload" :extend="custom"></markdown-editor>
+    </div>
+</template>
+
+<script>
+
+    export default {
+        data() {
+            return {              
+
+                custom: {
+                    'upload': {
+                        cmd: 'upload',
+                        className: 'fas fa-upload',
+                        title: 'Upload File'
+                    }
+                }
+            }
+        },       
+
+
+        created() {
+            this.$root.$on('markdown-editor:upload', function (md) {
+                md.drawImage({url:'https://i.imgur.com/CbCXhBe.png', title:'this image title'});
+            });
+
+        }
+
+
+    }
+
+</script>
+
+```
+
+
+### Handle editor
+
+
+```js
+
+<template>
+    <div class="container">
+       <markdown-editor ref="md"></markdown-editor>
+
+         <button @click="replace" class="btn btn-primary">Handle</button>
+
+    </div>
+</template>
+
+
+<script>
+
+    export default {
+       
+        methods: {          
+
+            replace(){
+
+                // more info: https://codemirror.net/doc/manual.html#api
+
+                this.$refs.md.editor.replaceSelection("Handle editor");
+            }
+        },  
+
+
+    }
+
+</script>
+
+```
+
+### Custom submit form input name
 
 
 ```js
@@ -127,5 +205,4 @@ Bootstrap 4 & Fontawesome
 
 ```
 
-## Donate
-[![](https://i.imgur.com/z0p6RvA.png)](http://vrl.to/ec5cfbae)[![](https://i.imgur.com/bEUNBGz.png)](http://vrl.to/ec5cfbae)
+
