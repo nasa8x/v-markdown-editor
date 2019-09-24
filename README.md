@@ -1,5 +1,7 @@
 # Vue Markdown Editor component for Vue.js
 
+☞ [Vue JS - The Complete Guide (incl. Vue Router & Vuex)](https://learnstartup.net/go/BJBa7-l-g)
+
 ☞ [How to Create a Chrome Extension with Vue.js](https://morioh.com/p/0169fb660bae)
 
 ☞ [How To Build a Blog with Nest.js, MongoDB, and Vue.js](https://morioh.com/p/74ffc8a798bb)
