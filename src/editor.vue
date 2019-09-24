@@ -10,13 +10,14 @@
 
         <!-- clipboard modal -->
         <slot name="clipboard">
-            <div class="modal fade" :id="uid('modal-clipboard')" data-backdrop="false" aria-labelledby="v-md-editor-modal-clipboard-label"
-                aria-hidden="true" role="dialog" tabindex="-1">
+            <div class="modal fade" :id="uid('modal-clipboard')" data-backdrop="false"
+                aria-labelledby="v-md-editor-modal-clipboard-label" aria-hidden="true" role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
                     <div class="modal-content">
-                        <div class="modal-header">                          
+                        <div class="modal-header">
                             <h4 class="modal-title" id="v-md-editor-modal-clipboard-label">Html to Markdown</h4>
-                            <button type="button" class="close" @click="hideModal('modal-clipboard')" aria-label="Close">
+                            <button type="button" class="close" @click="hideModal('modal-clipboard')"
+                                aria-label="Close">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
@@ -28,7 +29,8 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary" @click="hideModal('modal-clipboard')">Close</button>
+                            <button type="button" class="btn btn-outline-secondary"
+                                @click="hideModal('modal-clipboard')">Close</button>
                             <button type="button" @click="toMarkdown" class="btn btn-outline-primary">Convert</button>
                         </div>
 
@@ -39,12 +41,12 @@
         <!-- End Modal -->
 
         <!-- image modal -->
-        <slot name="image">
-            <div class="modal fade" :id="uid('modal-image')" data-backdrop="false" aria-labelledby="v-md-editor-modal-image-label" aria-hidden="true"
-                role="dialog" tabindex="-1">
+        <!-- <slot name="image">
+            <div class="modal fade" :id="uid('modal-image')" data-backdrop="false"
+                aria-labelledby="v-md-editor-modal-image-label" aria-hidden="true" role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
                     <div class="modal-content">
-                        <div class="modal-header">                           
+                        <div class="modal-header">
                             <h4 class="modal-title" id="v-md-editor-modal-image-label">Image</h4>
                             <button type="button" class="close" @click="hideModal('modal-image')" aria-label="Close">
                                 <span aria-hidden="true">×</span>
@@ -62,7 +64,8 @@
                             </div>
 
 
-                            <div class="alert alert-danger alert-dismissible" style="display:none" role="alert" :id="uid('image-alert')">
+                            <div class="alert alert-danger alert-dismissible" style="display:none" role="alert"
+                                :id="uid('image-alert')">
                                 <span>Image source is invalid!</span>
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -73,24 +76,25 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary float-left" @click="hideModal('modal-image')">Close</button>
+                            <button type="button" class="btn btn-outline-secondary float-left"
+                                @click="hideModal('modal-image')">Close</button>
                             <button type="button" class="btn btn-outline-primary" @click="drawImage"> Ok </button>
                         </div>
 
                     </div>
                 </div>
             </div>
-        </slot>
+        </slot> -->
         <!-- End Modal -->
 
 
         <!-- link modal -->
-        <slot name="link">
-            <div class="modal fade" :id="uid('modal-link')" data-backdrop="false" aria-labelledby="v-md-editor-modal-link-label" aria-hidden="true"
-                role="dialog" tabindex="-1">
+        <!-- <slot name="link">
+            <div class="modal fade" :id="uid('modal-link')" data-backdrop="false"
+                aria-labelledby="v-md-editor-modal-link-label" aria-hidden="true" role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-center">
                     <div class="modal-content">
-                        <div class="modal-header">                          
+                        <div class="modal-header">
                             <h4 class="modal-title" id="v-md-editor-modal-link-label">Link</h4>
                             <button type="button" class="close" @click="hideModal('modal-link')" aria-label="Close">
                                 <span aria-hidden="true">×</span>
@@ -108,7 +112,8 @@
                             </div>
 
 
-                            <div class="alert alert-danger alert-dismissible" style="display:none" role="alert" :id="uid('link-alert')">
+                            <div class="alert alert-danger alert-dismissible" style="display:none" role="alert"
+                                :id="uid('link-alert')">
                                 <span>Link is invalid!</span>
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
@@ -119,14 +124,15 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary float-left" @click="hideModal('modal-link')">Cancel</button>
+                            <button type="button" class="btn btn-outline-secondary float-left"
+                                @click="hideModal('modal-link')">Cancel</button>
                             <button type="button" class="btn btn-outline-primary" @click="drawLink"> Ok </button>
                         </div>
 
                     </div>
                 </div>
             </div>
-        </slot>
+        </slot> -->
         <!-- End Modal -->
     </div>
 </template>
@@ -306,11 +312,11 @@
                     mode: 'gfm',
                     theme: "elegent",
                     lineNumbers: true,
-                    styleActiveLine: true,
-                    styleSelectedText: true,
+                    styleActiveLine: false,
+                    styleSelectedText: false,
                     lineWrapping: true,
                     indentWithTabs: true,
-                    autoRefresh:true,
+                    autoRefresh: false,
                     tabSize: 2,
                     indentUnit: 2
                 },
@@ -321,10 +327,10 @@
 
         watch: {
             value(val) {
-                if (val != this.editor.getValue()){
+                if (val != this.editor.getValue()) {
                     this.editor.setValue(val);
                 }
-                
+
             },
         },
 
@@ -342,7 +348,7 @@
                 return s === null || s === undefined ? true : /^[\s\xa0]*$/.test(s);
             },
             isUrl: function (s) {
-                return this.isEmpty(s) ? false : s.match(/((http|https):\/\/)?(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/gi);
+                return this.isEmpty(s) ? false : s.match(/((http(s)?):\/\/[\w\.\/\-=?#]+)/gi);
             },
             format() {
                 var a = arguments[0];
@@ -387,9 +393,9 @@
                         line: startPoint.line,
                         ch: 0
                     }, {
-                            line: startPoint.line,
-                            ch: 99999999999999
-                        });
+                        line: startPoint.line,
+                        ch: 99999999999999
+                    });
 
                     if (type == "bold" || type == "strikethrough") {
                         startPoint.ch -= 2;
@@ -449,8 +455,8 @@
                         ed.replaceRange(text, {
                             line: i, ch: 0
                         }, {
-                                line: i, ch: 99999999999999
-                            });
+                            line: i, ch: 99999999999999
+                        });
                     })(i);
                 }
 
@@ -521,8 +527,9 @@
                         ch: 0
                     });
                 } else {
-                    text = ed.getSelection();
-                    ed.replaceSelection(start + text + end);
+                    // text = ed.getSelection();
+                    // ed.replaceSelection(start + text + end);
+                    ed.replaceSelection(start + end);
 
                     startPoint.ch += start.length;
                     if (startPoint !== endPoint) {
@@ -535,7 +542,7 @@
             },
             command(key) {
 
-                var ed = this.editor;               
+                var ed = this.editor;
                 var text = ed.getSelection();
                 var stat = this.state();
 
@@ -574,11 +581,29 @@
                         break;
 
                     case 'image':
-                        this.obj('modal-image').modal('show');
+                        // this.obj('modal-image').modal('show');
+
+                        var url = prompt("Please enter image url", "https://");
+                        if (this.isUrl(url)) {
+                            this._replaceSelection(stat.image, ["![#title#](", '#url# "#title#")'], {
+                                title: "This is image title",
+                                url: url
+                            });
+                        }
                         break;
 
                     case 'link':
-                        this.obj('modal-link').modal('show');
+                        //this.obj('modal-link').modal('show');
+
+                        var url = prompt("Please enter link", "https://");
+                        if (this.isUrl(url)) {
+                            var title = !this.isEmpty(text)? text: url;
+                            this._replaceSelection(stat.link, ['[#title#]', '(#url# "#title#")'], {
+                                title: title,
+                                url: url
+                            });
+                        }
+
                         break;
 
                     case 'quote':
@@ -634,41 +659,41 @@
 
             },
 
-            drawImage() {
-                var url = this.obj('img-src').val();
-                var title = this.obj('img-title').val();
-                if (this.isUrl(url)) {
-                    var stat = this.state();
-                    this._replaceSelection(stat.image, ["![#title#](", '#url# "#title#")'], {
-                        title: title,
-                        url: url
-                    });
-                   this.hideModal('modal-image');
+            // drawImage() {
+            //     var url = this.obj('img-src').val();
+            //     var title = this.obj('img-title').val();
+            //     if (this.isUrl(url)) {
+            //         var stat = this.state();
+            //         this._replaceSelection(stat.image, ["![#title#](", '#url# "#title#")'], {
+            //             title: title,
+            //             url: url
+            //         });
+            //         this.hideModal('modal-image');
 
-                } else {
-                    this.obj('image-alert').fadeIn();
-                }
+            //     } else {
+            //         this.obj('image-alert').fadeIn();
+            //     }               
 
-            },
+            // },
 
-            drawLink() {
-                var url = this.obj('link-src').val();
-                var title = this.obj('link-title').val();
-                if (this.isUrl(url)) {
-                    var stat = this.state();
-                    this._replaceSelection(stat.link, ['[#title#]', '(#url# "#title#")'], {
-                        title: title,
-                        url: url
-                    });
-                   
-                    this.hideModal('modal-link');
-                    
+            // drawLink() {
+            //     var url = this.obj('link-src').val();
+            //     var title = this.obj('link-title').val();
+            //     if (this.isUrl(url)) {
+            //         var stat = this.state();
+            //         this._replaceSelection(stat.link, ['[#title#]', '(#url# "#title#")'], {
+            //             title: title,
+            //             url: url
+            //         });
 
-                } else {
-                    this.obj('link-alert').fadeIn();
-                }
+            //         this.hideModal('modal-link');
 
-            },
+
+            //     } else {
+            //         this.obj('link-alert').fadeIn();
+            //     }
+
+            // },
 
             toMarkdown() {
                 var html = this.obj('clipboard-text').val();
@@ -735,14 +760,14 @@
                     //_t.value = ed.getValue();
                 });
 
-                _t.editor.on("cursorActivity", function () {
-                    var stat = _t.state();
+                // _t.editor.on("cursorActivity", function () {
+                //     var stat = _t.state();
 
-                    _t.obj('toolbar').find('.btn.active:not(.ready)').removeClass('active');
-                    Object.keys(stat).forEach(key => {
-                        _t.obj(key).addClass('active');
-                    });
-                });
+                //     _t.obj('toolbar').find('.btn.active:not(.ready)').removeClass('active');
+                //     Object.keys(stat).forEach(key => {
+                //         _t.obj(key).addClass('active');
+                //     });
+                // });
 
                 _t.__rendered = true;
 

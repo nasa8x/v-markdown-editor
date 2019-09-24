@@ -28,7 +28,7 @@
             <div class="form-group">
                 <markdown-editor
                     toolbar="bold italic heading | image link | numlist bullist code quote | preview fullscreen"
-                    buttonClass="btn btn-outline-success"></markdown-editor>
+                    buttonClass="btn btn-sm btn-outline-success"></markdown-editor>
             </div>
 
 
