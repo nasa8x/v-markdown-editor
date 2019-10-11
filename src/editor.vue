@@ -59,111 +59,114 @@
             },
             buttons: {
                 type: Object,
-                default: {
+                default: function () {
 
-                    'bold': {
-                        title: 'Bold',
-                        className: 'far fa-bold',
-                        cmd: 'bold',
-                        hotkey: 'Ctrl-B'
-                    },
+                    return {
 
-                    'italic': {
-                        title: 'Italic',
-                        className: "far fa-italic",
-                        cmd: 'italic',
-                        hotkey: 'Ctrl-I'
-                    },
+                        'bold': {
+                            title: 'Bold',
+                            className: 'far fa-bold',
+                            cmd: 'bold',
+                            hotkey: 'Ctrl-B'
+                        },
 
-                    "strikethrough": {
-                        cmd: "strikethrough",
-                        className: "far fa-strikethrough",
-                        title: "Strikethrough"
-                    },
+                        'italic': {
+                            title: 'Italic',
+                            className: "far fa-italic",
+                            cmd: 'italic',
+                            hotkey: 'Ctrl-I'
+                        },
 
-                    'heading': {
-                        title: 'Heading',
-                        className: "far fa-heading",
-                        cmd: 'heading',
-                        hotkey: 'Ctrl-H'
-                    },
+                        "strikethrough": {
+                            cmd: "strikethrough",
+                            className: "far fa-strikethrough",
+                            title: "Strikethrough"
+                        },
 
-                    'code': {
-                        title: 'Code',
-                        className: "far fa-code",
-                        cmd: 'code',
-                        hotkey: 'Ctrl-X'
-                    },
-                    'quote': {
-                        title: 'Quote',
-                        className: "far fa-quote-left",
-                        cmd: 'quote',
-                        hotkey: 'Ctrl-Q'
-                    },
-                    'link': {
-                        title: 'Link',
-                        className: "far fa-link",
-                        cmd: 'link',
-                        hotkey: 'Ctrl-K'
-                    },
-                    'image': {
-                        title: 'Image',
-                        className: "far fa-image",
-                        cmd: 'image',
-                        hotkey: 'Ctrl-P'
-                    },
-                    "fullscreen": {
-                        cmd: "fullscreen",
-                        className: "far fa-arrows-alt no-disable no-mobile",
-                        title: "Toggle Fullscreen",
-                        hotkey: 'F11',
-                        ready: true
-                    },
-                    "preview": {
-                        cmd: "preview",
-                        className: "far fa-eye no-disable",
-                        title: "Toggle Preview",
-                        hotkey: 'Ctrl-P',
-                        ready: true
-                    },
+                        'heading': {
+                            title: 'Heading',
+                            className: "far fa-heading",
+                            cmd: 'heading',
+                            hotkey: 'Ctrl-H'
+                        },
 
-                    "clipboard": {
-                        cmd: "clipboard",
-                        className: "far fa-clipboard",
-                        title: "Copy & Markdown Format",
-                        hotkey: 'Ctrl-V'
-                    },
+                        'code': {
+                            title: 'Code',
+                            className: "far fa-code",
+                            cmd: 'code',
+                            hotkey: 'Ctrl-X'
+                        },
+                        'quote': {
+                            title: 'Quote',
+                            className: "far fa-quote-left",
+                            cmd: 'quote',
+                            hotkey: 'Ctrl-Q'
+                        },
+                        'link': {
+                            title: 'Link',
+                            className: "far fa-link",
+                            cmd: 'link',
+                            hotkey: 'Ctrl-K'
+                        },
+                        'image': {
+                            title: 'Image',
+                            className: "far fa-image",
+                            cmd: 'image',
+                            hotkey: 'Ctrl-P'
+                        },
+                        "fullscreen": {
+                            cmd: "fullscreen",
+                            className: "far fa-arrows-alt no-disable no-mobile",
+                            title: "Toggle Fullscreen",
+                            hotkey: 'F11',
+                            ready: true
+                        },
+                        "preview": {
+                            cmd: "preview",
+                            className: "far fa-eye no-disable",
+                            title: "Toggle Preview",
+                            hotkey: 'Ctrl-P',
+                            ready: true
+                        },
 
-                    "clean": {
-                        cmd: "clean",
-                        className: "fas fa-remove-format",
-                        title: "Clean html format"
-                    },
+                        "clipboard": {
+                            cmd: "clipboard",
+                            className: "far fa-clipboard",
+                            title: "Copy & Markdown Format",
+                            hotkey: 'Ctrl-V'
+                        },
 
-                    "undo": {
-                        cmd: "undo",
-                        className: "far fa-undo",
-                        title: "Undo",
-                        hotkey: 'Ctrl-Z'
-                    },
+                        "clean": {
+                            cmd: "clean",
+                            className: "fas fa-remove-format",
+                            title: "Clean html format"
+                        },
 
-                    "redo": {
-                        cmd: "redo",
-                        className: "far fa-repeat",
-                        title: "Redo",
-                        hotkey: 'Ctrl-Y'
-                    },
+                        "undo": {
+                            cmd: "undo",
+                            className: "far fa-undo",
+                            title: "Undo",
+                            hotkey: 'Ctrl-Z'
+                        },
 
-                    "bullist": {
-                        cmd: "bullist",
-                        className: "far fa-list-ul",
-                        title: "Generic List",
+                        "redo": {
+                            cmd: "redo",
+                            className: "far fa-repeat",
+                            title: "Redo",
+                            hotkey: 'Ctrl-Y'
+                        },
 
-                    },
-                    "numlist": {
-                        cmd: "numlist",
-                        className: "far fa-list-ol",
-                        title: "Numbered List"
+                        "bullist": {
+                            cmd: "bullist",
+                            className: "far fa-list-ul",
+                            title: "Generic List",
+
+                        },
+                        "numlist": {
+                            cmd: "numlist",
+                            className: "far fa-list-ol",
+                            title: "Numbered List"
+                        }
                     }
 
                 }
@@ -187,17 +190,19 @@
 
             options: {
                 type: Object,
-                default: {
-                    mode: 'gfm',
-                    theme: "elegent",
-                    lineNumbers: true,
-                    styleActiveLine: false,
-                    styleSelectedText: true,
-                    lineWrapping: true,
-                    indentWithTabs: true,
-                    autoRefresh: true,
-                    tabSize: 2,
-                    indentUnit: 2
+                default: function () {
+                    return {
+                        mode: 'gfm',
+                        theme: "elegent",
+                        lineNumbers: false,
+                        styleActiveLine: false,
+                        styleSelectedText: true,
+                        lineWrapping: true,
+                        indentWithTabs: true,
+                        autoRefresh: true,
+                        tabSize: 2,
+                        indentUnit: 2,
+                    }
                 }
             },
         },
@@ -490,7 +495,8 @@
 
                         var url = prompt("Please enter image url", "https://");
                         if (this.isUrl(url)) {
-                            this.drawImage({ title: "This is image title", url: url });
+                            var title = !this.isEmpty(text) ? text : "This is image title";
+                            this.drawImage({ title: title, url: url });
                         }
                         break;
 
@@ -623,7 +629,9 @@
             }
         },
         mounted() {
-            this.build();
+            
+            this.$nextTick(() => { this.build(); });
+
         },
         destroyed() {
             this.editor = null;

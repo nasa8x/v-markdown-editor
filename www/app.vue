@@ -10,7 +10,7 @@
             <div class="form-group">
                 <h2 class="text-center"><a href="https://morioh.com">Social Network for Developers</a></h2>
             </div>
-
+            
 
             <div class="form-group">
                 <markdown-editor ref="md" v-model="value"></markdown-editor>
