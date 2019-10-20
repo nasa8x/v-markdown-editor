@@ -138,8 +138,8 @@
 
                         "clean": {
                             cmd: "clean",
-                            className: "fas fa-remove-format",
-                            title: "Clean html format"
+                            className: "far fa-remove-format",
+                            title: "Html to markdown"
                         },
 
                         "undo": {
