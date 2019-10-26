@@ -30,6 +30,18 @@ Vue.use(Editor);
 
 ```
 
+
+### Use CDN
+
+```
+
+<link href="https://unpkg.com/v-markdown-editor/dist/v-markdown-editor.css" rel="stylesheet">
+
+<script src="https://unpkg.com/v-markdown-editor/dist/v-markdown-editor.min.js" type="text/javascript"></script>
+
+
+```
+
 ## Require
 
 Bootstrap 4 & Fontawesome

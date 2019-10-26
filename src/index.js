@@ -1,7 +1,7 @@
 
-import editor from './editor.vue';
+import Editor from './editor.vue';
 
-const MarkdownEditor = {
+var MarkdownEditor = {
     install: function (Vue) {
         if (Vue.__md_editor_installed) {
             return;
@@ -9,12 +9,21 @@ const MarkdownEditor = {
 
         Vue.__md_editor_installed = true;
 
-        Vue.component('markdown-editor', editor);    
+        Vue.component('markdown-editor', Editor);
     }
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(MarkdownEditor);
+    Vue.use(MarkdownEditor);
 }
 
 export default MarkdownEditor;
+
+
+// if (typeof exports == "object") {
+//     module.exports = MarkdownEditor;
+// } else if (typeof define == "function" && define.amd) {
+//     define([], function () { return MarkdownEditor; })
+// } else if (window.Vue) {
+//     Vue.use(MarkdownEditor);
+// }

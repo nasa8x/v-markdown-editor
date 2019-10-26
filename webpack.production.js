@@ -8,7 +8,9 @@ module.exports = function () {
 
     configs.forEach(function (config) {
         config.devtool = false;
-        config.plugins.push(new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['dist/*'] }));
+        config.output.filename = '[name].min.js'
+
+        // config.plugins.push(new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ['dist/*'] }));
 
     });
 

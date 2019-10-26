@@ -1,7 +1,7 @@
 {
   "name": "v-markdown-editor",
   "description": "Vue Markdown Editor component for Vue.js",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "author": "Nasa8x",
   "main": "./dist/index.js",
   "scripts": {
@@ -30,16 +30,17 @@
     "bootstrap markdown editor"
   ],
   "dependencies": {
-    "codemirror": "^5.49.0",
+    "codemirror": "^5.49.2",
     "jquery": "^3.4.1",
-    "markdown-it": "^10.0.0",
-    "markdownparser": "^1.0.8",
+    "markdownparser": "^1.1.1",
+    "marked": "^0.7.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "@babel/preset-env": "^7.6.3",
-    "autoprefixer": "^9.6.4",
+    "autoprefixer": "^9.7.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
@@ -53,7 +54,7 @@
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
@@ -65,7 +66,7 @@
     "vue-ssr-webpack-plugin": "^3.0.0",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.41.0",
+    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-node-externals": "^1.7.2"
   }

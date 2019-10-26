@@ -26,7 +26,7 @@
 
 
     import Markdown from 'markdownparser';
-    import MarkdownIt from 'markdown-it';
+    import Marked from 'marked';
     import CodeMirror from 'codemirror';
     import 'codemirror/addon/display/fullscreen.js';
     import 'codemirror/mode/markdown/markdown.js';
@@ -530,9 +530,9 @@
 
                     case 'preview':
 
-                        var md = new MarkdownIt({ typographer: true, breaks: true, quotes: '“”‘’' });
+                        ///var md = new MarkdownIt({ typographer: true, breaks: true, quotes: '“”‘’' });
 
-                        this.html = md.render(ed.getValue());
+                        this.html = Marked(ed.getValue());
                         this.preview ^= true;
 
                         this.obj('toolbar').find('.btn:not(".ready")').prop('disabled', this.preview);
