@@ -532,7 +532,7 @@
 
                         ///var md = new MarkdownIt({ typographer: true, breaks: true, quotes: '“”‘’' });
 
-                        this.html = Marked(ed.getValue());
+                        this.html = Marked(ed.getValue(), { breaks: true });
                         this.preview ^= true;
 
                         this.obj('toolbar').find('.btn:not(".ready")').prop('disabled', this.preview);
@@ -629,7 +629,7 @@
             }
         },
         mounted() {
-            
+
             this.$nextTick(() => { this.build(); });
 
         },
