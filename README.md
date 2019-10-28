@@ -220,3 +220,11 @@ Bootstrap 4 & Fontawesome
 ```
 
 
+### Auto resize
+
+```js
+
+ <markdown-editor height="auto"></markdown-editor>
+```
+
+

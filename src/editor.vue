@@ -1,5 +1,5 @@
 <template>
-    <div :class="['v-md-container', css]" :id="uid('container')">
+    <div :class="['v-md-container', css,{'v-md-auto-resize': height=='auto' }]" :id="uid('container')">
         <div :id="uid('toolbar')" class="v-md-toolbar">
             <div class="btn-group mr-3" role="group" v-for="group in toolbars">
                 <button type="button" :id="uid(i.id)" :title="i.title" :class="[buttonClass, {'ready': i.ready}]"
@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="v-md-wrapper">
-            <textarea :id="uid('input')" v-model="value" :style="styles" :name="name"></textarea>
+            <textarea :id="uid('input')" v-model="value" :name="name" :style="styles"></textarea>
             <div class="v-md-preview" :id="uid('html-preview')" v-if="preview" v-html="html">
             </div>
         </div>
@@ -22,8 +22,6 @@
 
     import 'codemirror/lib/codemirror.css';
     import './index.css';
-
-
 
     import Markdown from 'markdownparser';
     import Marked from 'marked';
@@ -47,7 +45,7 @@
             },
             height: {
                 type: String,
-                default: '280px'
+                default: '300px'
             },
             toolbar: {
                 type: String,

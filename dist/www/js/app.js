@@ -523,7 +523,7 @@
             },
             height: {
               type: String,
-              "default": '280px'
+              "default": '300px'
             },
             toolbar: {
               type: String,
@@ -1130,7 +1130,9 @@
           var _c = _vm._self._c || _h;
 
           return _c("div", {
-            "class": ["v-md-container", _vm.css],
+            "class": ["v-md-container", _vm.css, {
+              "v-md-auto-resize": _vm.height == "auto"
+            }],
             attrs: {
               id: _vm.uid("container")
             }
@@ -1648,6 +1650,11 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -15545,9 +15552,17 @@ var render = function() {
       _c(
         "div",
         { staticClass: "form-group" },
+        [_c("markdown-editor", { attrs: { height: "auto" } })],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "form-group" },
         [
           _c("markdown-editor", {
             attrs: {
+              height: "auto",
               toolbar:
                 "bold italic heading | image link | numlist bullist code quote | preview fullscreen upload",
               buttonClass: "btn btn-default",

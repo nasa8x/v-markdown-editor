@@ -166,7 +166,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     height: {
       type: String,
-      "default": '280px'
+      "default": '300px'
     },
     toolbar: {
       type: String,
@@ -756,7 +756,14 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { class: ["v-md-container", _vm.css], attrs: { id: _vm.uid("container") } },
+    {
+      class: [
+        "v-md-container",
+        _vm.css,
+        { "v-md-auto-resize": _vm.height == "auto" }
+      ],
+      attrs: { id: _vm.uid("container") }
+    },
     [
       _c(
         "div",

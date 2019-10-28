@@ -10,7 +10,7 @@
             <div class="form-group">
                 <h2 class="text-center"><a href="https://morioh.com">Social Network for Developers</a></h2>
             </div>
-            
+
 
             <div class="form-group">
                 <markdown-editor ref="md" v-model="value"></markdown-editor>
@@ -21,13 +21,18 @@
                 <button @click="replace" class="btn btn-primary">Handle</button>
             </div>
 
-
             <div class="form-group">
                 <pre>{{value}}</pre>
+            </div>           
+
+
+
+            <div class="form-group">
+                <markdown-editor height="auto"></markdown-editor>
             </div>
 
             <div class="form-group">
-                <markdown-editor
+                <markdown-editor height="auto"
                     toolbar="bold italic heading | image link | numlist bullist code quote | preview fullscreen upload"
                     buttonClass="btn btn-default" :extend="custom"></markdown-editor>
             </div>
