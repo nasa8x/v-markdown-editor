@@ -1,5 +1,8 @@
 
+import 'codemirror/lib/codemirror.css';
+import './index.css';
 import Editor from './editor.vue';
+
 
 var MarkdownEditor = {
     install: function (Vue) {
@@ -18,12 +21,3 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default MarkdownEditor;
-
-
-// if (typeof exports == "object") {
-//     module.exports = MarkdownEditor;
-// } else if (typeof define == "function" && define.amd) {
-//     define([], function () { return MarkdownEditor; })
-// } else if (window.Vue) {
-//     Vue.use(MarkdownEditor);
-// }

@@ -5,12 +5,7 @@
             <header>
                 <h1>v-markdown-editor</h1>
                 <h4>Markdown Editor component for Vue.js</h4>
-            </header>
-
-            <div class="form-group">
-                <h2 class="text-center"><a href="https://morioh.com">Social Network for Developers</a></h2>
-            </div>
-
+            </header>         
 
             <div class="form-group">
                 <markdown-editor ref="md" v-model="value"></markdown-editor>
@@ -22,24 +17,28 @@
             </div>
 
             <div class="form-group">
-                <pre>{{value}}</pre>
-            </div>           
-
-
-
-            <div class="form-group">
-                <markdown-editor height="auto"></markdown-editor>
-            </div>
-
-            <div class="form-group">
-                <markdown-editor height="auto"
-                    toolbar="bold italic heading | image link | numlist bullist code quote | preview fullscreen upload"
-                    buttonClass="btn btn-default" :extend="custom"></markdown-editor>
+                <pre><code>{{value}}</code></pre>
             </div>
 
 
+            <pre><code>&lt;markdown-editor toolbar=&quot;bold italic upload&quot; :extend=&quot;custom&quot;&gt;&lt;/markdown-editor&gt;</code></pre>
+
             <div class="form-group">
-                <markdown-editor buttonClass="btn btn-sm btn-success"></markdown-editor>
+                <markdown-editor toolbar="bold italic upload" :extend="custom"></markdown-editor>
+            </div>
+
+
+
+            <pre><code>&#x3C;markdown-editor theme=&#x22;success&#x22;&#x3E;&#x3C;/markdown-editor&#x3E;</code></pre>            
+
+            <div class="form-group">                
+                <markdown-editor theme="success"></markdown-editor>
+            </div>
+
+
+            <pre><code>&#x3C;markdown-editor height="auto" toolbar=&#x27;&#x27;&#x3E;&#x3C;/markdown-editor&#x3E;</code></pre>    
+            <div class="form-group">                
+                <markdown-editor height="auto" toolbar=''></markdown-editor>
             </div>
 
 
@@ -55,12 +54,9 @@
 
             </p>
 
-            <p>Developed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a><br>
-                Made Love by Nasa8x<br>
-                <strong>Donate</strong><br>
-                <a href="http://vrl.to/ec5cfbae" target="_blank">
-                    <img src="https://i.imgur.com/z0p6RvA.png"></a><a href="http://vrl.to/ec5cfbae" target="_blank"><img
-                        src="https://i.imgur.com/bEUNBGz.png"></a>
+            <p>Themed by <a href="http://on.morioh.net/96d5d36367" target="_blank">Morioh Theme</a><br>
+                Made Love by <a href="https://morioh.com/@5c22e47440738156a7078a19">Nasa8x</a>
+
             </p>
 
 
@@ -75,12 +71,12 @@
     export default {
         data() {
             return {
-                value: 'Hello world',
+                value: 'Hello',
 
                 custom: {
                     'upload': {
                         cmd: 'upload',
-                        className: 'fas fa-upload',
+                        ico: 'fas fa-cloud',
                         title: 'Upload File'
                     }
                 }
@@ -90,15 +86,7 @@
         methods: {
             val() {
                 this.value = "jjkjlkjljlkjlkjlkjlkj"
-            },
-
-
-
-            showModal() {
-
-                $('#modal').modal('show');
-
-            },
+            },           
 
             replace() {
                 this.$refs.md.editor.replaceSelection("Handle editor");

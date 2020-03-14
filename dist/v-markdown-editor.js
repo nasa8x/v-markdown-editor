@@ -105,26 +105,18 @@ return /******/ (function(modules) { // webpackBootstrap
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! codemirror/lib/codemirror.css */ "./node_modules/codemirror/lib/codemirror.css");
-/* harmony import */ var codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var markdownparser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! markdownparser */ "./node_modules/markdownparser/index.js");
-/* harmony import */ var markdownparser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(markdownparser__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var marked__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! marked */ "./node_modules/marked/lib/marked.js");
-/* harmony import */ var marked__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(marked__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! codemirror */ "./node_modules/codemirror/lib/codemirror.js");
-/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(codemirror__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! codemirror/addon/display/fullscreen.js */ "./node_modules/codemirror/addon/display/fullscreen.js");
-/* harmony import */ var codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! codemirror/mode/markdown/markdown.js */ "./node_modules/codemirror/mode/markdown/markdown.js");
-/* harmony import */ var codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var codemirror_mode_gfm_gfm_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! codemirror/mode/gfm/gfm.js */ "./node_modules/codemirror/mode/gfm/gfm.js");
-/* harmony import */ var codemirror_mode_gfm_gfm_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(codemirror_mode_gfm_gfm_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! codemirror/addon/display/placeholder.js */ "./node_modules/codemirror/addon/display/placeholder.js");
-/* harmony import */ var codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var codemirror_addon_selection_active_line_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! codemirror/addon/selection/active-line.js */ "./node_modules/codemirror/addon/selection/active-line.js");
-/* harmony import */ var codemirror_addon_selection_active_line_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_selection_active_line_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var markdownparser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! markdownparser */ "./node_modules/markdownparser/index.js");
+/* harmony import */ var markdownparser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(markdownparser__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var marked__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! marked */ "./node_modules/marked/src/marked.js");
+/* harmony import */ var marked__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(marked__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! codemirror */ "./node_modules/codemirror/lib/codemirror.js");
+/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(codemirror__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! codemirror/addon/display/fullscreen.js */ "./node_modules/codemirror/addon/display/fullscreen.js");
+/* harmony import */ var codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! codemirror/mode/markdown/markdown.js */ "./node_modules/codemirror/mode/markdown/markdown.js");
+/* harmony import */ var codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! codemirror/addon/display/placeholder.js */ "./node_modules/codemirror/addon/display/placeholder.js");
+/* harmony import */ var codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_5__);
 //
 //
 //
@@ -143,12 +135,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-
-
-
-
 
 
 
@@ -157,6 +143,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
+    id: {
+      type: String,
+      "default": function _default() {
+        return 'v-md-editor-' + Math.random().toString(16).substr(2, 9);
+      }
+    },
     css: {
       type: String
     },
@@ -179,150 +171,122 @@ __webpack_require__.r(__webpack_exports__);
       type: Object,
       "default": function _default() {
         return {
+          "clean": {
+            cmd: "clean",
+            ico: "fas fa-remove-format mdi mdi-format-clear",
+            title: "Html to markdown",
+            hotkey: 'Shift-Alt-F'
+          },
+          "undo": {
+            cmd: "undo",
+            ico: "fas fa-undo mdi mdi-undo-variant",
+            title: "Undo",
+            hotkey: 'Ctrl-Z'
+          },
+          "redo": {
+            cmd: "redo",
+            ico: "fas fa-redo mdi mdi-redo-variant",
+            title: "Redo",
+            hotkey: 'Ctrl-Y'
+          },
+          "bullist": {
+            cmd: "bullist",
+            ico: "fas fa-list-ul mdi mdi-format-list-bulleted",
+            title: "Generic List"
+          },
+          "numlist": {
+            cmd: "numlist",
+            ico: "fas fa-list-ol mdi mdi-format-list-numbered",
+            title: "Numbered List"
+          },
           'bold': {
             title: 'Bold',
-            className: 'far fa-bold',
+            ico: 'fas fa-bold mdi mdi-format-bold',
             cmd: 'bold',
             hotkey: 'Ctrl-B'
           },
           'italic': {
             title: 'Italic',
-            className: "far fa-italic",
+            ico: "fas fa-italic mdi mdi-format-italic",
             cmd: 'italic',
             hotkey: 'Ctrl-I'
           },
           "strikethrough": {
             cmd: "strikethrough",
-            className: "far fa-strikethrough",
+            ico: "fas fa-strikethrough mdi mdi-format-strikethrough",
             title: "Strikethrough"
           },
           'heading': {
             title: 'Heading',
-            className: "far fa-heading",
+            ico: "fas fa-heading mdi mdi-format-header-3",
             cmd: 'heading',
             hotkey: 'Ctrl-H'
           },
           'code': {
             title: 'Code',
-            className: "far fa-code",
+            ico: "fas fa-code mdi mdi-code-tags",
             cmd: 'code',
             hotkey: 'Ctrl-X'
           },
           'quote': {
             title: 'Quote',
-            className: "far fa-quote-left",
+            ico: "fas fa-quote-left mdi mdi-format-quote-open",
             cmd: 'quote',
             hotkey: 'Ctrl-Q'
           },
           'link': {
             title: 'Link',
-            className: "far fa-link",
+            ico: "fas fa-link mdi mdi-link",
             cmd: 'link',
             hotkey: 'Ctrl-K'
           },
           'image': {
             title: 'Image',
-            className: "far fa-image",
+            ico: "fas fa-image mdi mdi-image",
             cmd: 'image',
             hotkey: 'Ctrl-P'
           },
           "fullscreen": {
             cmd: "fullscreen",
-            className: "far fa-arrows-alt no-disable no-mobile",
+            ico: "fas fa-expand mdi mdi-fullscreen",
             title: "Toggle Fullscreen",
             hotkey: 'F11',
             ready: true
           },
           "preview": {
             cmd: "preview",
-            className: "far fa-eye no-disable",
+            ico: "fas fa-eye mdi mdi-eye",
             title: "Toggle Preview",
             hotkey: 'Ctrl-P',
             ready: true
-          },
-          "clipboard": {
-            cmd: "clipboard",
-            className: "far fa-clipboard",
-            title: "Copy & Markdown Format",
-            hotkey: 'Ctrl-V'
-          },
-          "clean": {
-            cmd: "clean",
-            className: "far fa-remove-format",
-            title: "Html to markdown"
-          },
-          "undo": {
-            cmd: "undo",
-            className: "far fa-undo",
-            title: "Undo",
-            hotkey: 'Ctrl-Z'
-          },
-          "redo": {
-            cmd: "redo",
-            className: "far fa-repeat",
-            title: "Redo",
-            hotkey: 'Ctrl-Y'
-          },
-          "bullist": {
-            cmd: "bullist",
-            className: "far fa-list-ul",
-            title: "Generic List"
-          },
-          "numlist": {
-            cmd: "numlist",
-            className: "far fa-list-ol",
-            title: "Numbered List"
           }
         };
       }
     },
-    name: {
+    theme: {
       type: String,
-      "default": 'html'
+      "default": 'outline-secondary'
     },
     value: {
       type: String,
       "default": '',
       required: false
     },
-    buttonClass: {
-      type: String,
-      "default": 'btn btn-outline-secondary'
-    },
     options: {
       type: Object,
       "default": function _default() {
-        return {
-          mode: 'gfm',
-          theme: "elegent",
-          lineNumbers: false,
-          styleActiveLine: false,
-          styleSelectedText: true,
-          lineWrapping: true,
-          indentWithTabs: true,
-          autoRefresh: true,
-          tabSize: 2,
-          indentUnit: 2
-        };
+        return {};
       }
     }
   },
   data: function data() {
     return {
-      id: 'v-md-editor-' + new Date().getTime(),
       editor: null,
       preview: false,
+      fullScreen: false,
       html: '',
-      toolbars: [],
-      shortcuts: {}
+      toolbars: []
     };
-  },
-  watch: {
-    value: function value(val) {
-      if (val != this.editor.getValue()) {
-        this.editor.setValue(val);
-      }
-    }
   },
   computed: {
     styles: function styles() {
@@ -330,6 +294,13 @@ __webpack_require__.r(__webpack_exports__);
         width: isNaN(this.width) ? this.width : this.width + '%',
         height: isNaN(this.height) ? this.height : this.height + '%'
       };
+    }
+  },
+  watch: {
+    value: function value(val) {
+      if (val != this.editor.getValue()) {
+        this.editor.setValue(val);
+      }
     }
   },
   methods: {
@@ -347,12 +318,6 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       return a; // Make chainable
-    },
-    uid: function uid(name) {
-      return this.format('%s-%s', this.id, name);
-    },
-    obj: function obj(name) {
-      return jQuery('#' + this.uid(name));
     },
     _toggleBlock: function _toggleBlock(type, start, end) {
       end = this.isEmpty(end) ? start : end;
@@ -415,9 +380,8 @@ __webpack_require__.r(__webpack_exports__);
         ed.replaceSelection(start + text + end);
         startPoint.ch += start.length;
         endPoint.ch = startPoint.ch + text.length;
-      }
+      } // ed.setSelection(startPoint, endPoint);
 
-      ed.setSelection(startPoint, endPoint);
     },
     _toggleLine: function _toggleLine(name) {
       var ed = this.editor;
@@ -523,18 +487,14 @@ __webpack_require__.r(__webpack_exports__);
           ch: 0
         });
       } else {
-        // text = ed.getSelection();
-        // ed.replaceSelection(start + text + end);
         ed.replaceSelection(start + end);
         startPoint.ch += start.length;
 
         if (startPoint !== endPoint) {
           endPoint.ch += start.length;
         }
-      }
+      } //ed.setSelection(startPoint, endPoint);
 
-      ed.setSelection(startPoint, endPoint);
-      ed.focus();
     },
     drawImage: function drawImage(obj) {
       var stat = this.state();
@@ -549,7 +509,6 @@ __webpack_require__.r(__webpack_exports__);
     command: function command(key) {
       var ed = this.editor;
       var text = ed.getSelection();
-      var stat = this.state();
       this.$root.$emit('markdown-editor:' + key, this);
 
       switch (key) {
@@ -585,12 +544,7 @@ __webpack_require__.r(__webpack_exports__);
           ed.replaceSelection('\n### ' + text);
           break;
 
-        case 'clipboard':
-          this.obj('modal-clipboard').modal('show');
-          break;
-
         case 'image':
-          // this.obj('modal-image').modal('show');
           var url = prompt("Please enter image url", "https://");
 
           if (this.isUrl(url)) {
@@ -604,7 +558,6 @@ __webpack_require__.r(__webpack_exports__);
           break;
 
         case 'link':
-          //this.obj('modal-link').modal('show');
           var url = prompt("Please enter link", "https://");
 
           if (this.isUrl(url)) {
@@ -614,11 +567,6 @@ __webpack_require__.r(__webpack_exports__);
               url: url
             });
           }
-
-          break;
-
-        case 'quote':
-          this._toggleLine('quote');
 
           break;
 
@@ -638,99 +586,59 @@ __webpack_require__.r(__webpack_exports__);
           break;
 
         case 'preview':
-          ///var md = new MarkdownIt({ typographer: true, breaks: true, quotes: '“”‘’' });
-          this.html = marked__WEBPACK_IMPORTED_MODULE_3___default()(ed.getValue(), {
+          this.html = marked__WEBPACK_IMPORTED_MODULE_1___default()(ed.getValue(), {
             breaks: true
           });
-          this.preview ^= true;
-          this.obj('toolbar').find('.btn:not(".ready")').prop('disabled', this.preview);
+          this.preview = !this.preview;
           break;
 
         case 'fullscreen':
-          this.obj('container').toggleClass('v-md-fullscreen');
-          this.obj('fullscreen').toggleClass('active');
+          this.fullScreen = !this.fullScreen;
           ed.setOption("fullScreen", !ed.getOption("fullScreen"));
           break;
 
         case 'clean':
-          text = markdownparser__WEBPACK_IMPORTED_MODULE_2___default.a.parse(text);
-          ed.replaceSelection(text);
+          ed.replaceSelection(markdownparser__WEBPACK_IMPORTED_MODULE_0___default.a.parse(text));
           break;
       }
-
-      ed.focus();
     },
     build: function build() {
-      if (!jQuery) {
-        console.error("Must required jQuery!");
-        return;
-      }
-
-      if (this.isEmpty(this.toolbar)) {
-        console.error("You must set toolbar!");
-        return;
-      }
+      var _this = this;
 
       if (this.__rendered) return;
+      var buttons = Object.assign({}, this.buttons, this.extend);
+      var shortcuts = {};
+      this.toolbar.split('|').forEach(function (t, i) {
+        var group = [];
+        t.toLowerCase().split(/(\s)/).forEach(function (b) {
+          if (!_this.isEmpty(b)) {
+            var btn = buttons[b];
 
-      var _t = this;
+            if (!_this.isEmpty(btn.hotkey)) {
+              shortcuts[btn.hotkey] = function () {
+                return _this.command(btn.cmd);
+              };
+            }
 
-      this.buttons = Object.assign(this.buttons, this.extend);
-
-      var btns = _t.toolbar.toLowerCase().split(/(\s)/).filter(function (w) {
-        return !_t.isEmpty(w);
-      });
-
-      var group = [];
-
-      for (var i = 0; i < btns.length; i++) {
-        var btn = btns[i];
-        var obj = _t.buttons[btn];
-
-        if (obj) {
-          // obj.cmd = typeof obj.cmd ==='function'? obj.cmd: this.command(obj.cmd);
-          obj.id = btn;
-          group.push(obj);
-        }
-
-        if (btn === '|' || i == btns.length - 1) {
-          this.toolbars.push(group);
-          group = [];
-        }
-      }
-
-      var o = Object.assign({}, {
-        extraKeys: _t.shortcuts,
-        initialValue: _t.value
-      }, _t.options);
-      var el = document.getElementById(_t.id + '-input');
-      _t.editor = codemirror__WEBPACK_IMPORTED_MODULE_4___default.a.fromTextArea(el, o);
-
-      _t.editor.on("change", function (ed) {
-        //_t.editor.save();                    
-        _t.$emit('input', ed.getValue()); //_t.value = ed.getValue();
-
-      });
-
-      _t.editor.on("cursorActivity", function () {
-        var stat = _t.state();
-
-        _t.obj('toolbar').find('.btn.active:not(.ready)').removeClass('active');
-
-        Object.keys(stat).forEach(function (key) {
-          _t.obj(key).addClass('active');
+            group.push(btn);
+          }
         });
+        if (group.length > 0) _this.toolbars.push(group);
       });
-
-      _t.__rendered = true;
+      var o = Object.assign({
+        mode: 'markdown',
+        extraKeys: shortcuts
+      }, this.options);
+      var ed = this.editor = codemirror__WEBPACK_IMPORTED_MODULE_2___default.a.fromTextArea(document.getElementById(this.id), o);
+      ed.setValue(this.value);
+      ed.on("change", function (ed) {
+        _this.$emit('input', ed.getValue());
+      });
+      this.__rendered = true;
     }
   },
   mounted: function mounted() {
-    var _this = this;
-
-    this.$nextTick(function () {
-      _this.build();
-    });
+    this.build();
   },
   destroyed: function destroyed() {
     this.editor = null;
@@ -854,179 +762,6 @@ __webpack_require__.r(__webpack_exports__);
 
   function isEmpty(cm) {
     return cm.lineCount() === 1 && cm.getLine(0) === "";
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/codemirror/addon/mode/overlay.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/codemirror/addon/mode/overlay.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
-// Utility function that allows modes to be combined. The mode given
-// as the base argument takes care of most of the normal mode
-// functionality, but a second (typically simple) mode is used, which
-// can override the style of text. Both modes get to parse all of the
-// text, but when both assign a non-null style to a piece of code, the
-// overlay wins, unless the combine argument was true and not overridden,
-// or state.overlay.combineTokens was true, in which case the styles are
-// combined.
-(function (mod) {
-  if (true) // CommonJS
-    mod(__webpack_require__(/*! ../../lib/codemirror */ "./node_modules/codemirror/lib/codemirror.js"));else {}
-})(function (CodeMirror) {
-  "use strict";
-
-  CodeMirror.overlayMode = function (base, overlay, combine) {
-    return {
-      startState: function () {
-        return {
-          base: CodeMirror.startState(base),
-          overlay: CodeMirror.startState(overlay),
-          basePos: 0,
-          baseCur: null,
-          overlayPos: 0,
-          overlayCur: null,
-          streamSeen: null
-        };
-      },
-      copyState: function (state) {
-        return {
-          base: CodeMirror.copyState(base, state.base),
-          overlay: CodeMirror.copyState(overlay, state.overlay),
-          basePos: state.basePos,
-          baseCur: null,
-          overlayPos: state.overlayPos,
-          overlayCur: null
-        };
-      },
-      token: function (stream, state) {
-        if (stream != state.streamSeen || Math.min(state.basePos, state.overlayPos) < stream.start) {
-          state.streamSeen = stream;
-          state.basePos = state.overlayPos = stream.start;
-        }
-
-        if (stream.start == state.basePos) {
-          state.baseCur = base.token(stream, state.base);
-          state.basePos = stream.pos;
-        }
-
-        if (stream.start == state.overlayPos) {
-          stream.pos = stream.start;
-          state.overlayCur = overlay.token(stream, state.overlay);
-          state.overlayPos = stream.pos;
-        }
-
-        stream.pos = Math.min(state.basePos, state.overlayPos); // state.overlay.combineTokens always takes precedence over combine,
-        // unless set to null
-
-        if (state.overlayCur == null) return state.baseCur;else if (state.baseCur != null && state.overlay.combineTokens || combine && state.overlay.combineTokens == null) return state.baseCur + " " + state.overlayCur;else return state.overlayCur;
-      },
-      indent: base.indent && function (state, textAfter, line) {
-        return base.indent(state.base, textAfter, line);
-      },
-      electricChars: base.electricChars,
-      innerMode: function (state) {
-        return {
-          state: state.base,
-          mode: base
-        };
-      },
-      blankLine: function (state) {
-        var baseToken, overlayToken;
-        if (base.blankLine) baseToken = base.blankLine(state.base);
-        if (overlay.blankLine) overlayToken = overlay.blankLine(state.overlay);
-        return overlayToken == null ? baseToken : combine && baseToken != null ? baseToken + " " + overlayToken : overlayToken;
-      }
-    };
-  };
-});
-
-/***/ }),
-
-/***/ "./node_modules/codemirror/addon/selection/active-line.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/codemirror/addon/selection/active-line.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
-(function (mod) {
-  if (true) // CommonJS
-    mod(__webpack_require__(/*! ../../lib/codemirror */ "./node_modules/codemirror/lib/codemirror.js"));else {}
-})(function (CodeMirror) {
-  "use strict";
-
-  var WRAP_CLASS = "CodeMirror-activeline";
-  var BACK_CLASS = "CodeMirror-activeline-background";
-  var GUTT_CLASS = "CodeMirror-activeline-gutter";
-  CodeMirror.defineOption("styleActiveLine", false, function (cm, val, old) {
-    var prev = old == CodeMirror.Init ? false : old;
-    if (val == prev) return;
-
-    if (prev) {
-      cm.off("beforeSelectionChange", selectionChange);
-      clearActiveLines(cm);
-      delete cm.state.activeLines;
-    }
-
-    if (val) {
-      cm.state.activeLines = [];
-      updateActiveLines(cm, cm.listSelections());
-      cm.on("beforeSelectionChange", selectionChange);
-    }
-  });
-
-  function clearActiveLines(cm) {
-    for (var i = 0; i < cm.state.activeLines.length; i++) {
-      cm.removeLineClass(cm.state.activeLines[i], "wrap", WRAP_CLASS);
-      cm.removeLineClass(cm.state.activeLines[i], "background", BACK_CLASS);
-      cm.removeLineClass(cm.state.activeLines[i], "gutter", GUTT_CLASS);
-    }
-  }
-
-  function sameArray(a, b) {
-    if (a.length != b.length) return false;
-
-    for (var i = 0; i < a.length; i++) if (a[i] != b[i]) return false;
-
-    return true;
-  }
-
-  function updateActiveLines(cm, ranges) {
-    var active = [];
-
-    for (var i = 0; i < ranges.length; i++) {
-      var range = ranges[i];
-      var option = cm.getOption("styleActiveLine");
-      if (typeof option == "object" && option.nonEmpty ? range.anchor.line != range.head.line : !range.empty()) continue;
-      var line = cm.getLineHandleVisualStart(range.head.line);
-      if (active[active.length - 1] != line) active.push(line);
-    }
-
-    if (sameArray(cm.state.activeLines, active)) return;
-    cm.operation(function () {
-      clearActiveLines(cm);
-
-      for (var i = 0; i < active.length; i++) {
-        cm.addLineClass(active[i], "wrap", WRAP_CLASS);
-        cm.addLineClass(active[i], "background", BACK_CLASS);
-        cm.addLineClass(active[i], "gutter", GUTT_CLASS);
-      }
-
-      cm.state.activeLines = active;
-    });
-  }
-
-  function selectionChange(cm, sel) {
-    updateActiveLines(cm, sel.ranges);
   }
 });
 
@@ -1770,7 +1505,8 @@ __webpack_require__.r(__webpack_exports__);
           order.push(new BidiSpan(0, start, i$7));
         } else {
           var pos = i$7,
-              at = order.length;
+              at = order.length,
+              isRTL = direction == "rtl" ? 1 : 0;
 
           for (++i$7; i$7 < len && types[i$7] != "L"; ++i$7) {}
 
@@ -1778,6 +1514,7 @@ __webpack_require__.r(__webpack_exports__);
             if (countsAsNum.test(types[j$2])) {
               if (pos < j$2) {
                 order.splice(at, 0, new BidiSpan(1, pos, j$2));
+                at += isRTL;
               }
 
               var nstart = j$2;
@@ -1785,6 +1522,7 @@ __webpack_require__.r(__webpack_exports__);
               for (++j$2; j$2 < i$7 && countsAsNum.test(types[j$2]); ++j$2) {}
 
               order.splice(at, 0, new BidiSpan(2, nstart, j$2));
+              at += isRTL;
               pos = j$2;
             } else {
               ++j$2;
@@ -1837,8 +1575,8 @@ __webpack_require__.r(__webpack_exports__);
     } else if (emitter.attachEvent) {
       emitter.attachEvent("on" + type, f);
     } else {
-      var map$$1 = emitter._handlers || (emitter._handlers = {});
-      map$$1[type] = (map$$1[type] || noHandlers).concat(f);
+      var map = emitter._handlers || (emitter._handlers = {});
+      map[type] = (map[type] || noHandlers).concat(f);
     }
   };
 
@@ -1852,14 +1590,14 @@ __webpack_require__.r(__webpack_exports__);
     } else if (emitter.detachEvent) {
       emitter.detachEvent("on" + type, f);
     } else {
-      var map$$1 = emitter._handlers,
-          arr = map$$1 && map$$1[type];
+      var map = emitter._handlers,
+          arr = map && map[type];
 
       if (arr) {
         var index = indexOf(arr, f);
 
         if (index > -1) {
-          map$$1[type] = arr.slice(0, index).concat(arr.slice(index + 1));
+          map[type] = arr.slice(0, index).concat(arr.slice(index + 1));
         }
       }
     }
@@ -2068,17 +1806,17 @@ __webpack_require__.r(__webpack_exports__);
       return false;
     }
   } : function (te) {
-    var range$$1;
+    var range;
 
     try {
-      range$$1 = te.ownerDocument.selection.createRange();
+      range = te.ownerDocument.selection.createRange();
     } catch (e) {}
 
-    if (!range$$1 || range$$1.parentElement() != te) {
+    if (!range || range.parentElement() != te) {
       return false;
     }
 
-    return range$$1.compareEndPoints("StartToEnd", range$$1) != 0;
+    return range.compareEndPoints("StartToEnd", range) != 0;
   };
 
   var hasCopyEvent = function () {
@@ -2313,11 +2051,10 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   StringStream.prototype.eatSpace = function () {
-    var this$1 = this;
     var start = this.pos;
 
     while (/[\s\u00a0]/.test(this.string.charAt(this.pos))) {
-      ++this$1.pos;
+      ++this.pos;
     }
 
     return this.pos > start;
@@ -2649,14 +2386,12 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   Context.prototype.baseToken = function (n) {
-    var this$1 = this;
-
     if (!this.baseTokens) {
       return null;
     }
 
     while (this.baseTokens[this.baseTokenPos] <= n) {
-      this$1.baseTokenPos += 2;
+      this.baseTokenPos += 2;
     }
 
     var type = this.baseTokens[this.baseTokenPos + 1];
@@ -3420,8 +3155,8 @@ __webpack_require__.r(__webpack_exports__);
   // Such overlap is not allowed.
 
 
-  function conflictingCollapsedRange(doc, lineNo$$1, from, to, marker) {
-    var line = getLine(doc, lineNo$$1);
+  function conflictingCollapsedRange(doc, lineNo, from, to, marker) {
+    var line = getLine(doc, lineNo);
     var sps = sawCollapsedSpans && line.markedSpans;
 
     if (sps) {
@@ -4416,10 +4151,12 @@ __webpack_require__.r(__webpack_exports__);
       lineView.alignable = null;
     }
 
+    var isWidget = classTest("CodeMirror-linewidget");
+
     for (var node = lineView.node.firstChild, next = void 0; node; node = next) {
       next = node.nextSibling;
 
-      if (node.className == "CodeMirror-linewidget") {
+      if (isWidget.test(node.className)) {
         lineView.node.removeChild(node);
       }
     }
@@ -4467,7 +4204,7 @@ __webpack_require__.r(__webpack_exports__);
 
     for (var i = 0, ws = line.widgets; i < ws.length; ++i) {
       var widget = ws[i],
-          node = elt("div", [widget.node], "CodeMirror-linewidget");
+          node = elt("div", [widget.node], "CodeMirror-linewidget" + (widget.className ? " " + widget.className : ""));
 
       if (!widget.handleMouseEvents) {
         node.setAttribute("cm-ignore-events", "true");
@@ -4755,13 +4492,13 @@ __webpack_require__.r(__webpack_exports__);
     bottom: 0
   };
 
-  function nodeAndOffsetInLineMap(map$$1, ch, bias) {
+  function nodeAndOffsetInLineMap(map, ch, bias) {
     var node, start, end, collapse, mStart, mEnd; // First, search the line map for the text node corresponding to,
     // or closest to, the target character.
 
-    for (var i = 0; i < map$$1.length; i += 3) {
-      mStart = map$$1[i];
-      mEnd = map$$1[i + 1];
+    for (var i = 0; i < map.length; i += 3) {
+      mStart = map[i];
+      mEnd = map[i + 1];
 
       if (ch < mStart) {
         start = 0;
@@ -4770,7 +4507,7 @@ __webpack_require__.r(__webpack_exports__);
       } else if (ch < mEnd) {
         start = ch - mStart;
         end = start + 1;
-      } else if (i == map$$1.length - 3 || ch == mEnd && map$$1[i + 3] > ch) {
+      } else if (i == map.length - 3 || ch == mEnd && map[i + 3] > ch) {
         end = mEnd - mStart;
         start = end - 1;
 
@@ -4780,22 +4517,22 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       if (start != null) {
-        node = map$$1[i + 2];
+        node = map[i + 2];
 
         if (mStart == mEnd && bias == (node.insertLeft ? "left" : "right")) {
           collapse = bias;
         }
 
         if (bias == "left" && start == 0) {
-          while (i && map$$1[i - 2] == map$$1[i - 3] && map$$1[i - 1].insertLeft) {
-            node = map$$1[(i -= 3) + 2];
+          while (i && map[i - 2] == map[i - 3] && map[i - 1].insertLeft) {
+            node = map[(i -= 3) + 2];
             collapse = "left";
           }
         }
 
         if (bias == "right" && start == mEnd - mStart) {
-          while (i < map$$1.length - 3 && map$$1[i + 3] == map$$1[i + 4] && !map$$1[i + 5].insertLeft) {
-            node = map$$1[(i += 3) + 2];
+          while (i < map.length - 3 && map[i + 3] == map[i + 4] && !map[i + 5].insertLeft) {
+            node = map[(i += 3) + 2];
             collapse = "right";
           }
         }
@@ -5268,13 +5005,13 @@ __webpack_require__.r(__webpack_exports__);
     return box.bottom <= y ? false : box.top > y ? true : (left ? box.left : box.right) > x;
   }
 
-  function coordsCharInner(cm, lineObj, lineNo$$1, x, y) {
+  function coordsCharInner(cm, lineObj, lineNo, x, y) {
     // Move y into line-local coordinate space
     y -= heightAtLine(lineObj);
     var preparedMeasure = prepareMeasureForLine(cm, lineObj); // When directly calling `measureCharPrepared`, we have to adjust
     // for the widgets at this line.
 
-    var widgetHeight$$1 = widgetTopHeight(lineObj);
+    var widgetHeight = widgetTopHeight(lineObj);
     var begin = 0,
         end = lineObj.text.length,
         ltr = true;
@@ -5282,7 +5019,7 @@ __webpack_require__.r(__webpack_exports__);
     // which bidi section the coordinates fall into.
 
     if (order) {
-      var part = (cm.options.lineWrapping ? coordsBidiPartWrapped : coordsBidiPart)(cm, lineObj, lineNo$$1, preparedMeasure, order, x, y);
+      var part = (cm.options.lineWrapping ? coordsBidiPartWrapped : coordsBidiPart)(cm, lineObj, lineNo, preparedMeasure, order, x, y);
       ltr = part.level != 1; // The awkward -1 offsets are needed because findFirst (called
       // on these below) will treat its first bound as inclusive,
       // second as exclusive, but we want to actually address the
@@ -5299,8 +5036,8 @@ __webpack_require__.r(__webpack_exports__);
         boxAround = null;
     var ch = findFirst(function (ch) {
       var box = measureCharPrepared(cm, preparedMeasure, ch);
-      box.top += widgetHeight$$1;
-      box.bottom += widgetHeight$$1;
+      box.top += widgetHeight;
+      box.bottom += widgetHeight;
 
       if (!boxIsAfter(box, x, y, false)) {
         return false;
@@ -5333,19 +5070,19 @@ __webpack_require__.r(__webpack_exports__);
       // coordinates
 
 
-      sticky = ch == 0 ? "after" : ch == lineObj.text.length ? "before" : measureCharPrepared(cm, preparedMeasure, ch - (ltr ? 1 : 0)).bottom + widgetHeight$$1 <= y == ltr ? "after" : "before"; // Now get accurate coordinates for this place, in order to get a
+      sticky = ch == 0 ? "after" : ch == lineObj.text.length ? "before" : measureCharPrepared(cm, preparedMeasure, ch - (ltr ? 1 : 0)).bottom + widgetHeight <= y == ltr ? "after" : "before"; // Now get accurate coordinates for this place, in order to get a
       // base X position
 
-      var coords = cursorCoords(cm, Pos(lineNo$$1, ch, sticky), "line", lineObj, preparedMeasure);
+      var coords = cursorCoords(cm, Pos(lineNo, ch, sticky), "line", lineObj, preparedMeasure);
       baseX = coords.left;
       outside = y < coords.top ? -1 : y >= coords.bottom ? 1 : 0;
     }
 
     ch = skipExtendingChars(lineObj.text, ch, 1);
-    return PosWithInfo(lineNo$$1, ch, sticky, outside, x - baseX);
+    return PosWithInfo(lineNo, ch, sticky, outside, x - baseX);
   }
 
-  function coordsBidiPart(cm, lineObj, lineNo$$1, preparedMeasure, order, x, y) {
+  function coordsBidiPart(cm, lineObj, lineNo, preparedMeasure, order, x, y) {
     // Bidi parts are sorted left-to-right, and in a non-line-wrapping
     // situation, we can take this ordering to correspond to the visual
     // ordering. This finds the first part whose end is after the given
@@ -5353,7 +5090,7 @@ __webpack_require__.r(__webpack_exports__);
     var index = findFirst(function (i) {
       var part = order[i],
           ltr = part.level != 1;
-      return boxIsAfter(cursorCoords(cm, Pos(lineNo$$1, ltr ? part.to : part.from, ltr ? "before" : "after"), "line", lineObj, preparedMeasure), x, y, true);
+      return boxIsAfter(cursorCoords(cm, Pos(lineNo, ltr ? part.to : part.from, ltr ? "before" : "after"), "line", lineObj, preparedMeasure), x, y, true);
     }, 0, order.length - 1);
     var part = order[index]; // If this isn't the first part, the part's start is also after
     // the coordinates, and the coordinates aren't on the same line as
@@ -5361,7 +5098,7 @@ __webpack_require__.r(__webpack_exports__);
 
     if (index > 0) {
       var ltr = part.level != 1;
-      var start = cursorCoords(cm, Pos(lineNo$$1, ltr ? part.from : part.to, ltr ? "after" : "before"), "line", lineObj, preparedMeasure);
+      var start = cursorCoords(cm, Pos(lineNo, ltr ? part.from : part.to, ltr ? "after" : "before"), "line", lineObj, preparedMeasure);
 
       if (boxIsAfter(start, x, y, true) && start.top > y) {
         part = order[index - 1];
@@ -5580,7 +5317,7 @@ __webpack_require__.r(__webpack_exports__);
     var coords = coordsChar(cm, x, y),
         line;
 
-    if (forRect && coords.xRel == 1 && (line = getLine(cm.doc, coords.line).text).length == coords.ch) {
+    if (forRect && coords.xRel > 0 && (line = getLine(cm.doc, coords.line).text).length == coords.ch) {
       var colDiff = countColumn(line, line.length, cm.options.tabSize) - line.length;
       coords = Pos(coords.line, Math.max(0, Math.round((x - paddingH(cm.display).left) / charWidth(cm.display)) - colDiff));
     }
@@ -5845,20 +5582,20 @@ __webpack_require__.r(__webpack_exports__);
         continue;
       }
 
-      var range$$1 = doc.sel.ranges[i];
+      var range = doc.sel.ranges[i];
 
-      if (range$$1.from().line >= cm.display.viewTo || range$$1.to().line < cm.display.viewFrom) {
+      if (range.from().line >= cm.display.viewTo || range.to().line < cm.display.viewFrom) {
         continue;
       }
 
-      var collapsed = range$$1.empty();
+      var collapsed = range.empty();
 
       if (collapsed || cm.options.showCursorWhenSelecting) {
-        drawSelectionCursor(cm, range$$1.head, curFragment);
+        drawSelectionCursor(cm, range.head, curFragment);
       }
 
       if (!collapsed) {
-        drawSelectionRange(cm, range$$1, selFragment);
+        drawSelectionRange(cm, range, selFragment);
       }
     }
 
@@ -5888,7 +5625,7 @@ __webpack_require__.r(__webpack_exports__);
   } // Draws the given range as a highlighted selection
 
 
-  function drawSelectionRange(cm, range$$1, output) {
+  function drawSelectionRange(cm, range, output) {
     var display = cm.display,
         doc = cm.doc;
     var fragment = document.createDocumentFragment();
@@ -5987,8 +5724,8 @@ __webpack_require__.r(__webpack_exports__);
       };
     }
 
-    var sFrom = range$$1.from(),
-        sTo = range$$1.to();
+    var sFrom = range.from(),
+        sTo = range.to();
 
     if (sFrom.line == sTo.line) {
       drawForLine(sFrom.line, sFrom.ch, sTo.ch);
@@ -6390,9 +6127,9 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 
-  function scrollToRange(cm, range$$1) {
+  function scrollToRange(cm, range) {
     resolveScrollToPos(cm);
-    cm.curOp.scrollToPos = range$$1;
+    cm.curOp.scrollToPos = range;
   } // When an operation has its scrollToPos property set, and another
   // scroll action is applied before the end of the operation, this
   // 'simulates' scrolling that position into view in a cheap way, so
@@ -6400,13 +6137,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
   function resolveScrollToPos(cm) {
-    var range$$1 = cm.curOp.scrollToPos;
+    var range = cm.curOp.scrollToPos;
 
-    if (range$$1) {
+    if (range) {
       cm.curOp.scrollToPos = null;
-      var from = estimateCoords(cm, range$$1.from),
-          to = estimateCoords(cm, range$$1.to);
-      scrollToCoordsRange(cm, from, to, range$$1.margin);
+      var from = estimateCoords(cm, range.from),
+          to = estimateCoords(cm, range.to);
+      scrollToCoordsRange(cm, from, to, range.margin);
     }
   }
 
@@ -6443,7 +6180,7 @@ __webpack_require__.r(__webpack_exports__);
   }
 
   function setScrollTop(cm, val, forceScroll) {
-    val = Math.min(cm.display.scroller.scrollHeight - cm.display.scroller.clientHeight, val);
+    val = Math.max(0, Math.min(cm.display.scroller.scrollHeight - cm.display.scroller.clientHeight, val));
 
     if (cm.display.scroller.scrollTop == val && !forceScroll) {
       return;
@@ -6460,7 +6197,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
   function setScrollLeft(cm, val, isScroller, forceScroll) {
-    val = Math.min(val, cm.display.scroller.scrollWidth - cm.display.scroller.clientWidth);
+    val = Math.max(0, Math.min(val, cm.display.scroller.scrollWidth - cm.display.scroller.clientWidth));
 
     if ((isScroller ? val == cm.doc.scrollLeft : Math.abs(cm.doc.scrollLeft - val) < 2) && !forceScroll) {
       return;
@@ -6601,9 +6338,9 @@ __webpack_require__.r(__webpack_exports__);
       // (when the bar is hidden). If it is still visible, we keep
       // it enabled, if it's hidden, we disable pointer events.
       var box = bar.getBoundingClientRect();
-      var elt$$1 = type == "vert" ? document.elementFromPoint(box.right - 1, (box.top + box.bottom) / 2) : document.elementFromPoint((box.right + box.left) / 2, box.bottom - 1);
+      var elt = type == "vert" ? document.elementFromPoint(box.right - 1, (box.top + box.bottom) / 2) : document.elementFromPoint((box.right + box.left) / 2, box.bottom - 1);
 
-      if (elt$$1 != bar) {
+      if (elt != bar) {
         bar.style.pointerEvents = "none";
       } else {
         delay.set(1000, maybeDisable);
@@ -7120,10 +6857,8 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   DisplayUpdate.prototype.finish = function () {
-    var this$1 = this;
-
     for (var i = 0; i < this.events.length; i++) {
-      signal.apply(null, this$1.events[i]);
+      signal.apply(null, this.events[i]);
     }
   };
 
@@ -7177,11 +6912,11 @@ __webpack_require__.r(__webpack_exports__);
 
     if (snapshot.anchorNode && contains(document.body, snapshot.anchorNode) && contains(document.body, snapshot.focusNode)) {
       var sel = window.getSelection(),
-          range$$1 = document.createRange();
-      range$$1.setEnd(snapshot.anchorNode, snapshot.anchorOffset);
-      range$$1.collapse(false);
+          range = document.createRange();
+      range.setEnd(snapshot.anchorNode, snapshot.anchorOffset);
+      range.collapse(false);
       sel.removeAllRanges();
-      sel.addRange(range$$1);
+      sel.addRange(range);
       sel.extend(snapshot.focusNode, snapshot.focusOffset);
     }
   } // Does the actual updating of the line display. Bails out
@@ -7813,8 +7548,6 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   Selection.prototype.equals = function (other) {
-    var this$1 = this;
-
     if (other == this) {
       return true;
     }
@@ -7824,7 +7557,7 @@ __webpack_require__.r(__webpack_exports__);
     }
 
     for (var i = 0; i < this.ranges.length; i++) {
-      var here = this$1.ranges[i],
+      var here = this.ranges[i],
           there = other.ranges[i];
 
       if (!equalCursorPos(here.anchor, there.anchor) || !equalCursorPos(here.head, there.head)) {
@@ -7836,21 +7569,18 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   Selection.prototype.deepCopy = function () {
-    var this$1 = this;
     var out = [];
 
     for (var i = 0; i < this.ranges.length; i++) {
-      out[i] = new Range(copyPos(this$1.ranges[i].anchor), copyPos(this$1.ranges[i].head));
+      out[i] = new Range(copyPos(this.ranges[i].anchor), copyPos(this.ranges[i].head));
     }
 
     return new Selection(out, this.primIndex);
   };
 
   Selection.prototype.somethingSelected = function () {
-    var this$1 = this;
-
     for (var i = 0; i < this.ranges.length; i++) {
-      if (!this$1.ranges[i].empty()) {
+      if (!this.ranges[i].empty()) {
         return true;
       }
     }
@@ -7859,14 +7589,12 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   Selection.prototype.contains = function (pos, end) {
-    var this$1 = this;
-
     if (!end) {
       end = pos;
     }
 
     for (var i = 0; i < this.ranges.length; i++) {
-      var range = this$1.ranges[i];
+      var range = this.ranges[i];
 
       if (cmp(end, range.from()) >= 0 && cmp(pos, range.to()) <= 0) {
         return i;
@@ -8039,13 +7767,13 @@ __webpack_require__.r(__webpack_exports__);
   } // Perform a change on the document data structure.
 
 
-  function updateDoc(doc, change, markedSpans, estimateHeight$$1) {
+  function updateDoc(doc, change, markedSpans, estimateHeight) {
     function spansFor(n) {
       return markedSpans ? markedSpans[n] : null;
     }
 
     function update(line, text, spans) {
-      updateLine(line, text, spans, estimateHeight$$1);
+      updateLine(line, text, spans, estimateHeight);
       signalLater(line, "change", line, change);
     }
 
@@ -8053,7 +7781,7 @@ __webpack_require__.r(__webpack_exports__);
       var result = [];
 
       for (var i = start; i < end; ++i) {
-        result.push(new Line(text[i], spansFor(i), estimateHeight$$1));
+        result.push(new Line(text[i], spansFor(i), estimateHeight));
       }
 
       return result;
@@ -8089,7 +7817,7 @@ __webpack_require__.r(__webpack_exports__);
         update(firstLine, firstLine.text.slice(0, from.ch) + lastText + firstLine.text.slice(to.ch), lastSpans);
       } else {
         var added$1 = linesFor(1, text.length - 1);
-        added$1.push(new Line(lastText + firstLine.text.slice(to.ch), lastSpans, estimateHeight$$1));
+        added$1.push(new Line(lastText + firstLine.text.slice(to.ch), lastSpans, estimateHeight));
         update(firstLine, firstLine.text.slice(0, from.ch) + text[0], spansFor(0));
         doc.insert(from.line + 1, added$1);
       }
@@ -8527,11 +8255,10 @@ __webpack_require__.r(__webpack_exports__);
     var obj = {
       ranges: sel.ranges,
       update: function (ranges) {
-        var this$1 = this;
         this.ranges = [];
 
         for (var i = 0; i < ranges.length; i++) {
-          this$1.ranges[i] = new Range(clipPos(doc, ranges[i].anchor), clipPos(doc, ranges[i].head));
+          this.ranges[i] = new Range(clipPos(doc, ranges[i].anchor), clipPos(doc, ranges[i].head));
         }
       },
       origin: options && options.origin
@@ -9215,13 +8942,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
   function LeafChunk(lines) {
-    var this$1 = this;
     this.lines = lines;
     this.parent = null;
     var height = 0;
 
     for (var i = 0; i < lines.length; ++i) {
-      lines[i].parent = this$1;
+      lines[i].parent = this;
       height += lines[i].height;
     }
 
@@ -9234,11 +8960,9 @@ __webpack_require__.r(__webpack_exports__);
     },
     // Remove the n lines at offset 'at'.
     removeInner: function (at, n) {
-      var this$1 = this;
-
       for (var i = at, e = at + n; i < e; ++i) {
-        var line = this$1.lines[i];
-        this$1.height -= line.height;
+        var line = this.lines[i];
+        this.height -= line.height;
         cleanUpLine(line);
         signalLater(line, "delete");
       }
@@ -9252,20 +8976,17 @@ __webpack_require__.r(__webpack_exports__);
     // Insert the given array of lines at offset 'at', count them as
     // having the given height.
     insertInner: function (at, lines, height) {
-      var this$1 = this;
       this.height += height;
       this.lines = this.lines.slice(0, at).concat(lines).concat(this.lines.slice(at));
 
       for (var i = 0; i < lines.length; ++i) {
-        lines[i].parent = this$1;
+        lines[i].parent = this;
       }
     },
     // Used to iterate over a part of the tree.
     iterN: function (at, n, op) {
-      var this$1 = this;
-
       for (var e = at + n; at < e; ++at) {
-        if (op(this$1.lines[at])) {
+        if (op(this.lines[at])) {
           return true;
         }
       }
@@ -9273,7 +8994,6 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   function BranchChunk(children) {
-    var this$1 = this;
     this.children = children;
     var size = 0,
         height = 0;
@@ -9282,7 +9002,7 @@ __webpack_require__.r(__webpack_exports__);
       var ch = children[i];
       size += ch.chunkSize();
       height += ch.height;
-      ch.parent = this$1;
+      ch.parent = this;
     }
 
     this.size = size;
@@ -9295,21 +9015,20 @@ __webpack_require__.r(__webpack_exports__);
       return this.size;
     },
     removeInner: function (at, n) {
-      var this$1 = this;
       this.size -= n;
 
       for (var i = 0; i < this.children.length; ++i) {
-        var child = this$1.children[i],
+        var child = this.children[i],
             sz = child.chunkSize();
 
         if (at < sz) {
           var rm = Math.min(n, sz - at),
               oldHeight = child.height;
           child.removeInner(at, rm);
-          this$1.height -= oldHeight - child.height;
+          this.height -= oldHeight - child.height;
 
           if (sz == rm) {
-            this$1.children.splice(i--, 1);
+            this.children.splice(i--, 1);
             child.parent = null;
           }
 
@@ -9333,19 +9052,16 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     collapse: function (lines) {
-      var this$1 = this;
-
       for (var i = 0; i < this.children.length; ++i) {
-        this$1.children[i].collapse(lines);
+        this.children[i].collapse(lines);
       }
     },
     insertInner: function (at, lines, height) {
-      var this$1 = this;
       this.size += lines.length;
       this.height += height;
 
       for (var i = 0; i < this.children.length; ++i) {
-        var child = this$1.children[i],
+        var child = this.children[i],
             sz = child.chunkSize();
 
         if (at <= sz) {
@@ -9359,12 +9075,12 @@ __webpack_require__.r(__webpack_exports__);
             for (var pos = remaining; pos < child.lines.length;) {
               var leaf = new LeafChunk(child.lines.slice(pos, pos += 25));
               child.height -= leaf.height;
-              this$1.children.splice(++i, 0, leaf);
-              leaf.parent = this$1;
+              this.children.splice(++i, 0, leaf);
+              leaf.parent = this;
             }
 
             child.lines = child.lines.slice(0, remaining);
-            this$1.maybeSpill();
+            this.maybeSpill();
           }
 
           break;
@@ -9404,10 +9120,8 @@ __webpack_require__.r(__webpack_exports__);
       me.parent.maybeSpill();
     },
     iterN: function (at, n, op) {
-      var this$1 = this;
-
       for (var i = 0; i < this.children.length; ++i) {
-        var child = this$1.children[i],
+        var child = this.children[i],
             sz = child.chunkSize();
 
         if (at < sz) {
@@ -9430,12 +9144,10 @@ __webpack_require__.r(__webpack_exports__);
   }; // Line widgets are block elements displayed above or below a line.
 
   var LineWidget = function (doc, node, options) {
-    var this$1 = this;
-
     if (options) {
       for (var opt in options) {
         if (options.hasOwnProperty(opt)) {
-          this$1[opt] = options[opt];
+          this[opt] = options[opt];
         }
       }
     }
@@ -9445,7 +9157,6 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   LineWidget.prototype.clear = function () {
-    var this$1 = this;
     var cm = this.doc.cm,
         ws = this.line.widgets,
         line = this.line,
@@ -9456,7 +9167,7 @@ __webpack_require__.r(__webpack_exports__);
     }
 
     for (var i = 0; i < ws.length; ++i) {
-      if (ws[i] == this$1) {
+      if (ws[i] == this) {
         ws.splice(i--, 1);
       }
     }
@@ -9574,8 +9285,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
   TextMarker.prototype.clear = function () {
-    var this$1 = this;
-
     if (this.explicitlyCleared) {
       return;
     }
@@ -9599,10 +9308,10 @@ __webpack_require__.r(__webpack_exports__);
         max = null;
 
     for (var i = 0; i < this.lines.length; ++i) {
-      var line = this$1.lines[i];
-      var span = getMarkedSpanFor(line.markedSpans, this$1);
+      var line = this.lines[i];
+      var span = getMarkedSpanFor(line.markedSpans, this);
 
-      if (cm && !this$1.collapsed) {
+      if (cm && !this.collapsed) {
         regLineChange(cm, lineNo(line), "text");
       } else if (cm) {
         if (span.to != null) {
@@ -9616,14 +9325,14 @@ __webpack_require__.r(__webpack_exports__);
 
       line.markedSpans = removeMarkedSpan(line.markedSpans, span);
 
-      if (span.from == null && this$1.collapsed && !lineIsHidden(this$1.doc, line) && cm) {
+      if (span.from == null && this.collapsed && !lineIsHidden(this.doc, line) && cm) {
         updateLineHeight(line, textHeight(cm.display));
       }
     }
 
     if (cm && this.collapsed && !cm.options.lineWrapping) {
       for (var i$1 = 0; i$1 < this.lines.length; ++i$1) {
-        var visual = visualLine(this$1.lines[i$1]),
+        var visual = visualLine(this.lines[i$1]),
             len = lineLength(visual);
 
         if (len > cm.display.maxLineLength) {
@@ -9668,8 +9377,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
   TextMarker.prototype.find = function (side, lineObj) {
-    var this$1 = this;
-
     if (side == null && this.type == "bookmark") {
       side = 1;
     }
@@ -9677,8 +9384,8 @@ __webpack_require__.r(__webpack_exports__);
     var from, to;
 
     for (var i = 0; i < this.lines.length; ++i) {
-      var line = this$1.lines[i];
-      var span = getMarkedSpanFor(line.markedSpans, this$1);
+      var line = this.lines[i];
+      var span = getMarkedSpanFor(line.markedSpans, this);
 
       if (span.from != null) {
         from = Pos(lineObj ? line : lineNo(line), span.from);
@@ -9891,18 +9598,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
   var SharedTextMarker = function (markers, primary) {
-    var this$1 = this;
     this.markers = markers;
     this.primary = primary;
 
     for (var i = 0; i < markers.length; ++i) {
-      markers[i].parent = this$1;
+      markers[i].parent = this;
     }
   };
 
   SharedTextMarker.prototype.clear = function () {
-    var this$1 = this;
-
     if (this.explicitlyCleared) {
       return;
     }
@@ -9910,7 +9614,7 @@ __webpack_require__.r(__webpack_exports__);
     this.explicitlyCleared = true;
 
     for (var i = 0; i < this.markers.length; ++i) {
-      this$1.markers[i].clear();
+      this.markers[i].clear();
     }
 
     signalLater(this, "clear");
@@ -10126,17 +9830,17 @@ __webpack_require__.r(__webpack_exports__);
       return clipPos(this, pos);
     },
     getCursor: function (start) {
-      var range$$1 = this.sel.primary(),
+      var range = this.sel.primary(),
           pos;
 
       if (start == null || start == "head") {
-        pos = range$$1.head;
+        pos = range.head;
       } else if (start == "anchor") {
-        pos = range$$1.anchor;
+        pos = range.anchor;
       } else if (start == "end" || start == "to" || start === false) {
-        pos = range$$1.to();
+        pos = range.to();
       } else {
-        pos = range$$1.from();
+        pos = range.from();
       }
 
       return pos;
@@ -10164,8 +9868,6 @@ __webpack_require__.r(__webpack_exports__);
       extendSelections(this, clipPosArray(this, heads), options);
     }),
     setSelections: docMethodOp(function (ranges, primary, options) {
-      var this$1 = this;
-
       if (!ranges.length) {
         return;
       }
@@ -10173,7 +9875,7 @@ __webpack_require__.r(__webpack_exports__);
       var out = [];
 
       for (var i = 0; i < ranges.length; i++) {
-        out[i] = new Range(clipPos(this$1, ranges[i].anchor), clipPos(this$1, ranges[i].head));
+        out[i] = new Range(clipPos(this, ranges[i].anchor), clipPos(this, ranges[i].head));
       }
 
       if (primary == null) {
@@ -10188,12 +9890,11 @@ __webpack_require__.r(__webpack_exports__);
       setSelection(this, normalizeSelection(this.cm, ranges, ranges.length - 1), options);
     }),
     getSelection: function (lineSep) {
-      var this$1 = this;
       var ranges = this.sel.ranges,
           lines;
 
       for (var i = 0; i < ranges.length; i++) {
-        var sel = getBetween(this$1, ranges[i].from(), ranges[i].to());
+        var sel = getBetween(this, ranges[i].from(), ranges[i].to());
         lines = lines ? lines.concat(sel) : sel;
       }
 
@@ -10204,15 +9905,14 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     getSelections: function (lineSep) {
-      var this$1 = this;
       var parts = [],
           ranges = this.sel.ranges;
 
       for (var i = 0; i < ranges.length; i++) {
-        var sel = getBetween(this$1, ranges[i].from(), ranges[i].to());
+        var sel = getBetween(this, ranges[i].from(), ranges[i].to());
 
         if (lineSep !== false) {
-          sel = sel.join(lineSep || this$1.lineSeparator());
+          sel = sel.join(lineSep || this.lineSeparator());
         }
 
         parts[i] = sel;
@@ -10230,16 +9930,15 @@ __webpack_require__.r(__webpack_exports__);
       this.replaceSelections(dup, collapse, origin || "+input");
     },
     replaceSelections: docMethodOp(function (code, collapse, origin) {
-      var this$1 = this;
       var changes = [],
           sel = this.sel;
 
       for (var i = 0; i < sel.ranges.length; i++) {
-        var range$$1 = sel.ranges[i];
+        var range = sel.ranges[i];
         changes[i] = {
-          from: range$$1.from(),
-          to: range$$1.to(),
-          text: this$1.splitLines(code[i]),
+          from: range.from(),
+          to: range.to(),
+          text: this.splitLines(code[i]),
           origin: origin
         };
       }
@@ -10247,7 +9946,7 @@ __webpack_require__.r(__webpack_exports__);
       var newSel = collapse && collapse != "end" && computeReplacedSel(this, changes, collapse);
 
       for (var i$1 = changes.length - 1; i$1 >= 0; i$1--) {
-        makeChange(this$1, changes[i$1]);
+        makeChange(this, changes[i$1]);
       }
 
       if (newSel) {
@@ -10297,7 +9996,11 @@ __webpack_require__.r(__webpack_exports__);
       };
     },
     clearHistory: function () {
+      var this$1 = this;
       this.history = new History(this.history.maxGeneration);
+      linkedDocs(this, function (doc) {
+        return doc.history = this$1.history;
+      }, true);
     },
     markClean: function () {
       this.cleanGeneration = this.changeGeneration(true);
@@ -10463,7 +10166,7 @@ __webpack_require__.r(__webpack_exports__);
       from = clipPos(this, from);
       to = clipPos(this, to);
       var found = [],
-          lineNo$$1 = from.line;
+          lineNo = from.line;
       this.iter(from.line, to.line + 1, function (line) {
         var spans = line.markedSpans;
 
@@ -10471,13 +10174,13 @@ __webpack_require__.r(__webpack_exports__);
           for (var i = 0; i < spans.length; i++) {
             var span = spans[i];
 
-            if (!(span.to != null && lineNo$$1 == from.line && from.ch >= span.to || span.from == null && lineNo$$1 != from.line || span.from != null && lineNo$$1 == to.line && span.from >= to.ch) && (!filter || filter(span.marker))) {
+            if (!(span.to != null && lineNo == from.line && from.ch >= span.to || span.from == null && lineNo != from.line || span.from != null && lineNo == to.line && span.from >= to.ch) && (!filter || filter(span.marker))) {
               found.push(span.marker.parent || span.marker);
             }
           }
         }
 
-        ++lineNo$$1;
+        ++lineNo;
       });
       return found;
     },
@@ -10498,7 +10201,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     posFromIndex: function (off) {
       var ch,
-          lineNo$$1 = this.first,
+          lineNo = this.first,
           sepSize = this.lineSeparator().length;
       this.iter(function (line) {
         var sz = line.text.length + sepSize;
@@ -10509,9 +10212,9 @@ __webpack_require__.r(__webpack_exports__);
         }
 
         off -= sz;
-        ++lineNo$$1;
+        ++lineNo;
       });
-      return clipPos(this, Pos(lineNo$$1, ch));
+      return clipPos(this, Pos(lineNo, ch));
     },
     indexFromPos: function (coords) {
       coords = clipPos(this, coords);
@@ -10577,23 +10280,21 @@ __webpack_require__.r(__webpack_exports__);
       return copy;
     },
     unlinkDoc: function (other) {
-      var this$1 = this;
-
       if (other instanceof CodeMirror) {
         other = other.doc;
       }
 
       if (this.linked) {
         for (var i = 0; i < this.linked.length; ++i) {
-          var link = this$1.linked[i];
+          var link = this.linked[i];
 
           if (link.doc != other) {
             continue;
           }
 
-          this$1.linked.splice(i, 1);
-          other.unlinkDoc(this$1);
-          detachSharedMarkers(findSharedMarkers(this$1));
+          this.linked.splice(i, 1);
+          other.unlinkDoc(this);
+          detachSharedMarkers(findSharedMarkers(this));
           break;
         }
       } // If the histories were shared, split them again
@@ -10681,38 +10382,53 @@ __webpack_require__.r(__webpack_exports__);
           text = Array(n),
           read = 0;
 
-      var loadFile = function (file, i) {
-        if (cm.options.allowDropFileTypes && indexOf(cm.options.allowDropFileTypes, file.type) == -1) {
-          return;
-        }
-
-        var reader = new FileReader();
-        reader.onload = operation(cm, function () {
-          var content = reader.result;
-
-          if (/[\x00-\x08\x0e-\x1f]{2}/.test(content)) {
-            content = "";
-          }
-
-          text[i] = content;
-
-          if (++read == n) {
+      var markAsReadAndPasteIfAllFilesAreRead = function () {
+        if (++read == n) {
+          operation(cm, function () {
             pos = clipPos(cm.doc, pos);
             var change = {
               from: pos,
               to: pos,
-              text: cm.doc.splitLines(text.join(cm.doc.lineSeparator())),
+              text: cm.doc.splitLines(text.filter(function (t) {
+                return t != null;
+              }).join(cm.doc.lineSeparator())),
               origin: "paste"
             };
             makeChange(cm.doc, change);
-            setSelectionReplaceHistory(cm.doc, simpleSelection(pos, changeEnd(change)));
+            setSelectionReplaceHistory(cm.doc, simpleSelection(clipPos(cm.doc, pos), clipPos(cm.doc, changeEnd(change))));
+          })();
+        }
+      };
+
+      var readTextFromFile = function (file, i) {
+        if (cm.options.allowDropFileTypes && indexOf(cm.options.allowDropFileTypes, file.type) == -1) {
+          markAsReadAndPasteIfAllFilesAreRead();
+          return;
+        }
+
+        var reader = new FileReader();
+
+        reader.onerror = function () {
+          return markAsReadAndPasteIfAllFilesAreRead();
+        };
+
+        reader.onload = function () {
+          var content = reader.result;
+
+          if (/[\x00-\x08\x0e-\x1f]{2}/.test(content)) {
+            markAsReadAndPasteIfAllFilesAreRead();
+            return;
           }
-        });
+
+          text[i] = content;
+          markAsReadAndPasteIfAllFilesAreRead();
+        };
+
         reader.readAsText(file);
       };
 
-      for (var i = 0; i < n; ++i) {
-        loadFile(files[i], i);
+      for (var i = 0; i < files.length; i++) {
+        readTextFromFile(files[i], i);
       }
     } else {
       // Normal drop
@@ -11147,9 +10863,9 @@ __webpack_require__.r(__webpack_exports__);
     return keymap;
   }
 
-  function lookupKey(key, map$$1, handle, context) {
-    map$$1 = getKeyMap(map$$1);
-    var found = map$$1.call ? map$$1.call(key, context) : map$$1[key];
+  function lookupKey(key, map, handle, context) {
+    map = getKeyMap(map);
+    var found = map.call ? map.call(key, context) : map[key];
 
     if (found === false) {
       return "nothing";
@@ -11163,13 +10879,13 @@ __webpack_require__.r(__webpack_exports__);
       return "handled";
     }
 
-    if (map$$1.fallthrough) {
-      if (Object.prototype.toString.call(map$$1.fallthrough) != "[object Array]") {
-        return lookupKey(key, map$$1.fallthrough, handle, context);
+    if (map.fallthrough) {
+      if (Object.prototype.toString.call(map.fallthrough) != "[object Array]") {
+        return lookupKey(key, map.fallthrough, handle, context);
       }
 
-      for (var i = 0; i < map$$1.fallthrough.length; i++) {
-        var result = lookupKey(key, map$$1.fallthrough[i], handle, context);
+      for (var i = 0; i < map.fallthrough.length; i++) {
+        var result = lookupKey(key, map.fallthrough[i], handle, context);
 
         if (result) {
           return result;
@@ -11276,6 +10992,10 @@ __webpack_require__.r(__webpack_exports__);
 
   function endOfLine(visually, cm, lineObj, lineNo, dir) {
     if (visually) {
+      if (cm.doc.direction == "rtl") {
+        dir = -dir;
+      }
+
       var order = getOrder(lineObj, cm.doc.direction);
 
       if (order) {
@@ -11743,7 +11463,7 @@ __webpack_require__.r(__webpack_exports__);
     var order = getOrder(line, cm.doc.direction);
 
     if (!order || order[0].level == 0) {
-      var firstNonWS = Math.max(0, line.text.search(/\S/));
+      var firstNonWS = Math.max(start.ch, line.text.search(/\S/));
       var inWS = pos.line == start.line && pos.ch <= firstNonWS && pos.ch;
       return Pos(start.line, inWS ? 0 : firstNonWS, start.sticky);
     }
@@ -11905,6 +11625,10 @@ __webpack_require__.r(__webpack_exports__);
       if (!handled && code == 88 && !hasCopyEvent && (mac ? e.metaKey : e.ctrlKey)) {
         cm.replaceSelection("", null, "cut");
       }
+    }
+
+    if (gecko && !mac && !handled && code == 46 && e.shiftKey && !e.ctrlKey && document.execCommand) {
+      document.execCommand("cut");
     } // Turn mouse into crosshair when Alt is held on Mac.
 
 
@@ -12260,12 +11984,12 @@ __webpack_require__.r(__webpack_exports__);
       start = posFromMouse(cm, event, true, true);
       ourIndex = -1;
     } else {
-      var range$$1 = rangeForUnit(cm, start, behavior.unit);
+      var range = rangeForUnit(cm, start, behavior.unit);
 
       if (behavior.extend) {
-        ourRange = extendRange(ourRange, range$$1.anchor, range$$1.head, behavior.extend);
+        ourRange = extendRange(ourRange, range.anchor, range.head, behavior.extend);
       } else {
-        ourRange = range$$1;
+        ourRange = range;
       }
     }
 
@@ -12328,16 +12052,16 @@ __webpack_require__.r(__webpack_exports__);
         cm.scrollIntoView(pos);
       } else {
         var oldRange = ourRange;
-        var range$$1 = rangeForUnit(cm, pos, behavior.unit);
+        var range = rangeForUnit(cm, pos, behavior.unit);
         var anchor = oldRange.anchor,
             head;
 
-        if (cmp(range$$1.anchor, anchor) > 0) {
-          head = range$$1.head;
-          anchor = minPos(oldRange.from(), range$$1.anchor);
+        if (cmp(range.anchor, anchor) > 0) {
+          head = range.head;
+          anchor = minPos(oldRange.from(), range.anchor);
         } else {
-          head = range$$1.anchor;
-          anchor = maxPos(oldRange.to(), range$$1.head);
+          head = range.anchor;
+          anchor = maxPos(oldRange.to(), range.head);
         }
 
         var ranges$1 = startSel.ranges.slice(0);
@@ -12420,32 +12144,32 @@ __webpack_require__.r(__webpack_exports__);
   // of a bidi jump depending on the visual position of the head.
 
 
-  function bidiSimplify(cm, range$$1) {
-    var anchor = range$$1.anchor;
-    var head = range$$1.head;
+  function bidiSimplify(cm, range) {
+    var anchor = range.anchor;
+    var head = range.head;
     var anchorLine = getLine(cm.doc, anchor.line);
 
     if (cmp(anchor, head) == 0 && anchor.sticky == head.sticky) {
-      return range$$1;
+      return range;
     }
 
     var order = getOrder(anchorLine);
 
     if (!order) {
-      return range$$1;
+      return range;
     }
 
     var index = getBidiPartAt(order, anchor.ch, anchor.sticky),
         part = order[index];
 
     if (part.from != anchor.ch && part.to != anchor.ch) {
-      return range$$1;
+      return range;
     }
 
     var boundary = index + (part.from == anchor.ch == (part.level != 1) ? 0 : 1);
 
     if (boundary == 0 || boundary == order.length) {
-      return range$$1;
+      return range;
     } // Compute the relative visual position of the head compared to the
     // anchor (<0 is to the left, >0 to the right)
 
@@ -12469,7 +12193,7 @@ __webpack_require__.r(__webpack_exports__);
     var from = leftSide == (usePart.level == 1);
     var ch = from ? usePart.from : usePart.to,
         sticky = from ? "after" : "before";
-    return anchor.ch == ch && anchor.sticky == sticky ? range$$1 : new Range(new Pos(anchor.line, ch, sticky), head);
+    return anchor.ch == ch && anchor.sticky == sticky ? range : new Range(new Pos(anchor.line, ch, sticky), head);
   } // Determines whether an event happened in the gutter, and fires the
   // handlers for the corresponding event.
 
@@ -12858,7 +12582,7 @@ __webpack_require__.r(__webpack_exports__);
 
     for (var opt in optionHandlers) {
       if (optionHandlers.hasOwnProperty(opt)) {
-        optionHandlers[opt](this$1, options[opt], Init);
+        optionHandlers[opt](this, options[opt], Init);
       }
     }
 
@@ -12869,7 +12593,7 @@ __webpack_require__.r(__webpack_exports__);
     }
 
     for (var i = 0; i < initHooks.length; ++i) {
-      initHooks[i](this$1);
+      initHooks[i](this);
     }
 
     endOperation(this); // Suppress optimizelegibility in Webkit, since it breaks text
@@ -12916,6 +12640,11 @@ __webpack_require__.r(__webpack_exports__);
 
     on(d.scroller, "contextmenu", function (e) {
       return onContextMenu(cm, e);
+    });
+    on(d.input.getField(), "contextmenu", function (e) {
+      if (!d.scroller.contains(e.target)) {
+        onContextMenu(cm, e);
+      }
     }); // Used to suppress mouse event handling when a touch happens
 
     var touchFinished,
@@ -13200,11 +12929,11 @@ __webpack_require__.r(__webpack_exports__);
     var updateInput = cm.curOp.updateInput; // Normal behavior is to insert the new text into every selection
 
     for (var i$1 = sel.ranges.length - 1; i$1 >= 0; i$1--) {
-      var range$$1 = sel.ranges[i$1];
-      var from = range$$1.from(),
-          to = range$$1.to();
+      var range = sel.ranges[i$1];
+      var from = range.from(),
+          to = range.to();
 
-      if (range$$1.empty()) {
+      if (range.empty()) {
         if (deleted && deleted > 0) // Handle deletion
           {
             from = Pos(from.line, from.ch - deleted);
@@ -13265,30 +12994,30 @@ __webpack_require__.r(__webpack_exports__);
     var sel = cm.doc.sel;
 
     for (var i = sel.ranges.length - 1; i >= 0; i--) {
-      var range$$1 = sel.ranges[i];
+      var range = sel.ranges[i];
 
-      if (range$$1.head.ch > 100 || i && sel.ranges[i - 1].head.line == range$$1.head.line) {
+      if (range.head.ch > 100 || i && sel.ranges[i - 1].head.line == range.head.line) {
         continue;
       }
 
-      var mode = cm.getModeAt(range$$1.head);
+      var mode = cm.getModeAt(range.head);
       var indented = false;
 
       if (mode.electricChars) {
         for (var j = 0; j < mode.electricChars.length; j++) {
           if (inserted.indexOf(mode.electricChars.charAt(j)) > -1) {
-            indented = indentLine(cm, range$$1.head.line, "smart");
+            indented = indentLine(cm, range.head.line, "smart");
             break;
           }
         }
       } else if (mode.electricInput) {
-        if (mode.electricInput.test(getLine(cm.doc, range$$1.head.line).text.slice(0, range$$1.head.ch))) {
-          indented = indentLine(cm, range$$1.head.line, "smart");
+        if (mode.electricInput.test(getLine(cm.doc, range.head.line).text.slice(0, range.head.ch))) {
+          indented = indentLine(cm, range.head.line, "smart");
         }
       }
 
       if (indented) {
-        signalLater(cm, "electricInput", cm, range$$1.head.line);
+        signalLater(cm, "electricInput", cm, range.head.line);
       }
     }
   }
@@ -13378,14 +13107,14 @@ __webpack_require__.r(__webpack_exports__);
       getDoc: function () {
         return this.doc;
       },
-      addKeyMap: function (map$$1, bottom) {
-        this.state.keyMaps[bottom ? "push" : "unshift"](getKeyMap(map$$1));
+      addKeyMap: function (map, bottom) {
+        this.state.keyMaps[bottom ? "push" : "unshift"](getKeyMap(map));
       },
-      removeKeyMap: function (map$$1) {
+      removeKeyMap: function (map) {
         var maps = this.state.keyMaps;
 
         for (var i = 0; i < maps.length; ++i) {
-          if (maps[i] == map$$1 || maps[i].name == map$$1) {
+          if (maps[i] == map || maps[i].name == map) {
             maps.splice(i, 1);
             return true;
           }
@@ -13410,7 +13139,6 @@ __webpack_require__.r(__webpack_exports__);
         regChange(this);
       }),
       removeOverlay: methodOp(function (spec) {
-        var this$1 = this;
         var overlays = this.state.overlays;
 
         for (var i = 0; i < overlays.length; ++i) {
@@ -13418,8 +13146,8 @@ __webpack_require__.r(__webpack_exports__);
 
           if (cur == spec || typeof spec == "string" && cur.name == spec) {
             overlays.splice(i, 1);
-            this$1.state.modeGen++;
-            regChange(this$1);
+            this.state.modeGen++;
+            regChange(this);
             return;
           }
         }
@@ -13438,34 +13166,33 @@ __webpack_require__.r(__webpack_exports__);
         }
       }),
       indentSelection: methodOp(function (how) {
-        var this$1 = this;
         var ranges = this.doc.sel.ranges,
             end = -1;
 
         for (var i = 0; i < ranges.length; i++) {
-          var range$$1 = ranges[i];
+          var range = ranges[i];
 
-          if (!range$$1.empty()) {
-            var from = range$$1.from(),
-                to = range$$1.to();
+          if (!range.empty()) {
+            var from = range.from(),
+                to = range.to();
             var start = Math.max(end, from.line);
-            end = Math.min(this$1.lastLine(), to.line - (to.ch ? 0 : 1)) + 1;
+            end = Math.min(this.lastLine(), to.line - (to.ch ? 0 : 1)) + 1;
 
             for (var j = start; j < end; ++j) {
-              indentLine(this$1, j, how);
+              indentLine(this, j, how);
             }
 
-            var newRanges = this$1.doc.sel.ranges;
+            var newRanges = this.doc.sel.ranges;
 
             if (from.ch == 0 && ranges.length == newRanges.length && newRanges[i].from().ch > 0) {
-              replaceOneSelection(this$1.doc, i, new Range(from, newRanges[i].to()), sel_dontScroll);
+              replaceOneSelection(this.doc, i, new Range(from, newRanges[i].to()), sel_dontScroll);
             }
-          } else if (range$$1.head.line > end) {
-            indentLine(this$1, range$$1.head.line, how, true);
-            end = range$$1.head.line;
+          } else if (range.head.line > end) {
+            indentLine(this, range.head.line, how, true);
+            end = range.head.line;
 
-            if (i == this$1.doc.sel.primIndex) {
-              ensureCursorVisible(this$1);
+            if (i == this.doc.sel.primIndex) {
+              ensureCursorVisible(this);
             }
           }
         }
@@ -13519,7 +13246,6 @@ __webpack_require__.r(__webpack_exports__);
         return this.getHelpers(pos, type)[0];
       },
       getHelpers: function (pos, type) {
-        var this$1 = this;
         var found = [];
 
         if (!helpers.hasOwnProperty(type)) {
@@ -13550,7 +13276,7 @@ __webpack_require__.r(__webpack_exports__);
         for (var i$1 = 0; i$1 < help._global.length; i$1++) {
           var cur = help._global[i$1];
 
-          if (cur.pred(mode, this$1) && indexOf(found, cur.val) == -1) {
+          if (cur.pred(mode, this) && indexOf(found, cur.val) == -1) {
             found.push(cur.val);
           }
         }
@@ -13564,14 +13290,14 @@ __webpack_require__.r(__webpack_exports__);
       },
       cursorCoords: function (start, mode) {
         var pos,
-            range$$1 = this.doc.sel.primary();
+            range = this.doc.sel.primary();
 
         if (start == null) {
-          pos = range$$1.head;
+          pos = range.head;
         } else if (typeof start == "object") {
           pos = clipPos(this.doc, start);
         } else {
-          pos = start ? range$$1.from() : range$$1.to();
+          pos = start ? range.from() : range.to();
         }
 
         return cursorCoords(this, pos, mode || "page");
@@ -13691,7 +13417,6 @@ __webpack_require__.r(__webpack_exports__);
         triggerElectric(this, text);
       }),
       findPosH: function (from, amount, unit, visually) {
-        var this$1 = this;
         var dir = 1;
 
         if (amount < 0) {
@@ -13702,7 +13427,7 @@ __webpack_require__.r(__webpack_exports__);
         var cur = clipPos(this.doc, from);
 
         for (var i = 0; i < amount; ++i) {
-          cur = findPosH(this$1.doc, cur, dir, unit, visually);
+          cur = findPosH(this.doc, cur, dir, unit, visually);
 
           if (cur.hitSide) {
             break;
@@ -13713,11 +13438,11 @@ __webpack_require__.r(__webpack_exports__);
       },
       moveH: methodOp(function (dir, unit) {
         var this$1 = this;
-        this.extendSelectionsBy(function (range$$1) {
-          if (this$1.display.shift || this$1.doc.extend || range$$1.empty()) {
-            return findPosH(this$1.doc, range$$1.head, dir, unit, this$1.options.rtlMoveVisually);
+        this.extendSelectionsBy(function (range) {
+          if (this$1.display.shift || this$1.doc.extend || range.empty()) {
+            return findPosH(this$1.doc, range.head, dir, unit, this$1.options.rtlMoveVisually);
           } else {
-            return dir < 0 ? range$$1.from() : range$$1.to();
+            return dir < 0 ? range.from() : range.to();
           }
         }, sel_move);
       }),
@@ -13728,20 +13453,19 @@ __webpack_require__.r(__webpack_exports__);
         if (sel.somethingSelected()) {
           doc.replaceSelection("", null, "+delete");
         } else {
-          deleteNearSelection(this, function (range$$1) {
-            var other = findPosH(doc, range$$1.head, dir, unit, false);
+          deleteNearSelection(this, function (range) {
+            var other = findPosH(doc, range.head, dir, unit, false);
             return dir < 0 ? {
               from: other,
-              to: range$$1.head
+              to: range.head
             } : {
-              from: range$$1.head,
+              from: range.head,
               to: other
             };
           });
         }
       }),
       findPosV: function (from, amount, unit, goalColumn) {
-        var this$1 = this;
         var dir = 1,
             x = goalColumn;
 
@@ -13753,7 +13477,7 @@ __webpack_require__.r(__webpack_exports__);
         var cur = clipPos(this.doc, from);
 
         for (var i = 0; i < amount; ++i) {
-          var coords = cursorCoords(this$1, cur, "div");
+          var coords = cursorCoords(this, cur, "div");
 
           if (x == null) {
             x = coords.left;
@@ -13761,7 +13485,7 @@ __webpack_require__.r(__webpack_exports__);
             coords.left = x;
           }
 
-          cur = findPosV(this$1, coords, dir, unit);
+          cur = findPosV(this, coords, dir, unit);
 
           if (cur.hitSide) {
             break;
@@ -13775,21 +13499,21 @@ __webpack_require__.r(__webpack_exports__);
         var doc = this.doc,
             goals = [];
         var collapse = !this.display.shift && !doc.extend && doc.sel.somethingSelected();
-        doc.extendSelectionsBy(function (range$$1) {
+        doc.extendSelectionsBy(function (range) {
           if (collapse) {
-            return dir < 0 ? range$$1.from() : range$$1.to();
+            return dir < 0 ? range.from() : range.to();
           }
 
-          var headPos = cursorCoords(this$1, range$$1.head, "div");
+          var headPos = cursorCoords(this$1, range.head, "div");
 
-          if (range$$1.goalColumn != null) {
-            headPos.left = range$$1.goalColumn;
+          if (range.goalColumn != null) {
+            headPos.left = range.goalColumn;
           }
 
           goals.push(headPos.left);
           var pos = findPosV(this$1, headPos, dir, unit);
 
-          if (unit == "page" && range$$1 == doc.sel.primary()) {
+          if (unit == "page" && range == doc.sel.primary()) {
             addToScrollTop(this$1, charCoords(this$1, pos, "div").top - headPos.top);
           }
 
@@ -13871,9 +13595,9 @@ __webpack_require__.r(__webpack_exports__);
           clientWidth: displayWidth(this)
         };
       },
-      scrollIntoView: methodOp(function (range$$1, margin) {
-        if (range$$1 == null) {
-          range$$1 = {
+      scrollIntoView: methodOp(function (range, margin) {
+        if (range == null) {
+          range = {
             from: this.doc.sel.primary().head,
             to: null
           };
@@ -13881,28 +13605,28 @@ __webpack_require__.r(__webpack_exports__);
           if (margin == null) {
             margin = this.options.cursorScrollMargin;
           }
-        } else if (typeof range$$1 == "number") {
-          range$$1 = {
-            from: Pos(range$$1, 0),
+        } else if (typeof range == "number") {
+          range = {
+            from: Pos(range, 0),
             to: null
           };
-        } else if (range$$1.from == null) {
-          range$$1 = {
-            from: range$$1,
+        } else if (range.from == null) {
+          range = {
+            from: range,
             to: null
           };
         }
 
-        if (!range$$1.to) {
-          range$$1.to = range$$1.from;
+        if (!range.to) {
+          range.to = range.from;
         }
 
-        range$$1.margin = margin || 0;
+        range.margin = margin || 0;
 
-        if (range$$1.from.line != null) {
-          scrollToRange(this, range$$1);
+        if (range.from.line != null) {
+          scrollToRange(this, range);
         } else {
-          scrollToCoordsRange(this, range$$1.from, range$$1.to, range$$1.margin);
+          scrollToCoordsRange(this, range.from, range.to, range.margin);
         }
       }),
       setSize: methodOp(function (width, height) {
@@ -13924,18 +13648,18 @@ __webpack_require__.r(__webpack_exports__);
           clearLineMeasurementCache(this);
         }
 
-        var lineNo$$1 = this.display.viewFrom;
-        this.doc.iter(lineNo$$1, this.display.viewTo, function (line) {
+        var lineNo = this.display.viewFrom;
+        this.doc.iter(lineNo, this.display.viewTo, function (line) {
           if (line.widgets) {
             for (var i = 0; i < line.widgets.length; i++) {
               if (line.widgets[i].noHScroll) {
-                regLineChange(this$1, lineNo$$1, "widget");
+                regLineChange(this$1, lineNo, "widget");
                 break;
               }
             }
           }
 
-          ++lineNo$$1;
+          ++lineNo;
         });
         this.curOp.forceUpdate = true;
         signal(this, "refresh", this);
@@ -14031,9 +13755,10 @@ __webpack_require__.r(__webpack_exports__);
     var oldPos = pos;
     var origDir = dir;
     var lineObj = getLine(doc, pos.line);
+    var lineDir = visually && doc.direction == "rtl" ? -dir : dir;
 
     function findNextLine() {
-      var l = pos.line + dir;
+      var l = pos.line + lineDir;
 
       if (l < doc.first || l >= doc.first + doc.size) {
         return false;
@@ -14054,7 +13779,7 @@ __webpack_require__.r(__webpack_exports__);
 
       if (next == null) {
         if (!boundToLine && findNextLine()) {
-          pos = endOfLine(visually, doc.cm, lineObj, pos.line, dir);
+          pos = endOfLine(visually, doc.cm, lineObj, pos.line, lineDir);
         } else {
           return false;
         }
@@ -14325,10 +14050,10 @@ __webpack_require__.r(__webpack_exports__);
 
     if (!end) {
       var measure = view[view.length - 1].measure;
-      var map$$1 = measure.maps ? measure.maps[measure.maps.length - 1] : measure.map;
+      var map = measure.maps ? measure.maps[measure.maps.length - 1] : measure.map;
       end = {
-        node: map$$1[map$$1.length - 1],
-        offset: map$$1[map$$1.length - 2] - map$$1[map$$1.length - 3]
+        node: map[map.length - 1],
+        offset: map[map.length - 2] - map[map.length - 3]
       };
     }
 
@@ -14759,13 +14484,13 @@ __webpack_require__.r(__webpack_exports__);
         }
 
         var markerID = node.getAttribute("cm-marker"),
-            range$$1;
+            range;
 
         if (markerID) {
           var found = cm.findMarks(Pos(fromLine, 0), Pos(toLine + 1, 0), recognizeMarker(+markerID));
 
-          if (found.length && (range$$1 = found[0].find(0))) {
-            addText(getBetween(cm.doc, range$$1.from, range$$1.to).join(lineSep));
+          if (found.length && (range = found[0].find(0))) {
+            addText(getBetween(cm.doc, range.from, range.to).join(lineSep));
           }
 
           return;
@@ -14887,17 +14612,17 @@ __webpack_require__.r(__webpack_exports__);
 
     function find(textNode, topNode, offset) {
       for (var i = -1; i < (maps ? maps.length : 0); i++) {
-        var map$$1 = i < 0 ? measure.map : maps[i];
+        var map = i < 0 ? measure.map : maps[i];
 
-        for (var j = 0; j < map$$1.length; j += 3) {
-          var curNode = map$$1[j + 2];
+        for (var j = 0; j < map.length; j += 3) {
+          var curNode = map[j + 2];
 
           if (curNode == textNode || curNode == topNode) {
             var line = lineNo(i < 0 ? lineView.line : lineView.rest[i]);
-            var ch = map$$1[j] + offset;
+            var ch = map[j] + offset;
 
             if (offset < 0 || curNode != textNode) {
-              ch = map$$1[j + (offset ? 1 : 0)];
+              ch = map[j + (offset ? 1 : 0)];
             }
 
             return Pos(line, ch);
@@ -15593,151 +15318,8 @@ __webpack_require__.r(__webpack_exports__);
 
   CodeMirror.fromTextArea = fromTextArea;
   addLegacyProps(CodeMirror);
-  CodeMirror.version = "5.49.2";
+  CodeMirror.version = "5.52.0";
   return CodeMirror;
-});
-
-/***/ }),
-
-/***/ "./node_modules/codemirror/mode/gfm/gfm.js":
-/*!*************************************************!*\
-  !*** ./node_modules/codemirror/mode/gfm/gfm.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// CodeMirror, copyright (c) by Marijn Haverbeke and others
-// Distributed under an MIT license: https://codemirror.net/LICENSE
-(function (mod) {
-  if (true) // CommonJS
-    mod(__webpack_require__(/*! ../../lib/codemirror */ "./node_modules/codemirror/lib/codemirror.js"), __webpack_require__(/*! ../markdown/markdown */ "./node_modules/codemirror/mode/markdown/markdown.js"), __webpack_require__(/*! ../../addon/mode/overlay */ "./node_modules/codemirror/addon/mode/overlay.js"));else {}
-})(function (CodeMirror) {
-  "use strict";
-
-  var urlRE = /^((?:(?:aaas?|about|acap|adiumxtra|af[ps]|aim|apt|attachment|aw|beshare|bitcoin|bolo|callto|cap|chrome(?:-extension)?|cid|coap|com-eventbrite-attendee|content|crid|cvs|data|dav|dict|dlna-(?:playcontainer|playsingle)|dns|doi|dtn|dvb|ed2k|facetime|feed|file|finger|fish|ftp|geo|gg|git|gizmoproject|go|gopher|gtalk|h323|hcp|https?|iax|icap|icon|im|imap|info|ipn|ipp|irc[6s]?|iris(?:\.beep|\.lwz|\.xpc|\.xpcs)?|itms|jar|javascript|jms|keyparc|lastfm|ldaps?|magnet|mailto|maps|market|message|mid|mms|ms-help|msnim|msrps?|mtqp|mumble|mupdate|mvn|news|nfs|nih?|nntp|notes|oid|opaquelocktoken|palm|paparazzi|platform|pop|pres|proxy|psyc|query|res(?:ource)?|rmi|rsync|rtmp|rtsp|secondlife|service|session|sftp|sgn|shttp|sieve|sips?|skype|sm[bs]|snmp|soap\.beeps?|soldat|spotify|ssh|steam|svn|tag|teamspeak|tel(?:net)?|tftp|things|thismessage|tip|tn3270|tv|udp|unreal|urn|ut2004|vemmi|ventrilo|view-source|webcal|wss?|wtai|wyciwyg|xcon(?:-userid)?|xfire|xmlrpc\.beeps?|xmpp|xri|ymsgr|z39\.50[rs]?):(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/)(?:[^\s()<>]|\([^\s()<>]*\))+(?:\([^\s()<>]*\)|[^\s`*!()\[\]{};:'".,<>?«»“”‘’]))/i;
-  CodeMirror.defineMode("gfm", function (config, modeConfig) {
-    var codeDepth = 0;
-
-    function blankLine(state) {
-      state.code = false;
-      return null;
-    }
-
-    var gfmOverlay = {
-      startState: function () {
-        return {
-          code: false,
-          codeBlock: false,
-          ateSpace: false
-        };
-      },
-      copyState: function (s) {
-        return {
-          code: s.code,
-          codeBlock: s.codeBlock,
-          ateSpace: s.ateSpace
-        };
-      },
-      token: function (stream, state) {
-        state.combineTokens = null; // Hack to prevent formatting override inside code blocks (block and inline)
-
-        if (state.codeBlock) {
-          if (stream.match(/^```+/)) {
-            state.codeBlock = false;
-            return null;
-          }
-
-          stream.skipToEnd();
-          return null;
-        }
-
-        if (stream.sol()) {
-          state.code = false;
-        }
-
-        if (stream.sol() && stream.match(/^```+/)) {
-          stream.skipToEnd();
-          state.codeBlock = true;
-          return null;
-        } // If this block is changed, it may need to be updated in Markdown mode
-
-
-        if (stream.peek() === '`') {
-          stream.next();
-          var before = stream.pos;
-          stream.eatWhile('`');
-          var difference = 1 + stream.pos - before;
-
-          if (!state.code) {
-            codeDepth = difference;
-            state.code = true;
-          } else {
-            if (difference === codeDepth) {
-              // Must be exact
-              state.code = false;
-            }
-          }
-
-          return null;
-        } else if (state.code) {
-          stream.next();
-          return null;
-        } // Check if space. If so, links can be formatted later on
-
-
-        if (stream.eatSpace()) {
-          state.ateSpace = true;
-          return null;
-        }
-
-        if (stream.sol() || state.ateSpace) {
-          state.ateSpace = false;
-
-          if (modeConfig.gitHubSpice !== false) {
-            if (stream.match(/^(?:[a-zA-Z0-9\-_]+\/)?(?:[a-zA-Z0-9\-_]+@)?(?=.{0,6}\d)(?:[a-f0-9]{7,40}\b)/)) {
-              // User/Project@SHA
-              // User@SHA
-              // SHA
-              state.combineTokens = true;
-              return "link";
-            } else if (stream.match(/^(?:[a-zA-Z0-9\-_]+\/)?(?:[a-zA-Z0-9\-_]+)?#[0-9]+\b/)) {
-              // User/Project#Num
-              // User#Num
-              // #Num
-              state.combineTokens = true;
-              return "link";
-            }
-          }
-        }
-
-        if (stream.match(urlRE) && stream.string.slice(stream.start - 2, stream.start) != "](" && (stream.start == 0 || /\W/.test(stream.string.charAt(stream.start - 1)))) {
-          // URLs
-          // Taken from http://daringfireball.net/2010/07/improved_regex_for_matching_urls
-          // And then (issue #1160) simplified to make it not crash the Chrome Regexp engine
-          // And then limited url schemes to the CommonMark list, so foo:bar isn't matched as a URL
-          state.combineTokens = true;
-          return "link";
-        }
-
-        stream.next();
-        return null;
-      },
-      blankLine: blankLine
-    };
-    var markdownConfig = {
-      taskLists: true,
-      strikethrough: true,
-      emoji: true
-    };
-
-    for (var attr in modeConfig) {
-      markdownConfig[attr] = modeConfig[attr];
-    }
-
-    markdownConfig.name = "markdown";
-    return CodeMirror.overlayMode(CodeMirror.getMode(config, markdownConfig), gfmOverlay);
-  }, "markdown");
-  CodeMirror.defineMIME("text/x-gfm", "gfm");
 });
 
 /***/ }),
@@ -17494,6 +17076,8 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   CodeMirror.findModeByExtension = function (ext) {
+    ext = ext.toLowerCase();
+
     for (var i = 0; i < CodeMirror.modeInfo.length; i++) {
       var info = CodeMirror.modeInfo[i];
       if (info.ext) for (var j = 0; j < info.ext.length; j++) if (info.ext[j] == ext) return info;
@@ -18249,102 +17833,355 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/marked/lib/marked.js":
-/*!*******************************************!*\
-  !*** ./node_modules/marked/lib/marked.js ***!
-  \*******************************************/
+/***/ "./node_modules/marked/src/InlineLexer.js":
+/*!************************************************!*\
+  !*** ./node_modules/marked/src/InlineLexer.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {/**
- * marked - a markdown parser
- * Copyright (c) 2011-2018, Christopher Jeffrey. (MIT Licensed)
- * https://github.com/markedjs/marked
+const Renderer = __webpack_require__(/*! ./Renderer.js */ "./node_modules/marked/src/Renderer.js");
+
+const {
+  defaults
+} = __webpack_require__(/*! ./defaults.js */ "./node_modules/marked/src/defaults.js");
+
+const {
+  inline
+} = __webpack_require__(/*! ./rules.js */ "./node_modules/marked/src/rules.js");
+
+const {
+  findClosingBracket,
+  escape
+} = __webpack_require__(/*! ./helpers.js */ "./node_modules/marked/src/helpers.js");
+/**
+ * Inline Lexer & Compiler
  */
-;
 
-(function (root) {
-  'use strict';
+
+module.exports = class InlineLexer {
+  constructor(links, options) {
+    this.options = options || defaults;
+    this.links = links;
+    this.rules = inline.normal;
+    this.options.renderer = this.options.renderer || new Renderer();
+    this.renderer = this.options.renderer;
+    this.renderer.options = this.options;
+
+    if (!this.links) {
+      throw new Error('Tokens array requires a `links` property.');
+    }
+
+    if (this.options.pedantic) {
+      this.rules = inline.pedantic;
+    } else if (this.options.gfm) {
+      if (this.options.breaks) {
+        this.rules = inline.breaks;
+      } else {
+        this.rules = inline.gfm;
+      }
+    }
+  }
   /**
-   * Block-Level Grammar
+   * Expose Inline Rules
    */
 
-  var block = {
-    newline: /^\n+/,
-    code: /^( {4}[^\n]+\n*)+/,
-    fences: /^ {0,3}(`{3,}|~{3,})([^`~\n]*)\n(?:|([\s\S]*?)\n)(?: {0,3}\1[~`]* *(?:\n+|$)|$)/,
-    hr: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,
-    heading: /^ {0,3}(#{1,6}) +([^\n]*?)(?: +#+)? *(?:\n+|$)/,
-    blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,
-    list: /^( {0,3})(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,
-    html: '^ {0,3}(?:' // optional indentation
-    + '<(script|pre|style)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)' // (1)
-    + '|comment[^\\n]*(\\n+|$)' // (2)
-    + '|<\\?[\\s\\S]*?\\?>\\n*' // (3)
-    + '|<![A-Z][\\s\\S]*?>\\n*' // (4)
-    + '|<!\\[CDATA\\[[\\s\\S]*?\\]\\]>\\n*' // (5)
-    + '|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:\\n{2,}|$)' // (6)
-    + '|<(?!script|pre|style)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) open tag
-    + '|</(?!script|pre|style)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) closing tag
-    + ')',
-    def: /^ {0,3}\[(label)\]: *\n? *<?([^\s>]+)>?(?:(?: +\n? *| *\n *)(title))? *(?:\n+|$)/,
-    nptable: noop,
-    table: noop,
-    lheading: /^([^\n]+)\n {0,3}(=+|-+) *(?:\n+|$)/,
-    // regex template, placeholders will be replaced according to different paragraph
-    // interruption rules of commonmark and the original markdown spec:
-    _paragraph: /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html)[^\n]+)*)/,
-    text: /^[^\n]+/
-  };
-  block._label = /(?!\s*\])(?:\\[\[\]]|[^\[\]])+/;
-  block._title = /(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/;
-  block.def = edit(block.def).replace('label', block._label).replace('title', block._title).getRegex();
-  block.bullet = /(?:[*+-]|\d{1,9}\.)/;
-  block.item = /^( *)(bull) ?[^\n]*(?:\n(?!\1bull ?)[^\n]*)*/;
-  block.item = edit(block.item, 'gm').replace(/bull/g, block.bullet).getRegex();
-  block.list = edit(block.list).replace(/bull/g, block.bullet).replace('hr', '\\n+(?=\\1?(?:(?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$))').replace('def', '\\n+(?=' + block.def.source + ')').getRegex();
-  block._tag = 'address|article|aside|base|basefont|blockquote|body|caption' + '|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption' + '|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe' + '|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option' + '|p|param|section|source|summary|table|tbody|td|tfoot|th|thead|title|tr' + '|track|ul';
-  block._comment = /<!--(?!-?>)[\s\S]*?-->/;
-  block.html = edit(block.html, 'i').replace('comment', block._comment).replace('tag', block._tag).replace('attribute', / +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex();
-  block.paragraph = edit(block._paragraph).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} +').replace('|lheading', '') // setex headings don't interrupt commonmark paragraphs
-  .replace('blockquote', ' {0,3}>').replace('fences', ' {0,3}(?:`{3,}|~{3,})[^`\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
-  .replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // pars can be interrupted by type (6) html blocks
-  .getRegex();
-  block.blockquote = edit(block.blockquote).replace('paragraph', block.paragraph).getRegex();
+
+  static get rules() {
+    return inline;
+  }
   /**
-   * Normal Block Grammar
+   * Static Lexing/Compiling Method
    */
 
-  block.normal = merge({}, block);
+
+  static output(src, links, options) {
+    const inline = new InlineLexer(links, options);
+    return inline.output(src);
+  }
   /**
-   * GFM Block Grammar
+   * Lexing/Compiling
    */
 
-  block.gfm = merge({}, block.normal, {
-    nptable: /^ *([^|\n ].*\|.*)\n *([-:]+ *\|[-| :]*)(?:\n((?:.*[^>\n ].*(?:\n|$))*)\n*|$)/,
-    table: /^ *\|(.+)\n *\|?( *[-:]+[-| :]*)(?:\n((?: *[^>\n ].*(?:\n|$))*)\n*|$)/
-  });
+
+  output(src) {
+    let out = '',
+        link,
+        text,
+        href,
+        title,
+        cap,
+        prevCapZero;
+
+    while (src) {
+      // escape
+      if (cap = this.rules.escape.exec(src)) {
+        src = src.substring(cap[0].length);
+        out += escape(cap[1]);
+        continue;
+      } // tag
+
+
+      if (cap = this.rules.tag.exec(src)) {
+        if (!this.inLink && /^<a /i.test(cap[0])) {
+          this.inLink = true;
+        } else if (this.inLink && /^<\/a>/i.test(cap[0])) {
+          this.inLink = false;
+        }
+
+        if (!this.inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
+          this.inRawBlock = true;
+        } else if (this.inRawBlock && /^<\/(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
+          this.inRawBlock = false;
+        }
+
+        src = src.substring(cap[0].length);
+        out += this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : escape(cap[0]) : cap[0];
+        continue;
+      } // link
+
+
+      if (cap = this.rules.link.exec(src)) {
+        const lastParenIndex = findClosingBracket(cap[2], '()');
+
+        if (lastParenIndex > -1) {
+          const start = cap[0].indexOf('!') === 0 ? 5 : 4;
+          const linkLen = start + cap[1].length + lastParenIndex;
+          cap[2] = cap[2].substring(0, lastParenIndex);
+          cap[0] = cap[0].substring(0, linkLen).trim();
+          cap[3] = '';
+        }
+
+        src = src.substring(cap[0].length);
+        this.inLink = true;
+        href = cap[2];
+
+        if (this.options.pedantic) {
+          link = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(href);
+
+          if (link) {
+            href = link[1];
+            title = link[3];
+          } else {
+            title = '';
+          }
+        } else {
+          title = cap[3] ? cap[3].slice(1, -1) : '';
+        }
+
+        href = href.trim().replace(/^<([\s\S]*)>$/, '$1');
+        out += this.outputLink(cap, {
+          href: InlineLexer.escapes(href),
+          title: InlineLexer.escapes(title)
+        });
+        this.inLink = false;
+        continue;
+      } // reflink, nolink
+
+
+      if ((cap = this.rules.reflink.exec(src)) || (cap = this.rules.nolink.exec(src))) {
+        src = src.substring(cap[0].length);
+        link = (cap[2] || cap[1]).replace(/\s+/g, ' ');
+        link = this.links[link.toLowerCase()];
+
+        if (!link || !link.href) {
+          out += cap[0].charAt(0);
+          src = cap[0].substring(1) + src;
+          continue;
+        }
+
+        this.inLink = true;
+        out += this.outputLink(cap, link);
+        this.inLink = false;
+        continue;
+      } // strong
+
+
+      if (cap = this.rules.strong.exec(src)) {
+        src = src.substring(cap[0].length);
+        out += this.renderer.strong(this.output(cap[4] || cap[3] || cap[2] || cap[1]));
+        continue;
+      } // em
+
+
+      if (cap = this.rules.em.exec(src)) {
+        src = src.substring(cap[0].length);
+        out += this.renderer.em(this.output(cap[6] || cap[5] || cap[4] || cap[3] || cap[2] || cap[1]));
+        continue;
+      } // code
+
+
+      if (cap = this.rules.code.exec(src)) {
+        src = src.substring(cap[0].length);
+        out += this.renderer.codespan(escape(cap[2].trim(), true));
+        continue;
+      } // br
+
+
+      if (cap = this.rules.br.exec(src)) {
+        src = src.substring(cap[0].length);
+        out += this.renderer.br();
+        continue;
+      } // del (gfm)
+
+
+      if (cap = this.rules.del.exec(src)) {
+        src = src.substring(cap[0].length);
+        out += this.renderer.del(this.output(cap[1]));
+        continue;
+      } // autolink
+
+
+      if (cap = this.rules.autolink.exec(src)) {
+        src = src.substring(cap[0].length);
+
+        if (cap[2] === '@') {
+          text = escape(this.mangle(cap[1]));
+          href = 'mailto:' + text;
+        } else {
+          text = escape(cap[1]);
+          href = text;
+        }
+
+        out += this.renderer.link(href, null, text);
+        continue;
+      } // url (gfm)
+
+
+      if (!this.inLink && (cap = this.rules.url.exec(src))) {
+        if (cap[2] === '@') {
+          text = escape(cap[0]);
+          href = 'mailto:' + text;
+        } else {
+          // do extended autolink path validation
+          do {
+            prevCapZero = cap[0];
+            cap[0] = this.rules._backpedal.exec(cap[0])[0];
+          } while (prevCapZero !== cap[0]);
+
+          text = escape(cap[0]);
+
+          if (cap[1] === 'www.') {
+            href = 'http://' + text;
+          } else {
+            href = text;
+          }
+        }
+
+        src = src.substring(cap[0].length);
+        out += this.renderer.link(href, null, text);
+        continue;
+      } // text
+
+
+      if (cap = this.rules.text.exec(src)) {
+        src = src.substring(cap[0].length);
+
+        if (this.inRawBlock) {
+          out += this.renderer.text(this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : escape(cap[0]) : cap[0]);
+        } else {
+          out += this.renderer.text(escape(this.smartypants(cap[0])));
+        }
+
+        continue;
+      }
+
+      if (src) {
+        throw new Error('Infinite loop on byte: ' + src.charCodeAt(0));
+      }
+    }
+
+    return out;
+  }
+
+  static escapes(text) {
+    return text ? text.replace(InlineLexer.rules._escapes, '$1') : text;
+  }
   /**
-   * Pedantic grammar (original John Gruber's loose markdown specification)
+   * Compile Link
    */
 
-  block.pedantic = merge({}, block.normal, {
-    html: edit('^ *(?:comment *(?:\\n|\\s*$)' + '|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)' // closed tag
-    + '|<tag(?:"[^"]*"|\'[^\']*\'|\\s[^\'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))').replace('comment', block._comment).replace(/tag/g, '(?!(?:' + 'a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub' + '|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)' + '\\b)\\w+(?!:|[^\\w\\s@]*@)\\b').getRegex(),
-    def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
-    heading: /^ *(#{1,6}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/,
-    fences: noop,
-    // fences not supported
-    paragraph: edit(block.normal._paragraph).replace('hr', block.hr).replace('heading', ' *#{1,6} *[^\n]').replace('lheading', block.lheading).replace('blockquote', ' {0,3}>').replace('|fences', '').replace('|list', '').replace('|html', '').getRegex()
-  });
+
+  outputLink(cap, link) {
+    const href = link.href,
+          title = link.title ? escape(link.title) : null;
+    return cap[0].charAt(0) !== '!' ? this.renderer.link(href, title, this.output(cap[1])) : this.renderer.image(href, title, escape(cap[1]));
+  }
   /**
-   * Block Lexer
+   * Smartypants Transformations
    */
 
-  function Lexer(options) {
+
+  smartypants(text) {
+    if (!this.options.smartypants) return text;
+    return text // em-dashes
+    .replace(/---/g, '\u2014') // en-dashes
+    .replace(/--/g, '\u2013') // opening singles
+    .replace(/(^|[-\u2014/(\[{"\s])'/g, '$1\u2018') // closing singles & apostrophes
+    .replace(/'/g, '\u2019') // opening doubles
+    .replace(/(^|[-\u2014/(\[{\u2018\s])"/g, '$1\u201c') // closing doubles
+    .replace(/"/g, '\u201d') // ellipses
+    .replace(/\.{3}/g, '\u2026');
+  }
+  /**
+   * Mangle Links
+   */
+
+
+  mangle(text) {
+    if (!this.options.mangle) return text;
+    const l = text.length;
+    let out = '',
+        i = 0,
+        ch;
+
+    for (; i < l; i++) {
+      ch = text.charCodeAt(i);
+
+      if (Math.random() > 0.5) {
+        ch = 'x' + ch.toString(16);
+      }
+
+      out += '&#' + ch + ';';
+    }
+
+    return out;
+  }
+
+};
+
+/***/ }),
+
+/***/ "./node_modules/marked/src/Lexer.js":
+/*!******************************************!*\
+  !*** ./node_modules/marked/src/Lexer.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const {
+  defaults
+} = __webpack_require__(/*! ./defaults.js */ "./node_modules/marked/src/defaults.js");
+
+const {
+  block
+} = __webpack_require__(/*! ./rules.js */ "./node_modules/marked/src/rules.js");
+
+const {
+  rtrim,
+  splitCells,
+  escape
+} = __webpack_require__(/*! ./helpers.js */ "./node_modules/marked/src/helpers.js");
+/**
+ * Block Lexer
+ */
+
+
+module.exports = class Lexer {
+  constructor(options) {
     this.tokens = [];
     this.tokens.links = Object.create(null);
-    this.options = options || marked.defaults;
+    this.options = options || defaults;
     this.rules = block.normal;
 
     if (this.options.pedantic) {
@@ -18358,32 +18195,33 @@ module.exports = {
    */
 
 
-  Lexer.rules = block;
+  static get rules() {
+    return block;
+  }
   /**
    * Static Lex Method
    */
 
-  Lexer.lex = function (src, options) {
-    var lexer = new Lexer(options);
+
+  static lex(src, options) {
+    const lexer = new Lexer(options);
     return lexer.lex(src);
-  };
+  }
+
   /**
    * Preprocessing
    */
-
-
-  Lexer.prototype.lex = function (src) {
-    src = src.replace(/\r\n|\r/g, '\n').replace(/\t/g, '    ').replace(/\u00a0/g, ' ').replace(/\u2424/g, '\n');
+  lex(src) {
+    src = src.replace(/\r\n|\r/g, '\n').replace(/\t/g, '    ');
     return this.token(src, true);
-  };
+  }
+
   /**
    * Lexing
    */
-
-
-  Lexer.prototype.token = function (src, top) {
+  token(src, top) {
     src = src.replace(/^ +$/gm, '');
-    var next, loose, cap, bull, b, item, listStart, listItems, t, space, i, tag, l, isordered, istask, ischecked;
+    let next, loose, cap, bull, b, item, listStart, listItems, t, space, i, tag, l, isordered, istask, ischecked;
 
     while (src) {
       // newline
@@ -18399,7 +18237,7 @@ module.exports = {
 
 
       if (cap = this.rules.code.exec(src)) {
-        var lastToken = this.tokens[this.tokens.length - 1];
+        const lastToken = this.tokens[this.tokens.length - 1];
         src = src.substring(cap[0].length); // An indented code block cannot interrupt a paragraph.
 
         if (lastToken && lastToken.type === 'paragraph') {
@@ -18691,538 +18529,45 @@ module.exports = {
     }
 
     return this.tokens;
-  };
-  /**
-   * Inline-Level Grammar
-   */
-
-
-  var inline = {
-    escape: /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
-    autolink: /^<(scheme:[^\s\x00-\x1f<>]*|email)>/,
-    url: noop,
-    tag: '^comment' + '|^</[a-zA-Z][\\w:-]*\\s*>' // self-closing tag
-    + '|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>' // open tag
-    + '|^<\\?[\\s\\S]*?\\?>' // processing instruction, e.g. <?php ?>
-    + '|^<![a-zA-Z]+\\s[\\s\\S]*?>' // declaration, e.g. <!DOCTYPE html>
-    + '|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>',
-    // CDATA section
-    link: /^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/,
-    reflink: /^!?\[(label)\]\[(?!\s*\])((?:\\[\[\]]?|[^\[\]\\])+)\]/,
-    nolink: /^!?\[(?!\s*\])((?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]])*)\](?:\[\])?/,
-    strong: /^__([^\s_])__(?!_)|^\*\*([^\s*])\*\*(?!\*)|^__([^\s][\s\S]*?[^\s])__(?!_)|^\*\*([^\s][\s\S]*?[^\s])\*\*(?!\*)/,
-    em: /^_([^\s_])_(?!_)|^\*([^\s*<\[])\*(?!\*)|^_([^\s<][\s\S]*?[^\s_])_(?!_|[^\spunctuation])|^_([^\s_<][\s\S]*?[^\s])_(?!_|[^\spunctuation])|^\*([^\s<"][\s\S]*?[^\s\*])\*(?!\*|[^\spunctuation])|^\*([^\s*"<\[][\s\S]*?[^\s])\*(?!\*)/,
-    code: /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,
-    br: /^( {2,}|\\)\n(?!\s*$)/,
-    del: noop,
-    text: /^(`+|[^`])(?:[\s\S]*?(?:(?=[\\<!\[`*]|\b_|$)|[^ ](?= {2,}\n))|(?= {2,}\n))/
-  }; // list of punctuation marks from common mark spec
-  // without ` and ] to workaround Rule 17 (inline code blocks/links)
-
-  inline._punctuation = '!"#$%&\'()*+,\\-./:;<=>?@\\[^_{|}~';
-  inline.em = edit(inline.em).replace(/punctuation/g, inline._punctuation).getRegex();
-  inline._escapes = /\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/g;
-  inline._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/;
-  inline._email = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/;
-  inline.autolink = edit(inline.autolink).replace('scheme', inline._scheme).replace('email', inline._email).getRegex();
-  inline._attribute = /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/;
-  inline.tag = edit(inline.tag).replace('comment', block._comment).replace('attribute', inline._attribute).getRegex();
-  inline._label = /(?:\[[^\[\]]*\]|\\.|`[^`]*`|[^\[\]\\`])*?/;
-  inline._href = /<(?:\\[<>]?|[^\s<>\\])*>|[^\s\x00-\x1f]*/;
-  inline._title = /"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/;
-  inline.link = edit(inline.link).replace('label', inline._label).replace('href', inline._href).replace('title', inline._title).getRegex();
-  inline.reflink = edit(inline.reflink).replace('label', inline._label).getRegex();
-  /**
-   * Normal Inline Grammar
-   */
-
-  inline.normal = merge({}, inline);
-  /**
-   * Pedantic Inline Grammar
-   */
-
-  inline.pedantic = merge({}, inline.normal, {
-    strong: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,
-    em: /^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/,
-    link: edit(/^!?\[(label)\]\((.*?)\)/).replace('label', inline._label).getRegex(),
-    reflink: edit(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace('label', inline._label).getRegex()
-  });
-  /**
-   * GFM Inline Grammar
-   */
-
-  inline.gfm = merge({}, inline.normal, {
-    escape: edit(inline.escape).replace('])', '~|])').getRegex(),
-    _extended_email: /[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/,
-    url: /^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/,
-    _backpedal: /(?:[^?!.,:;*_~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_~)]+(?!$))+/,
-    del: /^~+(?=\S)([\s\S]*?\S)~+/,
-    text: /^(`+|[^`])(?:[\s\S]*?(?:(?=[\\<!\[`*~]|\b_|https?:\/\/|ftp:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))|(?= {2,}\n|[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))/
-  });
-  inline.gfm.url = edit(inline.gfm.url, 'i').replace('email', inline.gfm._extended_email).getRegex();
-  /**
-   * GFM + Line Breaks Inline Grammar
-   */
-
-  inline.breaks = merge({}, inline.gfm, {
-    br: edit(inline.br).replace('{2,}', '*').getRegex(),
-    text: edit(inline.gfm.text).replace('\\b_', '\\b_| {2,}\\n').replace(/\{2,\}/g, '*').getRegex()
-  });
-  /**
-   * Inline Lexer & Compiler
-   */
-
-  function InlineLexer(links, options) {
-    this.options = options || marked.defaults;
-    this.links = links;
-    this.rules = inline.normal;
-    this.renderer = this.options.renderer || new Renderer();
-    this.renderer.options = this.options;
-
-    if (!this.links) {
-      throw new Error('Tokens array requires a `links` property.');
-    }
-
-    if (this.options.pedantic) {
-      this.rules = inline.pedantic;
-    } else if (this.options.gfm) {
-      if (this.options.breaks) {
-        this.rules = inline.breaks;
-      } else {
-        this.rules = inline.gfm;
-      }
-    }
-  }
-  /**
-   * Expose Inline Rules
-   */
-
-
-  InlineLexer.rules = inline;
-  /**
-   * Static Lexing/Compiling Method
-   */
-
-  InlineLexer.output = function (src, links, options) {
-    var inline = new InlineLexer(links, options);
-    return inline.output(src);
-  };
-  /**
-   * Lexing/Compiling
-   */
-
-
-  InlineLexer.prototype.output = function (src) {
-    var out = '',
-        link,
-        text,
-        href,
-        title,
-        cap,
-        prevCapZero;
-
-    while (src) {
-      // escape
-      if (cap = this.rules.escape.exec(src)) {
-        src = src.substring(cap[0].length);
-        out += escape(cap[1]);
-        continue;
-      } // tag
-
-
-      if (cap = this.rules.tag.exec(src)) {
-        if (!this.inLink && /^<a /i.test(cap[0])) {
-          this.inLink = true;
-        } else if (this.inLink && /^<\/a>/i.test(cap[0])) {
-          this.inLink = false;
-        }
-
-        if (!this.inRawBlock && /^<(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
-          this.inRawBlock = true;
-        } else if (this.inRawBlock && /^<\/(pre|code|kbd|script)(\s|>)/i.test(cap[0])) {
-          this.inRawBlock = false;
-        }
-
-        src = src.substring(cap[0].length);
-        out += this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : escape(cap[0]) : cap[0];
-        continue;
-      } // link
-
-
-      if (cap = this.rules.link.exec(src)) {
-        var lastParenIndex = findClosingBracket(cap[2], '()');
-
-        if (lastParenIndex > -1) {
-          var linkLen = 4 + cap[1].length + lastParenIndex;
-          cap[2] = cap[2].substring(0, lastParenIndex);
-          cap[0] = cap[0].substring(0, linkLen).trim();
-          cap[3] = '';
-        }
-
-        src = src.substring(cap[0].length);
-        this.inLink = true;
-        href = cap[2];
-
-        if (this.options.pedantic) {
-          link = /^([^'"]*[^\s])\s+(['"])(.*)\2/.exec(href);
-
-          if (link) {
-            href = link[1];
-            title = link[3];
-          } else {
-            title = '';
-          }
-        } else {
-          title = cap[3] ? cap[3].slice(1, -1) : '';
-        }
-
-        href = href.trim().replace(/^<([\s\S]*)>$/, '$1');
-        out += this.outputLink(cap, {
-          href: InlineLexer.escapes(href),
-          title: InlineLexer.escapes(title)
-        });
-        this.inLink = false;
-        continue;
-      } // reflink, nolink
-
-
-      if ((cap = this.rules.reflink.exec(src)) || (cap = this.rules.nolink.exec(src))) {
-        src = src.substring(cap[0].length);
-        link = (cap[2] || cap[1]).replace(/\s+/g, ' ');
-        link = this.links[link.toLowerCase()];
-
-        if (!link || !link.href) {
-          out += cap[0].charAt(0);
-          src = cap[0].substring(1) + src;
-          continue;
-        }
-
-        this.inLink = true;
-        out += this.outputLink(cap, link);
-        this.inLink = false;
-        continue;
-      } // strong
-
-
-      if (cap = this.rules.strong.exec(src)) {
-        src = src.substring(cap[0].length);
-        out += this.renderer.strong(this.output(cap[4] || cap[3] || cap[2] || cap[1]));
-        continue;
-      } // em
-
-
-      if (cap = this.rules.em.exec(src)) {
-        src = src.substring(cap[0].length);
-        out += this.renderer.em(this.output(cap[6] || cap[5] || cap[4] || cap[3] || cap[2] || cap[1]));
-        continue;
-      } // code
-
-
-      if (cap = this.rules.code.exec(src)) {
-        src = src.substring(cap[0].length);
-        out += this.renderer.codespan(escape(cap[2].trim(), true));
-        continue;
-      } // br
-
-
-      if (cap = this.rules.br.exec(src)) {
-        src = src.substring(cap[0].length);
-        out += this.renderer.br();
-        continue;
-      } // del (gfm)
-
-
-      if (cap = this.rules.del.exec(src)) {
-        src = src.substring(cap[0].length);
-        out += this.renderer.del(this.output(cap[1]));
-        continue;
-      } // autolink
-
-
-      if (cap = this.rules.autolink.exec(src)) {
-        src = src.substring(cap[0].length);
-
-        if (cap[2] === '@') {
-          text = escape(this.mangle(cap[1]));
-          href = 'mailto:' + text;
-        } else {
-          text = escape(cap[1]);
-          href = text;
-        }
-
-        out += this.renderer.link(href, null, text);
-        continue;
-      } // url (gfm)
-
-
-      if (!this.inLink && (cap = this.rules.url.exec(src))) {
-        if (cap[2] === '@') {
-          text = escape(cap[0]);
-          href = 'mailto:' + text;
-        } else {
-          // do extended autolink path validation
-          do {
-            prevCapZero = cap[0];
-            cap[0] = this.rules._backpedal.exec(cap[0])[0];
-          } while (prevCapZero !== cap[0]);
-
-          text = escape(cap[0]);
-
-          if (cap[1] === 'www.') {
-            href = 'http://' + text;
-          } else {
-            href = text;
-          }
-        }
-
-        src = src.substring(cap[0].length);
-        out += this.renderer.link(href, null, text);
-        continue;
-      } // text
-
-
-      if (cap = this.rules.text.exec(src)) {
-        src = src.substring(cap[0].length);
-
-        if (this.inRawBlock) {
-          out += this.renderer.text(this.options.sanitize ? this.options.sanitizer ? this.options.sanitizer(cap[0]) : escape(cap[0]) : cap[0]);
-        } else {
-          out += this.renderer.text(escape(this.smartypants(cap[0])));
-        }
-
-        continue;
-      }
-
-      if (src) {
-        throw new Error('Infinite loop on byte: ' + src.charCodeAt(0));
-      }
-    }
-
-    return out;
-  };
-
-  InlineLexer.escapes = function (text) {
-    return text ? text.replace(InlineLexer.rules._escapes, '$1') : text;
-  };
-  /**
-   * Compile Link
-   */
-
-
-  InlineLexer.prototype.outputLink = function (cap, link) {
-    var href = link.href,
-        title = link.title ? escape(link.title) : null;
-    return cap[0].charAt(0) !== '!' ? this.renderer.link(href, title, this.output(cap[1])) : this.renderer.image(href, title, escape(cap[1]));
-  };
-  /**
-   * Smartypants Transformations
-   */
-
-
-  InlineLexer.prototype.smartypants = function (text) {
-    if (!this.options.smartypants) return text;
-    return text // em-dashes
-    .replace(/---/g, '\u2014') // en-dashes
-    .replace(/--/g, '\u2013') // opening singles
-    .replace(/(^|[-\u2014/(\[{"\s])'/g, '$1\u2018') // closing singles & apostrophes
-    .replace(/'/g, '\u2019') // opening doubles
-    .replace(/(^|[-\u2014/(\[{\u2018\s])"/g, '$1\u201c') // closing doubles
-    .replace(/"/g, '\u201d') // ellipses
-    .replace(/\.{3}/g, '\u2026');
-  };
-  /**
-   * Mangle Links
-   */
-
-
-  InlineLexer.prototype.mangle = function (text) {
-    if (!this.options.mangle) return text;
-    var out = '',
-        l = text.length,
-        i = 0,
-        ch;
-
-    for (; i < l; i++) {
-      ch = text.charCodeAt(i);
-
-      if (Math.random() > 0.5) {
-        ch = 'x' + ch.toString(16);
-      }
-
-      out += '&#' + ch + ';';
-    }
-
-    return out;
-  };
-  /**
-   * Renderer
-   */
-
-
-  function Renderer(options) {
-    this.options = options || marked.defaults;
   }
 
-  Renderer.prototype.code = function (code, infostring, escaped) {
-    var lang = (infostring || '').match(/\S*/)[0];
+};
 
-    if (this.options.highlight) {
-      var out = this.options.highlight(code, lang);
+/***/ }),
 
-      if (out != null && out !== code) {
-        escaped = true;
-        code = out;
-      }
-    }
+/***/ "./node_modules/marked/src/Parser.js":
+/*!*******************************************!*\
+  !*** ./node_modules/marked/src/Parser.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-    if (!lang) {
-      return '<pre><code>' + (escaped ? code : escape(code, true)) + '</code></pre>';
-    }
+const Renderer = __webpack_require__(/*! ./Renderer.js */ "./node_modules/marked/src/Renderer.js");
 
-    return '<pre><code class="' + this.options.langPrefix + escape(lang, true) + '">' + (escaped ? code : escape(code, true)) + '</code></pre>\n';
-  };
+const Slugger = __webpack_require__(/*! ./Slugger.js */ "./node_modules/marked/src/Slugger.js");
 
-  Renderer.prototype.blockquote = function (quote) {
-    return '<blockquote>\n' + quote + '</blockquote>\n';
-  };
+const InlineLexer = __webpack_require__(/*! ./InlineLexer.js */ "./node_modules/marked/src/InlineLexer.js");
 
-  Renderer.prototype.html = function (html) {
-    return html;
-  };
+const TextRenderer = __webpack_require__(/*! ./TextRenderer.js */ "./node_modules/marked/src/TextRenderer.js");
 
-  Renderer.prototype.heading = function (text, level, raw, slugger) {
-    if (this.options.headerIds) {
-      return '<h' + level + ' id="' + this.options.headerPrefix + slugger.slug(raw) + '">' + text + '</h' + level + '>\n';
-    } // ignore IDs
+const {
+  defaults
+} = __webpack_require__(/*! ./defaults.js */ "./node_modules/marked/src/defaults.js");
 
-
-    return '<h' + level + '>' + text + '</h' + level + '>\n';
-  };
-
-  Renderer.prototype.hr = function () {
-    return this.options.xhtml ? '<hr/>\n' : '<hr>\n';
-  };
-
-  Renderer.prototype.list = function (body, ordered, start) {
-    var type = ordered ? 'ol' : 'ul',
-        startatt = ordered && start !== 1 ? ' start="' + start + '"' : '';
-    return '<' + type + startatt + '>\n' + body + '</' + type + '>\n';
-  };
-
-  Renderer.prototype.listitem = function (text) {
-    return '<li>' + text + '</li>\n';
-  };
-
-  Renderer.prototype.checkbox = function (checked) {
-    return '<input ' + (checked ? 'checked="" ' : '') + 'disabled="" type="checkbox"' + (this.options.xhtml ? ' /' : '') + '> ';
-  };
-
-  Renderer.prototype.paragraph = function (text) {
-    return '<p>' + text + '</p>\n';
-  };
-
-  Renderer.prototype.table = function (header, body) {
-    if (body) body = '<tbody>' + body + '</tbody>';
-    return '<table>\n' + '<thead>\n' + header + '</thead>\n' + body + '</table>\n';
-  };
-
-  Renderer.prototype.tablerow = function (content) {
-    return '<tr>\n' + content + '</tr>\n';
-  };
-
-  Renderer.prototype.tablecell = function (content, flags) {
-    var type = flags.header ? 'th' : 'td';
-    var tag = flags.align ? '<' + type + ' align="' + flags.align + '">' : '<' + type + '>';
-    return tag + content + '</' + type + '>\n';
-  }; // span level renderer
+const {
+  merge,
+  unescape
+} = __webpack_require__(/*! ./helpers.js */ "./node_modules/marked/src/helpers.js");
+/**
+ * Parsing & Compiling
+ */
 
 
-  Renderer.prototype.strong = function (text) {
-    return '<strong>' + text + '</strong>';
-  };
-
-  Renderer.prototype.em = function (text) {
-    return '<em>' + text + '</em>';
-  };
-
-  Renderer.prototype.codespan = function (text) {
-    return '<code>' + text + '</code>';
-  };
-
-  Renderer.prototype.br = function () {
-    return this.options.xhtml ? '<br/>' : '<br>';
-  };
-
-  Renderer.prototype.del = function (text) {
-    return '<del>' + text + '</del>';
-  };
-
-  Renderer.prototype.link = function (href, title, text) {
-    href = cleanUrl(this.options.sanitize, this.options.baseUrl, href);
-
-    if (href === null) {
-      return text;
-    }
-
-    var out = '<a href="' + escape(href) + '"';
-
-    if (title) {
-      out += ' title="' + title + '"';
-    }
-
-    out += '>' + text + '</a>';
-    return out;
-  };
-
-  Renderer.prototype.image = function (href, title, text) {
-    href = cleanUrl(this.options.sanitize, this.options.baseUrl, href);
-
-    if (href === null) {
-      return text;
-    }
-
-    var out = '<img src="' + href + '" alt="' + text + '"';
-
-    if (title) {
-      out += ' title="' + title + '"';
-    }
-
-    out += this.options.xhtml ? '/>' : '>';
-    return out;
-  };
-
-  Renderer.prototype.text = function (text) {
-    return text;
-  };
-  /**
-   * TextRenderer
-   * returns only the textual part of the token
-   */
-
-
-  function TextRenderer() {} // no need for block level renderers
-
-
-  TextRenderer.prototype.strong = TextRenderer.prototype.em = TextRenderer.prototype.codespan = TextRenderer.prototype.del = TextRenderer.prototype.text = function (text) {
-    return text;
-  };
-
-  TextRenderer.prototype.link = TextRenderer.prototype.image = function (href, title, text) {
-    return '' + text;
-  };
-
-  TextRenderer.prototype.br = function () {
-    return '';
-  };
-  /**
-   * Parsing & Compiling
-   */
-
-
-  function Parser(options) {
+module.exports = class Parser {
+  constructor(options) {
     this.tokens = [];
     this.token = null;
-    this.options = options || marked.defaults;
+    this.options = options || defaults;
     this.options.renderer = this.options.renderer || new Renderer();
     this.renderer = this.options.renderer;
     this.renderer.options = this.options;
@@ -19233,67 +18578,64 @@ module.exports = {
    */
 
 
-  Parser.parse = function (src, options) {
-    var parser = new Parser(options);
-    return parser.parse(src);
-  };
+  static parse(tokens, options) {
+    const parser = new Parser(options);
+    return parser.parse(tokens);
+  }
+
   /**
    * Parse Loop
    */
+  parse(tokens) {
+    this.inline = new InlineLexer(tokens.links, this.options); // use an InlineLexer with a TextRenderer to extract pure text
 
-
-  Parser.prototype.parse = function (src) {
-    this.inline = new InlineLexer(src.links, this.options); // use an InlineLexer with a TextRenderer to extract pure text
-
-    this.inlineText = new InlineLexer(src.links, merge({}, this.options, {
+    this.inlineText = new InlineLexer(tokens.links, merge({}, this.options, {
       renderer: new TextRenderer()
     }));
-    this.tokens = src.reverse();
-    var out = '';
+    this.tokens = tokens.reverse();
+    let out = '';
 
     while (this.next()) {
       out += this.tok();
     }
 
     return out;
-  };
+  }
+
   /**
    * Next Token
    */
-
-
-  Parser.prototype.next = function () {
+  next() {
     this.token = this.tokens.pop();
     return this.token;
-  };
+  }
+
   /**
    * Preview Next Token
    */
-
-
-  Parser.prototype.peek = function () {
+  peek() {
     return this.tokens[this.tokens.length - 1] || 0;
-  };
+  }
+
   /**
    * Parse Text Tokens
    */
-
-
-  Parser.prototype.parseText = function () {
-    var body = this.token.text;
+  parseText() {
+    let body = this.token.text;
 
     while (this.peek().type === 'text') {
       body += '\n' + this.next().text;
     }
 
     return this.inline.output(body);
-  };
+  }
+
   /**
    * Parse Current Token
    */
+  tok() {
+    let body = '';
 
-
-  Parser.prototype.tok = function () {
     switch (this.token.type) {
       case 'space':
         {
@@ -19317,8 +18659,7 @@ module.exports = {
 
       case 'table':
         {
-          var header = '',
-              body = '',
+          let header = '',
               i,
               row,
               cell,
@@ -19366,8 +18707,8 @@ module.exports = {
       case 'list_start':
         {
           body = '';
-          var ordered = this.token.ordered,
-              start = this.token.start;
+          const ordered = this.token.ordered,
+                start = this.token.start;
 
           while (this.next().type !== 'list_end') {
             body += this.tok();
@@ -19379,12 +18720,24 @@ module.exports = {
       case 'list_item_start':
         {
           body = '';
-          var loose = this.token.loose;
-          var checked = this.token.checked;
-          var task = this.token.task;
+          const loose = this.token.loose;
+          const checked = this.token.checked;
+          const task = this.token.task;
 
           if (this.token.task) {
-            body += this.renderer.checkbox(checked);
+            if (loose) {
+              if (this.peek().type === 'text') {
+                const nextToken = this.peek();
+                nextToken.text = this.renderer.checkbox(checked) + ' ' + nextToken.text;
+              } else {
+                this.tokens.push({
+                  type: 'text',
+                  text: this.renderer.checkbox(checked)
+                });
+              }
+            } else {
+              body += this.renderer.checkbox(checked);
+            }
           }
 
           while (this.next().type !== 'list_item_end') {
@@ -19412,7 +18765,7 @@ module.exports = {
 
       default:
         {
-          var errMsg = 'Token with "' + this.token.type + '" type was not found.';
+          const errMsg = 'Token with "' + this.token.type + '" type was not found.';
 
           if (this.options.silent) {
             console.log(errMsg);
@@ -19421,13 +18774,185 @@ module.exports = {
           }
         }
     }
-  };
-  /**
-   * Slugger generates header id
-   */
+  }
+
+};
+
+/***/ }),
+
+/***/ "./node_modules/marked/src/Renderer.js":
+/*!*********************************************!*\
+  !*** ./node_modules/marked/src/Renderer.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const {
+  defaults
+} = __webpack_require__(/*! ./defaults.js */ "./node_modules/marked/src/defaults.js");
+
+const {
+  cleanUrl,
+  escape
+} = __webpack_require__(/*! ./helpers.js */ "./node_modules/marked/src/helpers.js");
+/**
+ * Renderer
+ */
 
 
-  function Slugger() {
+module.exports = class Renderer {
+  constructor(options) {
+    this.options = options || defaults;
+  }
+
+  code(code, infostring, escaped) {
+    const lang = (infostring || '').match(/\S*/)[0];
+
+    if (this.options.highlight) {
+      const out = this.options.highlight(code, lang);
+
+      if (out != null && out !== code) {
+        escaped = true;
+        code = out;
+      }
+    }
+
+    if (!lang) {
+      return '<pre><code>' + (escaped ? code : escape(code, true)) + '</code></pre>';
+    }
+
+    return '<pre><code class="' + this.options.langPrefix + escape(lang, true) + '">' + (escaped ? code : escape(code, true)) + '</code></pre>\n';
+  }
+
+  blockquote(quote) {
+    return '<blockquote>\n' + quote + '</blockquote>\n';
+  }
+
+  html(html) {
+    return html;
+  }
+
+  heading(text, level, raw, slugger) {
+    if (this.options.headerIds) {
+      return '<h' + level + ' id="' + this.options.headerPrefix + slugger.slug(raw) + '">' + text + '</h' + level + '>\n';
+    } // ignore IDs
+
+
+    return '<h' + level + '>' + text + '</h' + level + '>\n';
+  }
+
+  hr() {
+    return this.options.xhtml ? '<hr/>\n' : '<hr>\n';
+  }
+
+  list(body, ordered, start) {
+    const type = ordered ? 'ol' : 'ul',
+          startatt = ordered && start !== 1 ? ' start="' + start + '"' : '';
+    return '<' + type + startatt + '>\n' + body + '</' + type + '>\n';
+  }
+
+  listitem(text) {
+    return '<li>' + text + '</li>\n';
+  }
+
+  checkbox(checked) {
+    return '<input ' + (checked ? 'checked="" ' : '') + 'disabled="" type="checkbox"' + (this.options.xhtml ? ' /' : '') + '> ';
+  }
+
+  paragraph(text) {
+    return '<p>' + text + '</p>\n';
+  }
+
+  table(header, body) {
+    if (body) body = '<tbody>' + body + '</tbody>';
+    return '<table>\n' + '<thead>\n' + header + '</thead>\n' + body + '</table>\n';
+  }
+
+  tablerow(content) {
+    return '<tr>\n' + content + '</tr>\n';
+  }
+
+  tablecell(content, flags) {
+    const type = flags.header ? 'th' : 'td';
+    const tag = flags.align ? '<' + type + ' align="' + flags.align + '">' : '<' + type + '>';
+    return tag + content + '</' + type + '>\n';
+  }
+
+  // span level renderer
+  strong(text) {
+    return '<strong>' + text + '</strong>';
+  }
+
+  em(text) {
+    return '<em>' + text + '</em>';
+  }
+
+  codespan(text) {
+    return '<code>' + text + '</code>';
+  }
+
+  br() {
+    return this.options.xhtml ? '<br/>' : '<br>';
+  }
+
+  del(text) {
+    return '<del>' + text + '</del>';
+  }
+
+  link(href, title, text) {
+    href = cleanUrl(this.options.sanitize, this.options.baseUrl, href);
+
+    if (href === null) {
+      return text;
+    }
+
+    let out = '<a href="' + escape(href) + '"';
+
+    if (title) {
+      out += ' title="' + title + '"';
+    }
+
+    out += '>' + text + '</a>';
+    return out;
+  }
+
+  image(href, title, text) {
+    href = cleanUrl(this.options.sanitize, this.options.baseUrl, href);
+
+    if (href === null) {
+      return text;
+    }
+
+    let out = '<img src="' + href + '" alt="' + text + '"';
+
+    if (title) {
+      out += ' title="' + title + '"';
+    }
+
+    out += this.options.xhtml ? '/>' : '>';
+    return out;
+  }
+
+  text(text) {
+    return text;
+  }
+
+};
+
+/***/ }),
+
+/***/ "./node_modules/marked/src/Slugger.js":
+/*!********************************************!*\
+  !*** ./node_modules/marked/src/Slugger.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Slugger generates header id
+ */
+module.exports = class Slugger {
+  constructor() {
     this.seen = {};
   }
   /**
@@ -19435,11 +18960,11 @@ module.exports = {
    */
 
 
-  Slugger.prototype.slug = function (value) {
-    var slug = value.toLowerCase().trim().replace(/[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, '').replace(/\s/g, '-');
+  slug(value) {
+    let slug = value.toLowerCase().trim().replace(/[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g, '').replace(/\s/g, '-');
 
     if (this.seen.hasOwnProperty(slug)) {
-      var originalSlug = slug;
+      const originalSlug = slug;
 
       do {
         this.seen[originalSlug]++;
@@ -19449,386 +18974,698 @@ module.exports = {
 
     this.seen[slug] = 0;
     return slug;
+  }
+
+};
+
+/***/ }),
+
+/***/ "./node_modules/marked/src/TextRenderer.js":
+/*!*************************************************!*\
+  !*** ./node_modules/marked/src/TextRenderer.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * TextRenderer
+ * returns only the textual part of the token
+ */
+module.exports = class TextRenderer {
+  // no need for block level renderers
+  strong(text) {
+    return text;
+  }
+
+  em(text) {
+    return text;
+  }
+
+  codespan(text) {
+    return text;
+  }
+
+  del(text) {
+    return text;
+  }
+
+  text(text) {
+    return text;
+  }
+
+  link(href, title, text) {
+    return '' + text;
+  }
+
+  image(href, title, text) {
+    return '' + text;
+  }
+
+  br() {
+    return '';
+  }
+
+};
+
+/***/ }),
+
+/***/ "./node_modules/marked/src/defaults.js":
+/*!*********************************************!*\
+  !*** ./node_modules/marked/src/defaults.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function getDefaults() {
+  return {
+    baseUrl: null,
+    breaks: false,
+    gfm: true,
+    headerIds: true,
+    headerPrefix: '',
+    highlight: null,
+    langPrefix: 'language-',
+    mangle: true,
+    pedantic: false,
+    renderer: null,
+    sanitize: false,
+    sanitizer: null,
+    silent: false,
+    smartLists: false,
+    smartypants: false,
+    xhtml: false
   };
-  /**
-   * Helpers
-   */
+}
 
+function changeDefaults(newDefaults) {
+  module.exports.defaults = newDefaults;
+}
 
-  function escape(html, encode) {
-    if (encode) {
-      if (escape.escapeTest.test(html)) {
-        return html.replace(escape.escapeReplace, function (ch) {
-          return escape.replacements[ch];
-        });
-      }
-    } else {
-      if (escape.escapeTestNoEncode.test(html)) {
-        return html.replace(escape.escapeReplaceNoEncode, function (ch) {
-          return escape.replacements[ch];
-        });
-      }
+module.exports = {
+  defaults: getDefaults(),
+  getDefaults,
+  changeDefaults
+};
+
+/***/ }),
+
+/***/ "./node_modules/marked/src/helpers.js":
+/*!********************************************!*\
+  !*** ./node_modules/marked/src/helpers.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Helpers
+ */
+const escapeTest = /[&<>"']/;
+const escapeReplace = /[&<>"']/g;
+const escapeTestNoEncode = /[<>"']|&(?!#?\w+;)/;
+const escapeReplaceNoEncode = /[<>"']|&(?!#?\w+;)/g;
+const escapeReplacements = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;'
+};
+
+const getEscapeReplacement = ch => escapeReplacements[ch];
+
+function escape(html, encode) {
+  if (encode) {
+    if (escapeTest.test(html)) {
+      return html.replace(escapeReplace, getEscapeReplacement);
     }
-
-    return html;
+  } else {
+    if (escapeTestNoEncode.test(html)) {
+      return html.replace(escapeReplaceNoEncode, getEscapeReplacement);
+    }
   }
 
-  escape.escapeTest = /[&<>"']/;
-  escape.escapeReplace = /[&<>"']/g;
-  escape.replacements = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#39;'
+  return html;
+}
+
+const unescapeTest = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig;
+
+function unescape(html) {
+  // explicitly match decimal, hex, and named HTML entities
+  return html.replace(unescapeTest, (_, n) => {
+    n = n.toLowerCase();
+    if (n === 'colon') return ':';
+
+    if (n.charAt(0) === '#') {
+      return n.charAt(1) === 'x' ? String.fromCharCode(parseInt(n.substring(2), 16)) : String.fromCharCode(+n.substring(1));
+    }
+
+    return '';
+  });
+}
+
+const caret = /(^|[^\[])\^/g;
+
+function edit(regex, opt) {
+  regex = regex.source || regex;
+  opt = opt || '';
+  const obj = {
+    replace: (name, val) => {
+      val = val.source || val;
+      val = val.replace(caret, '$1');
+      regex = regex.replace(name, val);
+      return obj;
+    },
+    getRegex: () => {
+      return new RegExp(regex, opt);
+    }
   };
-  escape.escapeTestNoEncode = /[<>"']|&(?!#?\w+;)/;
-  escape.escapeReplaceNoEncode = /[<>"']|&(?!#?\w+;)/g;
+  return obj;
+}
 
-  function unescape(html) {
-    // explicitly match decimal, hex, and named HTML entities
-    return html.replace(/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig, function (_, n) {
-      n = n.toLowerCase();
-      if (n === 'colon') return ':';
+const nonWordAndColonTest = /[^\w:]/g;
+const originIndependentUrl = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;
 
-      if (n.charAt(0) === '#') {
-        return n.charAt(1) === 'x' ? String.fromCharCode(parseInt(n.substring(2), 16)) : String.fromCharCode(+n.substring(1));
-      }
-
-      return '';
-    });
-  }
-
-  function edit(regex, opt) {
-    regex = regex.source || regex;
-    opt = opt || '';
-    return {
-      replace: function (name, val) {
-        val = val.source || val;
-        val = val.replace(/(^|[^\[])\^/g, '$1');
-        regex = regex.replace(name, val);
-        return this;
-      },
-      getRegex: function () {
-        return new RegExp(regex, opt);
-      }
-    };
-  }
-
-  function cleanUrl(sanitize, base, href) {
-    if (sanitize) {
-      try {
-        var prot = decodeURIComponent(unescape(href)).replace(/[^\w:]/g, '').toLowerCase();
-      } catch (e) {
-        return null;
-      }
-
-      if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0 || prot.indexOf('data:') === 0) {
-        return null;
-      }
-    }
-
-    if (base && !originIndependentUrl.test(href)) {
-      href = resolveUrl(base, href);
-    }
+function cleanUrl(sanitize, base, href) {
+  if (sanitize) {
+    let prot;
 
     try {
-      href = encodeURI(href).replace(/%25/g, '%');
+      prot = decodeURIComponent(unescape(href)).replace(nonWordAndColonTest, '').toLowerCase();
     } catch (e) {
       return null;
     }
 
-    return href;
+    if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0 || prot.indexOf('data:') === 0) {
+      return null;
+    }
   }
 
-  function resolveUrl(base, href) {
-    if (!baseUrls[' ' + base]) {
-      // we can ignore everything in base after the last slash of its path component,
-      // but we might need to add _that_
-      // https://tools.ietf.org/html/rfc3986#section-3
-      if (/^[^:]+:\/*[^/]*$/.test(base)) {
-        baseUrls[' ' + base] = base + '/';
-      } else {
-        baseUrls[' ' + base] = rtrim(base, '/', true);
-      }
-    }
+  if (base && !originIndependentUrl.test(href)) {
+    href = resolveUrl(base, href);
+  }
 
-    base = baseUrls[' ' + base];
+  try {
+    href = encodeURI(href).replace(/%25/g, '%');
+  } catch (e) {
+    return null;
+  }
 
-    if (href.slice(0, 2) === '//') {
-      return base.replace(/:[\s\S]*/, ':') + href;
-    } else if (href.charAt(0) === '/') {
-      return base.replace(/(:\/*[^/]*)[\s\S]*/, '$1') + href;
+  return href;
+}
+
+const baseUrls = {};
+const justDomain = /^[^:]+:\/*[^/]*$/;
+const protocol = /^([^:]+:)[\s\S]*$/;
+const domain = /^([^:]+:\/*[^/]*)[\s\S]*$/;
+
+function resolveUrl(base, href) {
+  if (!baseUrls[' ' + base]) {
+    // we can ignore everything in base after the last slash of its path component,
+    // but we might need to add _that_
+    // https://tools.ietf.org/html/rfc3986#section-3
+    if (justDomain.test(base)) {
+      baseUrls[' ' + base] = base + '/';
     } else {
-      return base + href;
+      baseUrls[' ' + base] = rtrim(base, '/', true);
     }
   }
 
-  var baseUrls = {};
-  var originIndependentUrl = /^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;
+  base = baseUrls[' ' + base];
+  const relativeBase = base.indexOf(':') === -1;
 
-  function noop() {}
-
-  noop.exec = noop;
-
-  function merge(obj) {
-    var i = 1,
-        target,
-        key;
-
-    for (; i < arguments.length; i++) {
-      target = arguments[i];
-
-      for (key in target) {
-        if (Object.prototype.hasOwnProperty.call(target, key)) {
-          obj[key] = target[key];
-        }
-      }
+  if (href.substring(0, 2) === '//') {
+    if (relativeBase) {
+      return href;
     }
 
-    return obj;
+    return base.replace(protocol, '$1') + href;
+  } else if (href.charAt(0) === '/') {
+    if (relativeBase) {
+      return href;
+    }
+
+    return base.replace(domain, '$1') + href;
+  } else {
+    return base + href;
+  }
+}
+
+const noopTest = {
+  exec: function noopTest() {}
+};
+
+function merge(obj) {
+  let i = 1,
+      target,
+      key;
+
+  for (; i < arguments.length; i++) {
+    target = arguments[i];
+
+    for (key in target) {
+      if (Object.prototype.hasOwnProperty.call(target, key)) {
+        obj[key] = target[key];
+      }
+    }
   }
 
-  function splitCells(tableRow, count) {
-    // ensure that every cell-delimiting pipe has a space
-    // before it to distinguish it from an escaped pipe
-    var row = tableRow.replace(/\|/g, function (match, offset, str) {
-      var escaped = false,
-          curr = offset;
+  return obj;
+}
 
-      while (--curr >= 0 && str[curr] === '\\') escaped = !escaped;
+function splitCells(tableRow, count) {
+  // ensure that every cell-delimiting pipe has a space
+  // before it to distinguish it from an escaped pipe
+  const row = tableRow.replace(/\|/g, (match, offset, str) => {
+    let escaped = false,
+        curr = offset;
 
-      if (escaped) {
-        // odd number of slashes means | is escaped
-        // so we leave it alone
-        return '|';
-      } else {
-        // add space before unescaped |
-        return ' |';
-      }
-    }),
-        cells = row.split(/ \|/),
-        i = 0;
+    while (--curr >= 0 && str[curr] === '\\') escaped = !escaped;
 
-    if (cells.length > count) {
-      cells.splice(count);
+    if (escaped) {
+      // odd number of slashes means | is escaped
+      // so we leave it alone
+      return '|';
     } else {
-      while (cells.length < count) cells.push('');
+      // add space before unescaped |
+      return ' |';
     }
+  }),
+        cells = row.split(/ \|/);
+  let i = 0;
 
-    for (; i < cells.length; i++) {
-      // leading or trailing whitespace is ignored per the gfm spec
-      cells[i] = cells[i].trim().replace(/\\\|/g, '|');
-    }
-
-    return cells;
-  } // Remove trailing 'c's. Equivalent to str.replace(/c*$/, '').
-  // /c*$/ is vulnerable to REDOS.
-  // invert: Remove suffix of non-c chars instead. Default falsey.
-
-
-  function rtrim(str, c, invert) {
-    if (str.length === 0) {
-      return '';
-    } // Length of suffix matching the invert condition.
-
-
-    var suffLen = 0; // Step left until we fail to match the invert condition.
-
-    while (suffLen < str.length) {
-      var currChar = str.charAt(str.length - suffLen - 1);
-
-      if (currChar === c && !invert) {
-        suffLen++;
-      } else if (currChar !== c && invert) {
-        suffLen++;
-      } else {
-        break;
-      }
-    }
-
-    return str.substr(0, str.length - suffLen);
+  if (cells.length > count) {
+    cells.splice(count);
+  } else {
+    while (cells.length < count) cells.push('');
   }
 
-  function findClosingBracket(str, b) {
-    if (str.indexOf(b[1]) === -1) {
-      return -1;
+  for (; i < cells.length; i++) {
+    // leading or trailing whitespace is ignored per the gfm spec
+    cells[i] = cells[i].trim().replace(/\\\|/g, '|');
+  }
+
+  return cells;
+} // Remove trailing 'c's. Equivalent to str.replace(/c*$/, '').
+// /c*$/ is vulnerable to REDOS.
+// invert: Remove suffix of non-c chars instead. Default falsey.
+
+
+function rtrim(str, c, invert) {
+  const l = str.length;
+
+  if (l === 0) {
+    return '';
+  } // Length of suffix matching the invert condition.
+
+
+  let suffLen = 0; // Step left until we fail to match the invert condition.
+
+  while (suffLen < l) {
+    const currChar = str.charAt(l - suffLen - 1);
+
+    if (currChar === c && !invert) {
+      suffLen++;
+    } else if (currChar !== c && invert) {
+      suffLen++;
+    } else {
+      break;
     }
+  }
 
-    var level = 0;
+  return str.substr(0, l - suffLen);
+}
 
-    for (var i = 0; i < str.length; i++) {
-      if (str[i] === '\\') {
-        i++;
-      } else if (str[i] === b[0]) {
-        level++;
-      } else if (str[i] === b[1]) {
-        level--;
-
-        if (level < 0) {
-          return i;
-        }
-      }
-    }
-
+function findClosingBracket(str, b) {
+  if (str.indexOf(b[1]) === -1) {
     return -1;
   }
 
-  function checkSanitizeDeprecation(opt) {
-    if (opt && opt.sanitize && !opt.silent) {
-      console.warn('marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options');
+  const l = str.length;
+  let level = 0,
+      i = 0;
+
+  for (; i < l; i++) {
+    if (str[i] === '\\') {
+      i++;
+    } else if (str[i] === b[0]) {
+      level++;
+    } else if (str[i] === b[1]) {
+      level--;
+
+      if (level < 0) {
+        return i;
+      }
     }
   }
-  /**
-   * Marked
-   */
+
+  return -1;
+}
+
+function checkSanitizeDeprecation(opt) {
+  if (opt && opt.sanitize && !opt.silent) {
+    console.warn('marked(): sanitize and sanitizer parameters are deprecated since version 0.7.0, should not be used and will be removed in the future. Read more here: https://marked.js.org/#/USING_ADVANCED.md#options');
+  }
+}
+
+module.exports = {
+  escape,
+  unescape,
+  edit,
+  cleanUrl,
+  resolveUrl,
+  noopTest,
+  merge,
+  splitCells,
+  rtrim,
+  findClosingBracket,
+  checkSanitizeDeprecation
+};
+
+/***/ }),
+
+/***/ "./node_modules/marked/src/marked.js":
+/*!*******************************************!*\
+  !*** ./node_modules/marked/src/marked.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const Lexer = __webpack_require__(/*! ./Lexer.js */ "./node_modules/marked/src/Lexer.js");
+
+const Parser = __webpack_require__(/*! ./Parser.js */ "./node_modules/marked/src/Parser.js");
+
+const Renderer = __webpack_require__(/*! ./Renderer.js */ "./node_modules/marked/src/Renderer.js");
+
+const TextRenderer = __webpack_require__(/*! ./TextRenderer.js */ "./node_modules/marked/src/TextRenderer.js");
+
+const InlineLexer = __webpack_require__(/*! ./InlineLexer.js */ "./node_modules/marked/src/InlineLexer.js");
+
+const Slugger = __webpack_require__(/*! ./Slugger.js */ "./node_modules/marked/src/Slugger.js");
+
+const {
+  merge,
+  checkSanitizeDeprecation,
+  escape
+} = __webpack_require__(/*! ./helpers.js */ "./node_modules/marked/src/helpers.js");
+
+const {
+  getDefaults,
+  changeDefaults,
+  defaults
+} = __webpack_require__(/*! ./defaults.js */ "./node_modules/marked/src/defaults.js");
+/**
+ * Marked
+ */
 
 
-  function marked(src, opt, callback) {
-    // throw error in case of non string input
-    if (typeof src === 'undefined' || src === null) {
-      throw new Error('marked(): input parameter is undefined or null');
+function marked(src, opt, callback) {
+  // throw error in case of non string input
+  if (typeof src === 'undefined' || src === null) {
+    throw new Error('marked(): input parameter is undefined or null');
+  }
+
+  if (typeof src !== 'string') {
+    throw new Error('marked(): input parameter is of type ' + Object.prototype.toString.call(src) + ', string expected');
+  }
+
+  if (callback || typeof opt === 'function') {
+    if (!callback) {
+      callback = opt;
+      opt = null;
     }
 
-    if (typeof src !== 'string') {
-      throw new Error('marked(): input parameter is of type ' + Object.prototype.toString.call(src) + ', string expected');
+    opt = merge({}, marked.defaults, opt || {});
+    checkSanitizeDeprecation(opt);
+    const highlight = opt.highlight;
+    let tokens,
+        pending,
+        i = 0;
+
+    try {
+      tokens = Lexer.lex(src, opt);
+    } catch (e) {
+      return callback(e);
     }
 
-    if (callback || typeof opt === 'function') {
-      if (!callback) {
-        callback = opt;
-        opt = null;
+    pending = tokens.length;
+
+    const done = function (err) {
+      if (err) {
+        opt.highlight = highlight;
+        return callback(err);
       }
 
-      opt = merge({}, marked.defaults, opt || {});
-      checkSanitizeDeprecation(opt);
-      var highlight = opt.highlight,
-          tokens,
-          pending,
-          i = 0;
+      let out;
 
       try {
-        tokens = Lexer.lex(src, opt);
+        out = Parser.parse(tokens, opt);
       } catch (e) {
-        return callback(e);
+        err = e;
       }
 
-      pending = tokens.length;
+      opt.highlight = highlight;
+      return err ? callback(err) : callback(null, out);
+    };
 
-      var done = function (err) {
-        if (err) {
-          opt.highlight = highlight;
-          return callback(err);
+    if (!highlight || highlight.length < 3) {
+      return done();
+    }
+
+    delete opt.highlight;
+    if (!pending) return done();
+
+    for (; i < tokens.length; i++) {
+      (function (token) {
+        if (token.type !== 'code') {
+          return --pending || done();
         }
 
-        var out;
+        return highlight(token.text, token.lang, function (err, code) {
+          if (err) return done(err);
 
-        try {
-          out = Parser.parse(tokens, opt);
-        } catch (e) {
-          err = e;
-        }
-
-        opt.highlight = highlight;
-        return err ? callback(err) : callback(null, out);
-      };
-
-      if (!highlight || highlight.length < 3) {
-        return done();
-      }
-
-      delete opt.highlight;
-      if (!pending) return done();
-
-      for (; i < tokens.length; i++) {
-        (function (token) {
-          if (token.type !== 'code') {
+          if (code == null || code === token.text) {
             return --pending || done();
           }
 
-          return highlight(token.text, token.lang, function (err, code) {
-            if (err) return done(err);
-
-            if (code == null || code === token.text) {
-              return --pending || done();
-            }
-
-            token.text = code;
-            token.escaped = true;
-            --pending || done();
-          });
-        })(tokens[i]);
-      }
-
-      return;
+          token.text = code;
+          token.escaped = true;
+          --pending || done();
+        });
+      })(tokens[i]);
     }
 
-    try {
-      if (opt) opt = merge({}, marked.defaults, opt);
-      checkSanitizeDeprecation(opt);
-      return Parser.parse(Lexer.lex(src, opt), opt);
-    } catch (e) {
-      e.message += '\nPlease report this to https://github.com/markedjs/marked.';
-
-      if ((opt || marked.defaults).silent) {
-        return '<p>An error occurred:</p><pre>' + escape(e.message + '', true) + '</pre>';
-      }
-
-      throw e;
-    }
+    return;
   }
-  /**
-   * Options
-   */
+
+  try {
+    opt = merge({}, marked.defaults, opt || {});
+    checkSanitizeDeprecation(opt);
+    return Parser.parse(Lexer.lex(src, opt), opt);
+  } catch (e) {
+    e.message += '\nPlease report this to https://github.com/markedjs/marked.';
+
+    if ((opt || marked.defaults).silent) {
+      return '<p>An error occurred:</p><pre>' + escape(e.message + '', true) + '</pre>';
+    }
+
+    throw e;
+  }
+}
+/**
+ * Options
+ */
 
 
-  marked.options = marked.setOptions = function (opt) {
-    merge(marked.defaults, opt);
-    return marked;
-  };
+marked.options = marked.setOptions = function (opt) {
+  merge(marked.defaults, opt);
+  changeDefaults(marked.defaults);
+  return marked;
+};
 
-  marked.getDefaults = function () {
-    return {
-      baseUrl: null,
-      breaks: false,
-      gfm: true,
-      headerIds: true,
-      headerPrefix: '',
-      highlight: null,
-      langPrefix: 'language-',
-      mangle: true,
-      pedantic: false,
-      renderer: new Renderer(),
-      sanitize: false,
-      sanitizer: null,
-      silent: false,
-      smartLists: false,
-      smartypants: false,
-      xhtml: false
-    };
-  };
+marked.getDefaults = getDefaults;
+marked.defaults = defaults;
+/**
+ * Expose
+ */
 
-  marked.defaults = marked.getDefaults();
-  /**
-   * Expose
-   */
+marked.Parser = Parser;
+marked.parser = Parser.parse;
+marked.Renderer = Renderer;
+marked.TextRenderer = TextRenderer;
+marked.Lexer = Lexer;
+marked.lexer = Lexer.lex;
+marked.InlineLexer = InlineLexer;
+marked.inlineLexer = InlineLexer.output;
+marked.Slugger = Slugger;
+marked.parse = marked;
+module.exports = marked;
 
-  marked.Parser = Parser;
-  marked.parser = Parser.parse;
-  marked.Renderer = Renderer;
-  marked.TextRenderer = TextRenderer;
-  marked.Lexer = Lexer;
-  marked.lexer = Lexer.lex;
-  marked.InlineLexer = InlineLexer;
-  marked.inlineLexer = InlineLexer.output;
-  marked.Slugger = Slugger;
-  marked.parse = marked;
+/***/ }),
 
-  if (true) {
-    module.exports = marked;
-  } else {}
-})(this || (typeof window !== 'undefined' ? window : global));
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+/***/ "./node_modules/marked/src/rules.js":
+/*!******************************************!*\
+  !*** ./node_modules/marked/src/rules.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const {
+  noopTest,
+  edit,
+  merge
+} = __webpack_require__(/*! ./helpers.js */ "./node_modules/marked/src/helpers.js");
+/**
+ * Block-Level Grammar
+ */
+
+
+const block = {
+  newline: /^\n+/,
+  code: /^( {4}[^\n]+\n*)+/,
+  fences: /^ {0,3}(`{3,}|~{3,})([^`~\n]*)\n(?:|([\s\S]*?)\n)(?: {0,3}\1[~`]* *(?:\n+|$)|$)/,
+  hr: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,
+  heading: /^ {0,3}(#{1,6}) +([^\n]*?)(?: +#+)? *(?:\n+|$)/,
+  blockquote: /^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,
+  list: /^( {0,3})(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,
+  html: '^ {0,3}(?:' // optional indentation
+  + '<(script|pre|style)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)' // (1)
+  + '|comment[^\\n]*(\\n+|$)' // (2)
+  + '|<\\?[\\s\\S]*?\\?>\\n*' // (3)
+  + '|<![A-Z][\\s\\S]*?>\\n*' // (4)
+  + '|<!\\[CDATA\\[[\\s\\S]*?\\]\\]>\\n*' // (5)
+  + '|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:\\n{2,}|$)' // (6)
+  + '|<(?!script|pre|style)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) open tag
+  + '|</(?!script|pre|style)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:\\n{2,}|$)' // (7) closing tag
+  + ')',
+  def: /^ {0,3}\[(label)\]: *\n? *<?([^\s>]+)>?(?:(?: +\n? *| *\n *)(title))? *(?:\n+|$)/,
+  nptable: noopTest,
+  table: noopTest,
+  lheading: /^([^\n]+)\n {0,3}(=+|-+) *(?:\n+|$)/,
+  // regex template, placeholders will be replaced according to different paragraph
+  // interruption rules of commonmark and the original markdown spec:
+  _paragraph: /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html)[^\n]+)*)/,
+  text: /^[^\n]+/
+};
+block._label = /(?!\s*\])(?:\\[\[\]]|[^\[\]])+/;
+block._title = /(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/;
+block.def = edit(block.def).replace('label', block._label).replace('title', block._title).getRegex();
+block.bullet = /(?:[*+-]|\d{1,9}\.)/;
+block.item = /^( *)(bull) ?[^\n]*(?:\n(?!\1bull ?)[^\n]*)*/;
+block.item = edit(block.item, 'gm').replace(/bull/g, block.bullet).getRegex();
+block.list = edit(block.list).replace(/bull/g, block.bullet).replace('hr', '\\n+(?=\\1?(?:(?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$))').replace('def', '\\n+(?=' + block.def.source + ')').getRegex();
+block._tag = 'address|article|aside|base|basefont|blockquote|body|caption' + '|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption' + '|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe' + '|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option' + '|p|param|section|source|summary|table|tbody|td|tfoot|th|thead|title|tr' + '|track|ul';
+block._comment = /<!--(?!-?>)[\s\S]*?-->/;
+block.html = edit(block.html, 'i').replace('comment', block._comment).replace('tag', block._tag).replace('attribute', / +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex();
+block.paragraph = edit(block._paragraph).replace('hr', block.hr).replace('heading', ' {0,3}#{1,6} +').replace('|lheading', '') // setex headings don't interrupt commonmark paragraphs
+.replace('blockquote', ' {0,3}>').replace('fences', ' {0,3}(?:`{3,}|~{3,})[^`\\n]*\\n').replace('list', ' {0,3}(?:[*+-]|1[.)]) ') // only lists starting from 1 can interrupt
+.replace('html', '</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|!--)').replace('tag', block._tag) // pars can be interrupted by type (6) html blocks
+.getRegex();
+block.blockquote = edit(block.blockquote).replace('paragraph', block.paragraph).getRegex();
+/**
+ * Normal Block Grammar
+ */
+
+block.normal = merge({}, block);
+/**
+ * GFM Block Grammar
+ */
+
+block.gfm = merge({}, block.normal, {
+  nptable: /^ *([^|\n ].*\|.*)\n *([-:]+ *\|[-| :]*)(?:\n((?:.*[^>\n ].*(?:\n|$))*)\n*|$)/,
+  table: /^ *\|(.+)\n *\|?( *[-:]+[-| :]*)(?:\n((?: *[^>\n ].*(?:\n|$))*)\n*|$)/
+});
+/**
+ * Pedantic grammar (original John Gruber's loose markdown specification)
+ */
+
+block.pedantic = merge({}, block.normal, {
+  html: edit('^ *(?:comment *(?:\\n|\\s*$)' + '|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)' // closed tag
+  + '|<tag(?:"[^"]*"|\'[^\']*\'|\\s[^\'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))').replace('comment', block._comment).replace(/tag/g, '(?!(?:' + 'a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub' + '|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)' + '\\b)\\w+(?!:|[^\\w\\s@]*@)\\b').getRegex(),
+  def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
+  heading: /^ *(#{1,6}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/,
+  fences: noopTest,
+  // fences not supported
+  paragraph: edit(block.normal._paragraph).replace('hr', block.hr).replace('heading', ' *#{1,6} *[^\n]').replace('lheading', block.lheading).replace('blockquote', ' {0,3}>').replace('|fences', '').replace('|list', '').replace('|html', '').getRegex()
+});
+/**
+ * Inline-Level Grammar
+ */
+
+const inline = {
+  escape: /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
+  autolink: /^<(scheme:[^\s\x00-\x1f<>]*|email)>/,
+  url: noopTest,
+  tag: '^comment' + '|^</[a-zA-Z][\\w:-]*\\s*>' // self-closing tag
+  + '|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>' // open tag
+  + '|^<\\?[\\s\\S]*?\\?>' // processing instruction, e.g. <?php ?>
+  + '|^<![a-zA-Z]+\\s[\\s\\S]*?>' // declaration, e.g. <!DOCTYPE html>
+  + '|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>',
+  // CDATA section
+  link: /^!?\[(label)\]\(\s*(href)(?:\s+(title))?\s*\)/,
+  reflink: /^!?\[(label)\]\[(?!\s*\])((?:\\[\[\]]?|[^\[\]\\])+)\]/,
+  nolink: /^!?\[(?!\s*\])((?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]])*)\](?:\[\])?/,
+  strong: /^__([^\s_])__(?!_)|^\*\*([^\s*])\*\*(?!\*)|^__([^\s][\s\S]*?[^\s])__(?!_)|^\*\*([^\s][\s\S]*?[^\s])\*\*(?!\*)/,
+  em: /^_([^\s_])_(?!_)|^\*([^\s*<\[])\*(?!\*)|^_([^\s<][\s\S]*?[^\s_])_(?!_|[^\spunctuation])|^_([^\s_<][\s\S]*?[^\s])_(?!_|[^\spunctuation])|^\*([^\s<"][\s\S]*?[^\s\*])\*(?!\*|[^\spunctuation])|^\*([^\s*"<\[][\s\S]*?[^\s])\*(?!\*)/,
+  code: /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,
+  br: /^( {2,}|\\)\n(?!\s*$)/,
+  del: noopTest,
+  text: /^(`+|[^`])(?:[\s\S]*?(?:(?=[\\<!\[`*]|\b_|$)|[^ ](?= {2,}\n))|(?= {2,}\n))/
+}; // list of punctuation marks from common mark spec
+// without ` and ] to workaround Rule 17 (inline code blocks/links)
+
+inline._punctuation = '!"#$%&\'()*+,\\-./:;<=>?@\\[^_{|}~';
+inline.em = edit(inline.em).replace(/punctuation/g, inline._punctuation).getRegex();
+inline._escapes = /\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/g;
+inline._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/;
+inline._email = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/;
+inline.autolink = edit(inline.autolink).replace('scheme', inline._scheme).replace('email', inline._email).getRegex();
+inline._attribute = /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/;
+inline.tag = edit(inline.tag).replace('comment', block._comment).replace('attribute', inline._attribute).getRegex();
+inline._label = /(?:\[[^\[\]]*\]|\\.|`[^`]*`|[^\[\]\\`])*?/;
+inline._href = /<(?:\\[<>]?|[^\s<>\\])*>|[^\s\x00-\x1f]*/;
+inline._title = /"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/;
+inline.link = edit(inline.link).replace('label', inline._label).replace('href', inline._href).replace('title', inline._title).getRegex();
+inline.reflink = edit(inline.reflink).replace('label', inline._label).getRegex();
+/**
+ * Normal Inline Grammar
+ */
+
+inline.normal = merge({}, inline);
+/**
+ * Pedantic Inline Grammar
+ */
+
+inline.pedantic = merge({}, inline.normal, {
+  strong: /^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,
+  em: /^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/,
+  link: edit(/^!?\[(label)\]\((.*?)\)/).replace('label', inline._label).getRegex(),
+  reflink: edit(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace('label', inline._label).getRegex()
+});
+/**
+ * GFM Inline Grammar
+ */
+
+inline.gfm = merge({}, inline.normal, {
+  escape: edit(inline.escape).replace('])', '~|])').getRegex(),
+  _extended_email: /[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/,
+  url: /^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/,
+  _backpedal: /(?:[^?!.,:;*_~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_~)]+(?!$))+/,
+  del: /^~+(?=\S)([\s\S]*?\S)~+/,
+  text: /^(`+|[^`])(?:[\s\S]*?(?:(?=[\\<!\[`*~]|\b_|https?:\/\/|ftp:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))|(?= {2,}\n|[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@))/
+});
+inline.gfm.url = edit(inline.gfm.url, 'i').replace('email', inline.gfm._extended_email).getRegex();
+/**
+ * GFM + Line Breaks Inline Grammar
+ */
+
+inline.breaks = merge({}, inline.gfm, {
+  br: edit(inline.br).replace('{2,}', '*').getRegex(),
+  text: edit(inline.gfm.text).replace('\\b_', '\\b_| {2,}\\n').replace(/\{2,\}/g, '*').getRegex()
+});
+module.exports = {
+  block,
+  inline
+};
 
 /***/ }),
 
@@ -19853,75 +19690,72 @@ var render = function() {
       class: [
         "v-md-container",
         _vm.css,
-        { "v-md-auto-resize": _vm.height == "auto" }
-      ],
-      attrs: { id: _vm.uid("container") }
+        {
+          "v-md-auto-resize": _vm.height == "auto",
+          "v-md-fullscreen": _vm.fullScreen
+        }
+      ]
     },
     [
-      _c(
-        "div",
-        { staticClass: "v-md-toolbar", attrs: { id: _vm.uid("toolbar") } },
-        _vm._l(_vm.toolbars, function(group) {
-          return _c(
+      _vm.toolbars.length > 0
+        ? _c(
             "div",
-            { staticClass: "btn-group mr-3", attrs: { role: "group" } },
-            _vm._l(group, function(i) {
+            { staticClass: "v-md-toolbar" },
+            _vm._l(_vm.toolbars, function(group) {
               return _c(
-                "button",
-                {
-                  class: [_vm.buttonClass, { ready: i.ready }],
-                  attrs: { type: "button", id: _vm.uid(i.id), title: i.title },
-                  on: {
-                    click: function($event) {
-                      return _vm.command(i.cmd)
-                    }
-                  }
-                },
-                [
-                  _c("i", {
-                    class: i.className,
-                    attrs: { "aria-hidden": "true" }
-                  })
-                ]
+                "div",
+                { staticClass: "btn-group mr-3", attrs: { role: "group" } },
+                _vm._l(group, function(i) {
+                  return _c(
+                    "button",
+                    {
+                      class: "btn btn-" + _vm.theme,
+                      attrs: {
+                        type: "button",
+                        title: i.title,
+                        disabled: _vm.preview && !i.ready
+                      },
+                      on: {
+                        click: function($event) {
+                          return _vm.command(i.cmd)
+                        }
+                      }
+                    },
+                    [_c("i", { class: i.ico })]
+                  )
+                }),
+                0
               )
             }),
             0
           )
-        }),
-        0
-      ),
+        : _vm._e(),
       _vm._v(" "),
-      _c("div", { staticClass: "v-md-wrapper" }, [
-        _c("textarea", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.value,
-              expression: "value"
-            }
-          ],
-          style: _vm.styles,
-          attrs: { id: _vm.uid("input"), name: _vm.name },
-          domProps: { value: _vm.value },
+      _c(
+        "div",
+        {
+          staticClass: "v-md-wrapper",
           on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.value = $event.target.value
+            click: function($event) {
+              return _vm.editor.focus()
             }
           }
-        }),
-        _vm._v(" "),
-        _vm.preview
-          ? _c("div", {
-              staticClass: "v-md-preview",
-              attrs: { id: _vm.uid("html-preview") },
-              domProps: { innerHTML: _vm._s(_vm.html) }
-            })
-          : _vm._e()
-      ])
+        },
+        [
+          _c("textarea", {
+            staticClass: "v-md-editor",
+            style: _vm.styles,
+            attrs: { id: _vm.id }
+          }),
+          _vm._v(" "),
+          _vm.preview
+            ? _c("div", {
+                staticClass: "v-md-preview",
+                domProps: { innerHTML: _vm._s(_vm.html) }
+              })
+            : _vm._e()
+        ]
+      )
     ]
   )
 }
@@ -20015,7 +19849,7 @@ function normalizeComponent (
       // for template-only hot-reload because in that case the render fn doesn't
       // go through the normalizer
       options._injectStyles = hook
-      // register for functioal component in vue file
+      // register for functional component in vue file
       var originalRender = options.render
       options.render = function renderWithStyleInjection (h, context) {
         hook.call(context)
@@ -20036,34 +19870,6 @@ function normalizeComponent (
   }
 }
 
-
-/***/ }),
-
-/***/ "./node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g; // This works in non-strict mode
-
-g = function () {
-  return this;
-}();
-
-try {
-  // This works if eval is allowed (see CSP)
-  g = g || new Function("return this")();
-} catch (e) {
-  // This works if the window reference is available
-  if (typeof window === "object") g = window;
-} // g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-
-module.exports = g;
 
 /***/ }),
 
@@ -20156,7 +19962,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _editor_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./editor.vue */ "./src/editor.vue");
+/* harmony import */ var codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! codemirror/lib/codemirror.css */ "./node_modules/codemirror/lib/codemirror.css");
+/* harmony import */ var codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _editor_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editor.vue */ "./src/editor.vue");
+
+
 
 var MarkdownEditor = {
   install: function install(Vue) {
@@ -20165,7 +19977,7 @@ var MarkdownEditor = {
     }
 
     Vue.__md_editor_installed = true;
-    Vue.component('markdown-editor', _editor_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
+    Vue.component('markdown-editor', _editor_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
   }
 };
 
@@ -20173,13 +19985,7 @@ if (typeof window !== 'undefined' && window.Vue) {
   Vue.use(MarkdownEditor);
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (MarkdownEditor); // if (typeof exports == "object") {
-//     module.exports = MarkdownEditor;
-// } else if (typeof define == "function" && define.amd) {
-//     define([], function () { return MarkdownEditor; })
-// } else if (window.Vue) {
-//     Vue.use(MarkdownEditor);
-// }
+/* harmony default export */ __webpack_exports__["default"] = (MarkdownEditor);
 
 /***/ })
 

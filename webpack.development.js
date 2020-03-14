@@ -306,23 +306,23 @@ module.exports = function (env) {
                 new HtmlWebpackExternalsPlugin({
                     // hash: true,
                     externals: [
-                        {
-                            module: 'jquery',
-                            entry: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
-                            global: 'jQuery'
-                        },
-                        {
-                            module: 'Popper',
-                            entry: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js'
-                        },
-                        {
-                            module: 'boostrap',
-                            entry: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'
-                        },
+                        // {
+                        //     module: 'jquery',
+                        //     entry: 'https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js',
+                        //     global: 'jQuery'
+                        // },
+                        // {
+                        //     module: 'Popper',
+                        //     entry: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js'
+                        // },
+                        // {
+                        //     module: 'boostrap',
+                        //     entry: 'https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js'
+                        // },
                         {
                             module: 'vue',
                             global: 'Vue',
-                            entry: 'https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'
+                            entry: 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js'
                         },
                         // {
                         //     module: 'vue-router',
@@ -376,7 +376,8 @@ module.exports = function (env) {
 
                             module: 'bootstrap',
                             entry: [
-                                'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css',
+                                // 'https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css',
+                                'https://cdn.jsdelivr.net/npm/morioh@1.0.8/dist/css/morioh.min.css',
                                 // '//l.allcdn.org/remark/v4.1/skins/green.min.css'
                             ],
 
@@ -386,7 +387,8 @@ module.exports = function (env) {
                         {
                             module: 'fonts',
                             entry: [
-                                '//l.allcdn.org/fa/v5.12.2/css/all.min.css'
+                                'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css',
+                                // 'https://cdn.jsdelivr.net/npm/@mdi/font@5.0.45/css/materialdesignicons.min.css'
                             ],
                         },
 

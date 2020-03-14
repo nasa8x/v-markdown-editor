@@ -105,26 +105,18 @@ return /******/ (function(modules) { // webpackBootstrap
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! codemirror/lib/codemirror.css */ "codemirror/lib/codemirror.css");
-/* harmony import */ var codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var markdownparser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! markdownparser */ "markdownparser");
-/* harmony import */ var markdownparser__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(markdownparser__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var marked__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! marked */ "marked");
-/* harmony import */ var marked__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(marked__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! codemirror */ "codemirror");
-/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(codemirror__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! codemirror/addon/display/fullscreen.js */ "codemirror/addon/display/fullscreen.js");
-/* harmony import */ var codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! codemirror/mode/markdown/markdown.js */ "codemirror/mode/markdown/markdown.js");
-/* harmony import */ var codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var codemirror_mode_gfm_gfm_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! codemirror/mode/gfm/gfm.js */ "codemirror/mode/gfm/gfm.js");
-/* harmony import */ var codemirror_mode_gfm_gfm_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(codemirror_mode_gfm_gfm_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! codemirror/addon/display/placeholder.js */ "codemirror/addon/display/placeholder.js");
-/* harmony import */ var codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var codemirror_addon_selection_active_line_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! codemirror/addon/selection/active-line.js */ "codemirror/addon/selection/active-line.js");
-/* harmony import */ var codemirror_addon_selection_active_line_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_selection_active_line_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var markdownparser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! markdownparser */ "markdownparser");
+/* harmony import */ var markdownparser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(markdownparser__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var marked__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! marked */ "marked");
+/* harmony import */ var marked__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(marked__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! codemirror */ "codemirror");
+/* harmony import */ var codemirror__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(codemirror__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! codemirror/addon/display/fullscreen.js */ "codemirror/addon/display/fullscreen.js");
+/* harmony import */ var codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_display_fullscreen_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! codemirror/mode/markdown/markdown.js */ "codemirror/mode/markdown/markdown.js");
+/* harmony import */ var codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(codemirror_mode_markdown_markdown_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! codemirror/addon/display/placeholder.js */ "codemirror/addon/display/placeholder.js");
+/* harmony import */ var codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(codemirror_addon_display_placeholder_js__WEBPACK_IMPORTED_MODULE_5__);
 //
 //
 //
@@ -143,12 +135,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-
-
-
-
 
 
 
@@ -157,6 +143,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
+    id: {
+      type: String,
+      "default": function _default() {
+        return 'v-md-editor-' + Math.random().toString(16).substr(2, 9);
+      }
+    },
     css: {
       type: String
     },
@@ -179,150 +171,122 @@ __webpack_require__.r(__webpack_exports__);
       type: Object,
       "default": function _default() {
         return {
+          "clean": {
+            cmd: "clean",
+            ico: "fas fa-remove-format mdi mdi-format-clear",
+            title: "Html to markdown",
+            hotkey: 'Shift-Alt-F'
+          },
+          "undo": {
+            cmd: "undo",
+            ico: "fas fa-undo mdi mdi-undo-variant",
+            title: "Undo",
+            hotkey: 'Ctrl-Z'
+          },
+          "redo": {
+            cmd: "redo",
+            ico: "fas fa-redo mdi mdi-redo-variant",
+            title: "Redo",
+            hotkey: 'Ctrl-Y'
+          },
+          "bullist": {
+            cmd: "bullist",
+            ico: "fas fa-list-ul mdi mdi-format-list-bulleted",
+            title: "Generic List"
+          },
+          "numlist": {
+            cmd: "numlist",
+            ico: "fas fa-list-ol mdi mdi-format-list-numbered",
+            title: "Numbered List"
+          },
           'bold': {
             title: 'Bold',
-            className: 'far fa-bold',
+            ico: 'fas fa-bold mdi mdi-format-bold',
             cmd: 'bold',
             hotkey: 'Ctrl-B'
           },
           'italic': {
             title: 'Italic',
-            className: "far fa-italic",
+            ico: "fas fa-italic mdi mdi-format-italic",
             cmd: 'italic',
             hotkey: 'Ctrl-I'
           },
           "strikethrough": {
             cmd: "strikethrough",
-            className: "far fa-strikethrough",
+            ico: "fas fa-strikethrough mdi mdi-format-strikethrough",
             title: "Strikethrough"
           },
           'heading': {
             title: 'Heading',
-            className: "far fa-heading",
+            ico: "fas fa-heading mdi mdi-format-header-3",
             cmd: 'heading',
             hotkey: 'Ctrl-H'
           },
           'code': {
             title: 'Code',
-            className: "far fa-code",
+            ico: "fas fa-code mdi mdi-code-tags",
             cmd: 'code',
             hotkey: 'Ctrl-X'
           },
           'quote': {
             title: 'Quote',
-            className: "far fa-quote-left",
+            ico: "fas fa-quote-left mdi mdi-format-quote-open",
             cmd: 'quote',
             hotkey: 'Ctrl-Q'
           },
           'link': {
             title: 'Link',
-            className: "far fa-link",
+            ico: "fas fa-link mdi mdi-link",
             cmd: 'link',
             hotkey: 'Ctrl-K'
           },
           'image': {
             title: 'Image',
-            className: "far fa-image",
+            ico: "fas fa-image mdi mdi-image",
             cmd: 'image',
             hotkey: 'Ctrl-P'
           },
           "fullscreen": {
             cmd: "fullscreen",
-            className: "far fa-arrows-alt no-disable no-mobile",
+            ico: "fas fa-expand mdi mdi-fullscreen",
             title: "Toggle Fullscreen",
             hotkey: 'F11',
             ready: true
           },
           "preview": {
             cmd: "preview",
-            className: "far fa-eye no-disable",
+            ico: "fas fa-eye mdi mdi-eye",
             title: "Toggle Preview",
             hotkey: 'Ctrl-P',
             ready: true
-          },
-          "clipboard": {
-            cmd: "clipboard",
-            className: "far fa-clipboard",
-            title: "Copy & Markdown Format",
-            hotkey: 'Ctrl-V'
-          },
-          "clean": {
-            cmd: "clean",
-            className: "far fa-remove-format",
-            title: "Html to markdown"
-          },
-          "undo": {
-            cmd: "undo",
-            className: "far fa-undo",
-            title: "Undo",
-            hotkey: 'Ctrl-Z'
-          },
-          "redo": {
-            cmd: "redo",
-            className: "far fa-repeat",
-            title: "Redo",
-            hotkey: 'Ctrl-Y'
-          },
-          "bullist": {
-            cmd: "bullist",
-            className: "far fa-list-ul",
-            title: "Generic List"
-          },
-          "numlist": {
-            cmd: "numlist",
-            className: "far fa-list-ol",
-            title: "Numbered List"
           }
         };
       }
     },
-    name: {
+    theme: {
       type: String,
-      "default": 'html'
+      "default": 'outline-secondary'
     },
     value: {
       type: String,
       "default": '',
       required: false
     },
-    buttonClass: {
-      type: String,
-      "default": 'btn btn-outline-secondary'
-    },
     options: {
       type: Object,
       "default": function _default() {
-        return {
-          mode: 'gfm',
-          theme: "elegent",
-          lineNumbers: false,
-          styleActiveLine: false,
-          styleSelectedText: true,
-          lineWrapping: true,
-          indentWithTabs: true,
-          autoRefresh: true,
-          tabSize: 2,
-          indentUnit: 2
-        };
+        return {};
       }
     }
   },
   data: function data() {
     return {
-      id: 'v-md-editor-' + new Date().getTime(),
       editor: null,
       preview: false,
+      fullScreen: false,
       html: '',
-      toolbars: [],
-      shortcuts: {}
+      toolbars: []
     };
-  },
-  watch: {
-    value: function value(val) {
-      if (val != this.editor.getValue()) {
-        this.editor.setValue(val);
-      }
-    }
   },
   computed: {
     styles: function styles() {
@@ -330,6 +294,13 @@ __webpack_require__.r(__webpack_exports__);
         width: isNaN(this.width) ? this.width : this.width + '%',
         height: isNaN(this.height) ? this.height : this.height + '%'
       };
+    }
+  },
+  watch: {
+    value: function value(val) {
+      if (val != this.editor.getValue()) {
+        this.editor.setValue(val);
+      }
     }
   },
   methods: {
@@ -347,12 +318,6 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       return a; // Make chainable
-    },
-    uid: function uid(name) {
-      return this.format('%s-%s', this.id, name);
-    },
-    obj: function obj(name) {
-      return jQuery('#' + this.uid(name));
     },
     _toggleBlock: function _toggleBlock(type, start, end) {
       end = this.isEmpty(end) ? start : end;
@@ -415,9 +380,8 @@ __webpack_require__.r(__webpack_exports__);
         ed.replaceSelection(start + text + end);
         startPoint.ch += start.length;
         endPoint.ch = startPoint.ch + text.length;
-      }
+      } // ed.setSelection(startPoint, endPoint);
 
-      ed.setSelection(startPoint, endPoint);
     },
     _toggleLine: function _toggleLine(name) {
       var ed = this.editor;
@@ -523,18 +487,14 @@ __webpack_require__.r(__webpack_exports__);
           ch: 0
         });
       } else {
-        // text = ed.getSelection();
-        // ed.replaceSelection(start + text + end);
         ed.replaceSelection(start + end);
         startPoint.ch += start.length;
 
         if (startPoint !== endPoint) {
           endPoint.ch += start.length;
         }
-      }
+      } //ed.setSelection(startPoint, endPoint);
 
-      ed.setSelection(startPoint, endPoint);
-      ed.focus();
     },
     drawImage: function drawImage(obj) {
       var stat = this.state();
@@ -549,7 +509,6 @@ __webpack_require__.r(__webpack_exports__);
     command: function command(key) {
       var ed = this.editor;
       var text = ed.getSelection();
-      var stat = this.state();
       this.$root.$emit('markdown-editor:' + key, this);
 
       switch (key) {
@@ -585,12 +544,7 @@ __webpack_require__.r(__webpack_exports__);
           ed.replaceSelection('\n### ' + text);
           break;
 
-        case 'clipboard':
-          this.obj('modal-clipboard').modal('show');
-          break;
-
         case 'image':
-          // this.obj('modal-image').modal('show');
           var url = prompt("Please enter image url", "https://");
 
           if (this.isUrl(url)) {
@@ -604,7 +558,6 @@ __webpack_require__.r(__webpack_exports__);
           break;
 
         case 'link':
-          //this.obj('modal-link').modal('show');
           var url = prompt("Please enter link", "https://");
 
           if (this.isUrl(url)) {
@@ -614,11 +567,6 @@ __webpack_require__.r(__webpack_exports__);
               url: url
             });
           }
-
-          break;
-
-        case 'quote':
-          this._toggleLine('quote');
 
           break;
 
@@ -638,99 +586,59 @@ __webpack_require__.r(__webpack_exports__);
           break;
 
         case 'preview':
-          ///var md = new MarkdownIt({ typographer: true, breaks: true, quotes: '“”‘’' });
-          this.html = marked__WEBPACK_IMPORTED_MODULE_3___default()(ed.getValue(), {
+          this.html = marked__WEBPACK_IMPORTED_MODULE_1___default()(ed.getValue(), {
             breaks: true
           });
-          this.preview ^= true;
-          this.obj('toolbar').find('.btn:not(".ready")').prop('disabled', this.preview);
+          this.preview = !this.preview;
           break;
 
         case 'fullscreen':
-          this.obj('container').toggleClass('v-md-fullscreen');
-          this.obj('fullscreen').toggleClass('active');
+          this.fullScreen = !this.fullScreen;
           ed.setOption("fullScreen", !ed.getOption("fullScreen"));
           break;
 
         case 'clean':
-          text = markdownparser__WEBPACK_IMPORTED_MODULE_2___default.a.parse(text);
-          ed.replaceSelection(text);
+          ed.replaceSelection(markdownparser__WEBPACK_IMPORTED_MODULE_0___default.a.parse(text));
           break;
       }
-
-      ed.focus();
     },
     build: function build() {
-      if (!jQuery) {
-        console.error("Must required jQuery!");
-        return;
-      }
-
-      if (this.isEmpty(this.toolbar)) {
-        console.error("You must set toolbar!");
-        return;
-      }
+      var _this = this;
 
       if (this.__rendered) return;
+      var buttons = Object.assign({}, this.buttons, this.extend);
+      var shortcuts = {};
+      this.toolbar.split('|').forEach(function (t, i) {
+        var group = [];
+        t.toLowerCase().split(/(\s)/).forEach(function (b) {
+          if (!_this.isEmpty(b)) {
+            var btn = buttons[b];
 
-      var _t = this;
+            if (!_this.isEmpty(btn.hotkey)) {
+              shortcuts[btn.hotkey] = function () {
+                return _this.command(btn.cmd);
+              };
+            }
 
-      this.buttons = Object.assign(this.buttons, this.extend);
-
-      var btns = _t.toolbar.toLowerCase().split(/(\s)/).filter(function (w) {
-        return !_t.isEmpty(w);
-      });
-
-      var group = [];
-
-      for (var i = 0; i < btns.length; i++) {
-        var btn = btns[i];
-        var obj = _t.buttons[btn];
-
-        if (obj) {
-          // obj.cmd = typeof obj.cmd ==='function'? obj.cmd: this.command(obj.cmd);
-          obj.id = btn;
-          group.push(obj);
-        }
-
-        if (btn === '|' || i == btns.length - 1) {
-          this.toolbars.push(group);
-          group = [];
-        }
-      }
-
-      var o = Object.assign({}, {
-        extraKeys: _t.shortcuts,
-        initialValue: _t.value
-      }, _t.options);
-      var el = document.getElementById(_t.id + '-input');
-      _t.editor = codemirror__WEBPACK_IMPORTED_MODULE_4___default.a.fromTextArea(el, o);
-
-      _t.editor.on("change", function (ed) {
-        //_t.editor.save();                    
-        _t.$emit('input', ed.getValue()); //_t.value = ed.getValue();
-
-      });
-
-      _t.editor.on("cursorActivity", function () {
-        var stat = _t.state();
-
-        _t.obj('toolbar').find('.btn.active:not(.ready)').removeClass('active');
-
-        Object.keys(stat).forEach(function (key) {
-          _t.obj(key).addClass('active');
+            group.push(btn);
+          }
         });
+        if (group.length > 0) _this.toolbars.push(group);
       });
-
-      _t.__rendered = true;
+      var o = Object.assign({
+        mode: 'markdown',
+        extraKeys: shortcuts
+      }, this.options);
+      var ed = this.editor = codemirror__WEBPACK_IMPORTED_MODULE_2___default.a.fromTextArea(document.getElementById(this.id), o);
+      ed.setValue(this.value);
+      ed.on("change", function (ed) {
+        _this.$emit('input', ed.getValue());
+      });
+      this.__rendered = true;
     }
   },
   mounted: function mounted() {
-    var _this = this;
-
-    this.$nextTick(function () {
-      _this.build();
-    });
+    this.build();
   },
   destroyed: function destroyed() {
     this.editor = null;
@@ -760,75 +668,72 @@ var render = function() {
       class: [
         "v-md-container",
         _vm.css,
-        { "v-md-auto-resize": _vm.height == "auto" }
-      ],
-      attrs: { id: _vm.uid("container") }
+        {
+          "v-md-auto-resize": _vm.height == "auto",
+          "v-md-fullscreen": _vm.fullScreen
+        }
+      ]
     },
     [
-      _c(
-        "div",
-        { staticClass: "v-md-toolbar", attrs: { id: _vm.uid("toolbar") } },
-        _vm._l(_vm.toolbars, function(group) {
-          return _c(
+      _vm.toolbars.length > 0
+        ? _c(
             "div",
-            { staticClass: "btn-group mr-3", attrs: { role: "group" } },
-            _vm._l(group, function(i) {
+            { staticClass: "v-md-toolbar" },
+            _vm._l(_vm.toolbars, function(group) {
               return _c(
-                "button",
-                {
-                  class: [_vm.buttonClass, { ready: i.ready }],
-                  attrs: { type: "button", id: _vm.uid(i.id), title: i.title },
-                  on: {
-                    click: function($event) {
-                      return _vm.command(i.cmd)
-                    }
-                  }
-                },
-                [
-                  _c("i", {
-                    class: i.className,
-                    attrs: { "aria-hidden": "true" }
-                  })
-                ]
+                "div",
+                { staticClass: "btn-group mr-3", attrs: { role: "group" } },
+                _vm._l(group, function(i) {
+                  return _c(
+                    "button",
+                    {
+                      class: "btn btn-" + _vm.theme,
+                      attrs: {
+                        type: "button",
+                        title: i.title,
+                        disabled: _vm.preview && !i.ready
+                      },
+                      on: {
+                        click: function($event) {
+                          return _vm.command(i.cmd)
+                        }
+                      }
+                    },
+                    [_c("i", { class: i.ico })]
+                  )
+                }),
+                0
               )
             }),
             0
           )
-        }),
-        0
-      ),
+        : _vm._e(),
       _vm._v(" "),
-      _c("div", { staticClass: "v-md-wrapper" }, [
-        _c("textarea", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.value,
-              expression: "value"
-            }
-          ],
-          style: _vm.styles,
-          attrs: { id: _vm.uid("input"), name: _vm.name },
-          domProps: { value: _vm.value },
+      _c(
+        "div",
+        {
+          staticClass: "v-md-wrapper",
           on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.value = $event.target.value
+            click: function($event) {
+              return _vm.editor.focus()
             }
           }
-        }),
-        _vm._v(" "),
-        _vm.preview
-          ? _c("div", {
-              staticClass: "v-md-preview",
-              attrs: { id: _vm.uid("html-preview") },
-              domProps: { innerHTML: _vm._s(_vm.html) }
-            })
-          : _vm._e()
-      ])
+        },
+        [
+          _c("textarea", {
+            staticClass: "v-md-editor",
+            style: _vm.styles,
+            attrs: { id: _vm.id }
+          }),
+          _vm._v(" "),
+          _vm.preview
+            ? _c("div", {
+                staticClass: "v-md-preview",
+                domProps: { innerHTML: _vm._s(_vm.html) }
+              })
+            : _vm._e()
+        ]
+      )
     ]
   )
 }
@@ -922,7 +827,7 @@ function normalizeComponent (
       // for template-only hot-reload because in that case the render fn doesn't
       // go through the normalizer
       options._injectStyles = hook
-      // register for functioal component in vue file
+      // register for functional component in vue file
       var originalRender = options.render
       options.render = function renderWithStyleInjection (h, context) {
         hook.call(context)
@@ -1035,7 +940,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _editor_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./editor.vue */ "./src/editor.vue");
+/* harmony import */ var codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! codemirror/lib/codemirror.css */ "codemirror/lib/codemirror.css");
+/* harmony import */ var codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(codemirror_lib_codemirror_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _editor_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./editor.vue */ "./src/editor.vue");
+
+
 
 var MarkdownEditor = {
   install: function install(Vue) {
@@ -1044,7 +955,7 @@ var MarkdownEditor = {
     }
 
     Vue.__md_editor_installed = true;
-    Vue.component('markdown-editor', _editor_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
+    Vue.component('markdown-editor', _editor_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
   }
 };
 
@@ -1052,13 +963,7 @@ if (typeof window !== 'undefined' && window.Vue) {
   Vue.use(MarkdownEditor);
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (MarkdownEditor); // if (typeof exports == "object") {
-//     module.exports = MarkdownEditor;
-// } else if (typeof define == "function" && define.amd) {
-//     define([], function () { return MarkdownEditor; })
-// } else if (window.Vue) {
-//     Vue.use(MarkdownEditor);
-// }
+/* harmony default export */ __webpack_exports__["default"] = (MarkdownEditor);
 
 /***/ }),
 
@@ -1095,17 +1000,6 @@ module.exports = require("codemirror/addon/display/placeholder.js");
 
 /***/ }),
 
-/***/ "codemirror/addon/selection/active-line.js":
-/*!************************************************************!*\
-  !*** external "codemirror/addon/selection/active-line.js" ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("codemirror/addon/selection/active-line.js");
-
-/***/ }),
-
 /***/ "codemirror/lib/codemirror.css":
 /*!************************************************!*\
   !*** external "codemirror/lib/codemirror.css" ***!
@@ -1114,17 +1008,6 @@ module.exports = require("codemirror/addon/selection/active-line.js");
 /***/ (function(module, exports) {
 
 module.exports = require("codemirror/lib/codemirror.css");
-
-/***/ }),
-
-/***/ "codemirror/mode/gfm/gfm.js":
-/*!*********************************************!*\
-  !*** external "codemirror/mode/gfm/gfm.js" ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("codemirror/mode/gfm/gfm.js");
 
 /***/ }),
 

@@ -1,16 +1,14 @@
 <template>
-    <div :class="['v-md-container', css,{'v-md-auto-resize': height=='auto' }]" :id="uid('container')">
-        <div :id="uid('toolbar')" class="v-md-toolbar">
+    <div :class="['v-md-container', css,{'v-md-auto-resize': height=='auto', 'v-md-fullscreen': fullScreen }]">
+        <div class="v-md-toolbar" v-if="toolbars.length>0">
             <div class="btn-group mr-3" role="group" v-for="group in toolbars">
-                <button type="button" :id="uid(i.id)" :title="i.title" :class="[buttonClass, {'ready': i.ready}]"
-                    v-on:click="command(i.cmd)" v-for="i in group"><i :class="i.className"
-                        aria-hidden="true"></i></button>
+                <button type="button" :title="i.title" :class="'btn btn-'+theme" v-on:click="command(i.cmd)"
+                    :disabled="preview && !i.ready" v-for="i in group"><i :class="i.ico"></i></button>
             </div>
         </div>
-        <div class="v-md-wrapper">
-            <textarea :id="uid('input')" v-model="value" :name="name" :style="styles"></textarea>
-            <div class="v-md-preview" :id="uid('html-preview')" v-if="preview" v-html="html">
-            </div>
+        <div class="v-md-wrapper" v-on:click="editor.focus()">
+            <textarea class="v-md-editor" :style="styles" :id="id"></textarea>
+            <div class="v-md-preview" v-if="preview" v-html="html"></div>
         </div>
 
     </div>
@@ -20,25 +18,29 @@
 
 <script>
 
-    import 'codemirror/lib/codemirror.css';
-    import './index.css';
+
 
     import Markdown from 'markdownparser';
     import Marked from 'marked';
+
     import CodeMirror from 'codemirror';
     import 'codemirror/addon/display/fullscreen.js';
     import 'codemirror/mode/markdown/markdown.js';
-    import 'codemirror/mode/gfm/gfm.js';
     import 'codemirror/addon/display/placeholder.js';
-    import 'codemirror/addon/selection/active-line.js';
 
 
     export default {
         props: {
 
-            css: {
-                type: String
+            id: {
+                type: String,
+                default: () => {
+                    return 'v-md-editor-' + Math.random().toString(16).substr(2, 9);
+                }
             },
+
+            css: { type: String },
+
             width: {
                 type: String,
                 default: '100%'
@@ -51,6 +53,8 @@
                 type: String,
                 default: 'clean redo undo | bold italic strikethrough heading | image link | numlist bullist code quote | preview fullscreen'
             },
+
+
             extend: {
                 type: Object
 
@@ -61,145 +65,128 @@
 
                     return {
 
-                        'bold': {
-                            title: 'Bold',
-                            className: 'far fa-bold',
-                            cmd: 'bold',
-                            hotkey: 'Ctrl-B'
-                        },
-
-                        'italic': {
-                            title: 'Italic',
-                            className: "far fa-italic",
-                            cmd: 'italic',
-                            hotkey: 'Ctrl-I'
-                        },
-
-                        "strikethrough": {
-                            cmd: "strikethrough",
-                            className: "far fa-strikethrough",
-                            title: "Strikethrough"
-                        },
-
-                        'heading': {
-                            title: 'Heading',
-                            className: "far fa-heading",
-                            cmd: 'heading',
-                            hotkey: 'Ctrl-H'
-                        },
-
-                        'code': {
-                            title: 'Code',
-                            className: "far fa-code",
-                            cmd: 'code',
-                            hotkey: 'Ctrl-X'
-                        },
-                        'quote': {
-                            title: 'Quote',
-                            className: "far fa-quote-left",
-                            cmd: 'quote',
-                            hotkey: 'Ctrl-Q'
-                        },
-                        'link': {
-                            title: 'Link',
-                            className: "far fa-link",
-                            cmd: 'link',
-                            hotkey: 'Ctrl-K'
-                        },
-                        'image': {
-                            title: 'Image',
-                            className: "far fa-image",
-                            cmd: 'image',
-                            hotkey: 'Ctrl-P'
-                        },
-                        "fullscreen": {
-                            cmd: "fullscreen",
-                            className: "far fa-arrows-alt no-disable no-mobile",
-                            title: "Toggle Fullscreen",
-                            hotkey: 'F11',
-                            ready: true
-                        },
-                        "preview": {
-                            cmd: "preview",
-                            className: "far fa-eye no-disable",
-                            title: "Toggle Preview",
-                            hotkey: 'Ctrl-P',
-                            ready: true
-                        },
-
-                        "clipboard": {
-                            cmd: "clipboard",
-                            className: "far fa-clipboard",
-                            title: "Copy & Markdown Format",
-                            hotkey: 'Ctrl-V'
-                        },
-
                         "clean": {
                             cmd: "clean",
-                            className: "far fa-remove-format",
-                            title: "Html to markdown"
+                            ico: "fas fa-remove-format mdi mdi-format-clear",
+                            title: "Html to markdown",
+                            hotkey: 'Shift-Alt-F'
                         },
 
                         "undo": {
                             cmd: "undo",
-                            className: "far fa-undo",
+                            ico: "fas fa-undo mdi mdi-undo-variant",
                             title: "Undo",
                             hotkey: 'Ctrl-Z'
                         },
 
                         "redo": {
                             cmd: "redo",
-                            className: "far fa-repeat",
+                            ico: "fas fa-redo mdi mdi-redo-variant",
                             title: "Redo",
                             hotkey: 'Ctrl-Y'
                         },
 
                         "bullist": {
                             cmd: "bullist",
-                            className: "far fa-list-ul",
+                            ico: "fas fa-list-ul mdi mdi-format-list-bulleted",
                             title: "Generic List",
 
                         },
                         "numlist": {
                             cmd: "numlist",
-                            className: "far fa-list-ol",
+                            ico: "fas fa-list-ol mdi mdi-format-list-numbered",
                             title: "Numbered List"
+                        },
+
+                        'bold': {
+                            title: 'Bold',
+                            ico: 'fas fa-bold mdi mdi-format-bold',
+                            cmd: 'bold',
+                            hotkey: 'Ctrl-B'
+                        },
+
+                        'italic': {
+                            title: 'Italic',
+                            ico: "fas fa-italic mdi mdi-format-italic",
+                            cmd: 'italic',
+                            hotkey: 'Ctrl-I'
+                        },
+
+                        "strikethrough": {
+                            cmd: "strikethrough",
+                            ico: "fas fa-strikethrough mdi mdi-format-strikethrough",
+                            title: "Strikethrough"
+                        },
+
+                        'heading': {
+                            title: 'Heading',
+                            ico: "fas fa-heading mdi mdi-format-header-3",
+                            cmd: 'heading',
+                            hotkey: 'Ctrl-H'
+                        },
+
+                        'code': {
+                            title: 'Code',
+                            ico: "fas fa-code mdi mdi-code-tags",
+                            cmd: 'code',
+                            hotkey: 'Ctrl-X'
+                        },
+                        'quote': {
+                            title: 'Quote',
+                            ico: "fas fa-quote-left mdi mdi-format-quote-open",
+                            cmd: 'quote',
+                            hotkey: 'Ctrl-Q'
+                        },
+                        'link': {
+                            title: 'Link',
+                            ico: "fas fa-link mdi mdi-link",
+                            cmd: 'link',
+                            hotkey: 'Ctrl-K'
+                        },
+                        'image': {
+                            title: 'Image',
+                            ico: "fas fa-image mdi mdi-image",
+                            cmd: 'image',
+                            hotkey: 'Ctrl-P'
+                        },
+                        "fullscreen": {
+                            cmd: "fullscreen",
+                            ico: "fas fa-expand mdi mdi-fullscreen",
+                            title: "Toggle Fullscreen",
+                            hotkey: 'F11',
+                            ready: true
+                        },
+                        "preview": {
+                            cmd: "preview",
+                            ico: "fas fa-eye mdi mdi-eye",
+                            title: "Toggle Preview",
+                            hotkey: 'Ctrl-P',
+                            ready: true
                         }
+
+
                     }
 
                 }
             },
-            name: {
+
+
+            theme: {
                 type: String,
-                default: 'html'
+                default: 'outline-secondary'
             },
+
             value: {
                 type: String,
                 default: '',
                 required: false
             },
 
-            buttonClass: {
-                type: String,
-                default: 'btn btn-outline-secondary'
-            },
-
-
-
             options: {
                 type: Object,
                 default: function () {
                     return {
-                        mode: 'gfm',
-                        theme: "elegent",
-                        lineNumbers: false,
-                        styleActiveLine: false,
-                        styleSelectedText: true,
-                        lineWrapping: true,
-                        indentWithTabs: true,
-                        autoRefresh: true,
-                        tabSize: 2,
-                        indentUnit: 2,
+
                     }
                 }
             },
@@ -207,23 +194,14 @@
 
         data() {
             return {
-                id: 'v-md-editor-' + new Date().getTime(),
+
                 editor: null,
                 preview: false,
+                fullScreen: false,
                 html: '',
-                toolbars: [],
-                shortcuts: {},
+                toolbars: [],                
 
             }
-        },
-
-        watch: {
-            value(val) {
-                if (val != this.editor.getValue()) {
-                    this.editor.setValue(val);
-                }
-
-            },
         },
 
         computed: {
@@ -234,6 +212,14 @@
                 }
             },
 
+        },
+
+        watch: {
+            value(val) {
+                if (val != this.editor.getValue()) {
+                    this.editor.setValue(val);
+                }
+            }
         },
 
         methods: {
@@ -251,12 +237,7 @@
                 return a; // Make chainable
 
             },
-            uid(name) {
-                return this.format('%s-%s', this.id, name);
-            },
-            obj(name) {
-                return jQuery('#' + this.uid(name));
-            },
+
 
             _toggleBlock(type, start, end) {
 
@@ -319,7 +300,7 @@
                     endPoint.ch = startPoint.ch + text.length;
                 }
 
-                ed.setSelection(startPoint, endPoint);
+                // ed.setSelection(startPoint, endPoint);
             },
 
             _toggleLine(name) {
@@ -417,22 +398,17 @@
                     text = ed.getLine(startPoint.line);
                     start = text.slice(0, startPoint.ch);
                     end = text.slice(startPoint.ch);
-                    ed.replaceRange(start + end, {
-                        line: startPoint.line,
-                        ch: 0
-                    });
+                    ed.replaceRange(start + end, { line: startPoint.line, ch: 0 });
                 } else {
-                    // text = ed.getSelection();
-                    // ed.replaceSelection(start + text + end);
-                    ed.replaceSelection(start + end);
 
+                    ed.replaceSelection(start + end);
                     startPoint.ch += start.length;
                     if (startPoint !== endPoint) {
                         endPoint.ch += start.length;
                     }
                 }
-                ed.setSelection(startPoint, endPoint);
-                ed.focus();
+                //ed.setSelection(startPoint, endPoint);
+
 
             },
 
@@ -450,7 +426,6 @@
 
                 var ed = this.editor;
                 var text = ed.getSelection();
-                var stat = this.state();
 
                 this.$root.$emit('markdown-editor:' + key, this);
 
@@ -484,12 +459,8 @@
                         ed.replaceSelection('\n### ' + text);
                         break;
 
-                    case 'clipboard':
-                        this.obj('modal-clipboard').modal('show');
-                        break;
 
                     case 'image':
-                        // this.obj('modal-image').modal('show');
 
                         var url = prompt("Please enter image url", "https://");
                         if (this.isUrl(url)) {
@@ -499,7 +470,6 @@
                         break;
 
                     case 'link':
-                        //this.obj('modal-link').modal('show');
 
                         var url = prompt("Please enter link", "https://");
                         if (this.isUrl(url)) {
@@ -514,10 +484,6 @@
                         this._toggleLine('quote');
                         break;
 
-                    case 'quote':
-                        this._toggleLine('quote');
-                        break;
-
                     case 'numlist':
                         this._toggleLine('numlist');
                         break;
@@ -526,112 +492,74 @@
                         this._toggleLine('bullist');
                         break;
 
+
                     case 'preview':
 
-                        ///var md = new MarkdownIt({ typographer: true, breaks: true, quotes: '“”‘’' });
-
                         this.html = Marked(ed.getValue(), { breaks: true });
-                        this.preview ^= true;
-
-                        this.obj('toolbar').find('.btn:not(".ready")').prop('disabled', this.preview);
+                        this.preview = !this.preview;
 
                         break;
 
                     case 'fullscreen':
-
-                        this.obj('container').toggleClass('v-md-fullscreen');
-                        this.obj('fullscreen').toggleClass('active');
+                        this.fullScreen = !this.fullScreen;
                         ed.setOption("fullScreen", !ed.getOption("fullScreen"));
-
                         break;
 
                     case 'clean':
-                        text = Markdown.parse(text);
-                        ed.replaceSelection(text);
-
+                        ed.replaceSelection(Markdown.parse(text));
                         break;
 
                 }
 
-                ed.focus();
-
             },
-
-
-
-
 
             build() {
 
-                if (!jQuery) {
-
-                    console.error("Must required jQuery!");
-                    return;
-                }
-
-                if (this.isEmpty(this.toolbar)) {
-                    console.error("You must set toolbar!");
-                    return;
-                }
-
                 if (this.__rendered) return;
 
-                var _t = this;
+                var buttons = Object.assign({}, this.buttons, this.extend);                
 
-                this.buttons = Object.assign(this.buttons, this.extend);
+                var shortcuts = {};
 
-                var btns = _t.toolbar.toLowerCase().split(/(\s)/).filter(function (w) {
-                    return !_t.isEmpty(w);
-                });
+                this.toolbar.split('|').forEach((t, i) => {
+                    var group = [];
+                    t.toLowerCase().split(/(\s)/).forEach((b) => {
 
+                        if (!this.isEmpty(b)) {
 
-                var group = [];
-                for (var i = 0; i < btns.length; i++) {
-                    var btn = btns[i];
-                    var obj = _t.buttons[btn];
-                    if (obj) {
-                        // obj.cmd = typeof obj.cmd ==='function'? obj.cmd: this.command(obj.cmd);
-                        obj.id = btn;
-                        group.push(obj);
-
-                    }
-                    if (btn === '|' || i == btns.length - 1) {
-                        this.toolbars.push(group);
-                        group = [];
-                    }
-                }
-
-
-                var o = Object.assign({}, { extraKeys: _t.shortcuts, initialValue: _t.value }, _t.options);
-                var el = document.getElementById(_t.id + '-input');
-                _t.editor = CodeMirror.fromTextArea(el, o);
-                _t.editor.on("change", function (ed) {
-                    //_t.editor.save();                    
-                    _t.$emit('input', ed.getValue());
-                    //_t.value = ed.getValue();
-                });
-
-                _t.editor.on("cursorActivity", function () {
-                    var stat = _t.state();
-
-                    _t.obj('toolbar').find('.btn.active:not(.ready)').removeClass('active');
-                    Object.keys(stat).forEach(key => {
-                        _t.obj(key).addClass('active');
-
+                            var btn = buttons[b];
+                            if (!this.isEmpty(btn.hotkey)) {
+                                shortcuts[btn.hotkey] = () => this.command(btn.cmd);
+                            }
+                            group.push(btn);
+                        }
                     });
+
+                    if (group.length > 0)
+                        this.toolbars.push(group);
+
                 });
 
-                _t.__rendered = true;
+                
+                var o = Object.assign({ mode: 'markdown', extraKeys: shortcuts }, this.options);
 
+                var ed = this.editor = CodeMirror.fromTextArea(document.getElementById(this.id), o);
+                ed.setValue(this.value);
+                ed.on("change", (ed) => {
+                    this.$emit('input', ed.getValue());
+                });
+
+                this.__rendered = true;
 
             }
         },
         mounted() {
-
-            this.$nextTick(() => { this.build(); });
-
+            this.build();
         },
+
+      
         destroyed() {
+
             this.editor = null;
         }
 

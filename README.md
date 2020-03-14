@@ -1,12 +1,12 @@
 # Vue Markdown Editor component for Vue.js
 
-☞ [Vue JS - The Complete Guide (incl. Vue Router & Vuex)](https://learnstartup.net/go/BJBa7-l-g)
+☞ [What's new in Bootstrap 5)](https://morioh.com/p/46e9af3b9b04)
 
-☞ [How to Create a Chrome Extension with Vue.js](https://morioh.com/p/0169fb660bae)
+☞ [Vue.JS Tutorial: Learn Vue.js from Scratch](https://morioh.com/list/5dd27fc107964607af718993)
 
-☞ [How To Build a Blog with Nest.js, MongoDB, and Vue.js](https://morioh.com/p/74ffc8a798bb)
+☞ [Javascript Tutorial for Absolute Beginners](https://morioh.com/list/5dcd0341203e265d661aa028)
 
-![Markdown Editor Preview](https://i.imgur.com/Bcr3Xhk.png)
+![Markdown Editor Preview](https://i.imgur.com/jdhT2Yf.png)
 
 
 ### Demo
@@ -20,7 +20,7 @@ npm install v-markdown-editor
 ```
 
 ```js
-import 'v-markdown-editor/dist/index.css';
+import 'v-markdown-editor/dist/v-markdown-editor.css';
 
 import Vue from 'vue'
 import Editor from 'v-markdown-editor'
@@ -34,6 +34,13 @@ Vue.use(Editor);
 ### Use CDN
 
 ```
+<link href="https://cdn.jsdelivr.net/npm/v-markdown-editor/dist/v-markdown-editor.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/v-markdown-editor/dist/v-markdown-editor.min.js" type="text/javascript"></script>
+
+```
+
+```
 
 <link href="https://unpkg.com/v-markdown-editor/dist/v-markdown-editor.css" rel="stylesheet">
 
@@ -42,14 +49,19 @@ Vue.use(Editor);
 
 ```
 
-## Require
+## Change
 
-Bootstrap 4 & Fontawesome
+```
+1.2.0
+- Support Fontawsome &  Material Design Icons 
+- Remove jQuery
+
+```
 
 
 ## Example
 
-```js
+```html
 
 <template>
     <div class="container">
@@ -87,7 +99,7 @@ Bootstrap 4 & Fontawesome
 ## v-model
 
 
-```js
+```html
 
 <template>
     <div class="container">
@@ -115,7 +127,7 @@ Bootstrap 4 & Fontawesome
 ### Toolbar
 
 
-```js
+```html
 
 // full toolbar: clipboard redo undo | bold italic strikethrough heading | image link | numlist bullist code quote | preview fullscreen
 
@@ -130,7 +142,7 @@ Bootstrap 4 & Fontawesome
 ### add custom button
 
 
-```js
+```html
 
 <template>
     <div class="container">
@@ -147,7 +159,7 @@ Bootstrap 4 & Fontawesome
                 custom: {
                     'upload': {
                         cmd: 'upload',
-                        className: 'fas fa-upload',
+                        ico: 'fas fa-upload',
                         title: 'Upload File'
                     }
                 }
@@ -173,7 +185,7 @@ Bootstrap 4 & Fontawesome
 ### Handle editor
 
 
-```js
+```html
 
 <template>
     <div class="container">
@@ -206,25 +218,19 @@ Bootstrap 4 & Fontawesome
 
 ```
 
-### Custom submit form input name
+### Auto resize
 
+```html
 
-```js
-
-<template>
-    <div class="container">
-       <markdown-editor name="html"></markdown-editor>
-    </div>
-</template>
-
+ <markdown-editor height="auto"></markdown-editor>
 ```
 
 
-### Auto resize
+### Button Theme
 
-```js
+```html
 
- <markdown-editor height="auto"></markdown-editor>
+ <markdown-editor theme="primary"></markdown-editor>
 ```
 
 
