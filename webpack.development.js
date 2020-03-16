@@ -378,7 +378,7 @@ module.exports = function (env) {
                             entry: [
                                 // 'https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css',
                                 'https://cdn.jsdelivr.net/npm/morioh@1.0.8/dist/css/morioh.min.css',
-                                // '//l.allcdn.org/remark/v4.1/skins/green.min.css'
+                                
                             ],
 
                         },
@@ -388,6 +388,8 @@ module.exports = function (env) {
                             module: 'fonts',
                             entry: [
                                 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css',
+                                // 'https://l.allcdn.org/fa/v5.12.2/css/fontawesome.min.css',
+                                // 'https://l.allcdn.org/fa/v5.12.2/css/regular.min.css'
                                 // 'https://cdn.jsdelivr.net/npm/@mdi/font@5.0.45/css/materialdesignicons.min.css'
                             ],
                         },

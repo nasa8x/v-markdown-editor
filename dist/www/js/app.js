@@ -486,89 +486,89 @@
                 return {
                   "clean": {
                     cmd: "clean",
-                    ico: "fas fa-remove-format mdi mdi-format-clear",
+                    ico: "fas far fa-remove-format mdi mdi-format-clear",
                     title: "Html to markdown",
                     hotkey: 'Shift-Alt-F'
                   },
                   "undo": {
                     cmd: "undo",
-                    ico: "fas fa-undo mdi mdi-undo-variant",
+                    ico: "fas far fa-undo mdi mdi-undo-variant",
                     title: "Undo",
                     hotkey: 'Ctrl-Z'
                   },
                   "redo": {
                     cmd: "redo",
-                    ico: "fas fa-redo mdi mdi-redo-variant",
+                    ico: "fas far fa-redo mdi mdi-redo-variant",
                     title: "Redo",
                     hotkey: 'Ctrl-Y'
                   },
                   "bullist": {
                     cmd: "bullist",
-                    ico: "fas fa-list-ul mdi mdi-format-list-bulleted",
+                    ico: "fas far fa-list-ul mdi mdi-format-list-bulleted",
                     title: "Generic List"
                   },
                   "numlist": {
                     cmd: "numlist",
-                    ico: "fas fa-list-ol mdi mdi-format-list-numbered",
+                    ico: "fas far fa-list-ol mdi mdi-format-list-numbered",
                     title: "Numbered List"
                   },
                   'bold': {
                     title: 'Bold',
-                    ico: 'fas fa-bold mdi mdi-format-bold',
+                    ico: 'fas far fa-bold mdi mdi-format-bold',
                     cmd: 'bold',
                     hotkey: 'Ctrl-B'
                   },
                   'italic': {
                     title: 'Italic',
-                    ico: "fas fa-italic mdi mdi-format-italic",
+                    ico: "fas far fa-italic mdi mdi-format-italic",
                     cmd: 'italic',
                     hotkey: 'Ctrl-I'
                   },
                   "strikethrough": {
                     cmd: "strikethrough",
-                    ico: "fas fa-strikethrough mdi mdi-format-strikethrough",
+                    ico: "fas far fa-strikethrough mdi mdi-format-strikethrough",
                     title: "Strikethrough"
                   },
                   'heading': {
                     title: 'Heading',
-                    ico: "fas fa-heading mdi mdi-format-header-3",
+                    ico: "fas far fa-heading mdi mdi-format-header-3",
                     cmd: 'heading',
                     hotkey: 'Ctrl-H'
                   },
                   'code': {
                     title: 'Code',
-                    ico: "fas fa-code mdi mdi-code-tags",
+                    ico: "fas far fa-code mdi mdi-code-tags",
                     cmd: 'code',
                     hotkey: 'Ctrl-X'
                   },
                   'quote': {
                     title: 'Quote',
-                    ico: "fas fa-quote-left mdi mdi-format-quote-open",
+                    ico: "fas far fa-quote-left mdi mdi-format-quote-open",
                     cmd: 'quote',
                     hotkey: 'Ctrl-Q'
                   },
                   'link': {
                     title: 'Link',
-                    ico: "fas fa-link mdi mdi-link",
+                    ico: "fas far fa-link mdi mdi-link",
                     cmd: 'link',
                     hotkey: 'Ctrl-K'
                   },
                   'image': {
                     title: 'Image',
-                    ico: "fas fa-image mdi mdi-image",
+                    ico: "fas far fa-image mdi mdi-image",
                     cmd: 'image',
                     hotkey: 'Ctrl-P'
                   },
                   "fullscreen": {
                     cmd: "fullscreen",
-                    ico: "fas fa-expand mdi mdi-fullscreen",
+                    ico: "fas far fa-expand mdi mdi-fullscreen",
                     title: "Toggle Fullscreen",
                     hotkey: 'F11',
                     ready: true
                   },
                   "preview": {
                     cmd: "preview",
-                    ico: "fas fa-eye mdi mdi-eye",
+                    ico: "fas far fa-eye mdi mdi-eye",
                     title: "Toggle Preview",
                     hotkey: 'Ctrl-P',
                     ready: true
