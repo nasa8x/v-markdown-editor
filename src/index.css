@@ -62,6 +62,20 @@
     min-height: 250px;    
 }
 
+.v-md-wrapper .CodeMirror-fullscreen {
+    position: fixed !important;
+    top: 52px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto !important;
+    z-index: 9;
+}
+
+.v-md-wrapper .CodeMirror-line {
+    white-space: unset !important;
+}
+
 /* 
 .v-md-container .cm-scroller{
     

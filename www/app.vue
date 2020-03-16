@@ -8,7 +8,7 @@
             </header>         
 
             <div class="form-group">
-                <markdown-editor ref="md" v-model="value"></markdown-editor>
+                <markdown-editor ref="md" placeholder="Enter markdown content..." v-model="value"></markdown-editor>
             </div>
 
             <div class="form-group">
@@ -71,7 +71,7 @@
     export default {
         data() {
             return {
-                value: 'Hello',
+                value: '',
 
                 custom: {
                     'upload': {

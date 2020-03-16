@@ -462,16 +462,20 @@
               type: String
             },
             width: {
-              type: String,
+              type: [String, Number],
               "default": '100%'
             },
             height: {
-              type: String,
+              type: [String, Number],
               "default": '300px'
             },
             toolbar: {
               type: String,
               "default": 'clean redo undo | bold italic strikethrough heading | image link | numlist bullist code quote | preview fullscreen'
+            },
+            placeholder: {
+              type: String,
+              "default": ''
             },
             extend: {
               type: Object
@@ -600,8 +604,8 @@
           computed: {
             styles: function styles() {
               return {
-                width: isNaN(this.width) ? this.width : this.width + '%',
-                height: isNaN(this.height) ? this.height : this.height + '%'
+                width: !/^\d+$/.test(this.width) ? this.width : "".concat(this.width, "px"),
+                height: !/^\d+$/.test(this.height) ? this.height : "".concat(this.height, "px")
               };
             }
           },
@@ -940,6 +944,7 @@
               }, this.options);
               var ed = this.editor = codemirror__WEBPACK_IMPORTED_MODULE_2___default.a.fromTextArea(document.getElementById(this.id), o);
               ed.setValue(this.value);
+              ed.setSize(this.width, this.height);
               ed.on("change", function (ed) {
                 _this.$emit('input', ed.getValue());
               });
@@ -949,8 +954,8 @@
           mounted: function mounted() {
             this.build();
           },
-          destroyed: function destroyed() {
-            this.editor = null;
+          destroy: function destroy() {
+            this.editor.toTextArea();
           }
         };
         /***/
@@ -1030,7 +1035,8 @@
             staticClass: "v-md-editor",
             style: _vm.styles,
             attrs: {
-              id: _vm.id
+              id: _vm.id,
+              placeholder: _vm.placeholder
             }
           }), _vm._v(" "), _vm.preview ? _c("div", {
             staticClass: "v-md-preview",
@@ -1540,7 +1546,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      value: 'Hello',
+      value: '',
       custom: {
         'upload': {
           cmd: 'upload',
@@ -15167,6 +15173,7 @@ var render = function() {
         [
           _c("markdown-editor", {
             ref: "md",
+            attrs: { placeholder: "Enter markdown content..." },
             model: {
               value: _vm.value,
               callback: function($$v) {
@@ -15471,8 +15478,8 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layout.css */ "./www/layout.css");
 /* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_layout_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _dist_v_markdown_editor_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../dist/v-markdown-editor.css */ "./dist/v-markdown-editor.css");
-/* harmony import */ var _dist_v_markdown_editor_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_dist_v_markdown_editor_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _dist_v_markdown_editor_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dist/v-markdown-editor.css */ "./dist/v-markdown-editor.css");
+/* harmony import */ var _dist_v_markdown_editor_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dist_v_markdown_editor_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "vue");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _app_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.vue */ "./www/app.vue");

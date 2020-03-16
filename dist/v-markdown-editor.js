@@ -153,16 +153,20 @@ __webpack_require__.r(__webpack_exports__);
       type: String
     },
     width: {
-      type: String,
+      type: [String, Number],
       "default": '100%'
     },
     height: {
-      type: String,
+      type: [String, Number],
       "default": '300px'
     },
     toolbar: {
       type: String,
       "default": 'clean redo undo | bold italic strikethrough heading | image link | numlist bullist code quote | preview fullscreen'
+    },
+    placeholder: {
+      type: String,
+      "default": ''
     },
     extend: {
       type: Object
@@ -291,8 +295,8 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     styles: function styles() {
       return {
-        width: isNaN(this.width) ? this.width : this.width + '%',
-        height: isNaN(this.height) ? this.height : this.height + '%'
+        width: !/^\d+$/.test(this.width) ? this.width : "".concat(this.width, "px"),
+        height: !/^\d+$/.test(this.height) ? this.height : "".concat(this.height, "px")
       };
     }
   },
@@ -631,6 +635,7 @@ __webpack_require__.r(__webpack_exports__);
       }, this.options);
       var ed = this.editor = codemirror__WEBPACK_IMPORTED_MODULE_2___default.a.fromTextArea(document.getElementById(this.id), o);
       ed.setValue(this.value);
+      ed.setSize(this.width, this.height);
       ed.on("change", function (ed) {
         _this.$emit('input', ed.getValue());
       });
@@ -640,8 +645,8 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     this.build();
   },
-  destroyed: function destroyed() {
-    this.editor = null;
+  destroy: function destroy() {
+    this.editor.toTextArea();
   }
 });
 
@@ -19745,7 +19750,7 @@ var render = function() {
           _c("textarea", {
             staticClass: "v-md-editor",
             style: _vm.styles,
-            attrs: { id: _vm.id }
+            attrs: { id: _vm.id, placeholder: _vm.placeholder }
           }),
           _vm._v(" "),
           _vm.preview

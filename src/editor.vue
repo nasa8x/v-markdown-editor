@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="v-md-wrapper" v-on:click="editor.focus()">
-            <textarea class="v-md-editor" :style="styles" :id="id"></textarea>
+            <textarea class="v-md-editor" :style="styles" :id="id" :placeholder="placeholder"></textarea>
             <div class="v-md-preview" v-if="preview" v-html="html"></div>
         </div>
 
@@ -41,19 +41,19 @@
 
             css: { type: String },
 
-            width: {
-                type: String,
-                default: '100%'
-            },
-            height: {
-                type: String,
-                default: '300px'
-            },
+
+            width: { type: [String, Number], default: '100%' },
+            height: { type: [String, Number], default: '300px' },
+
             toolbar: {
                 type: String,
                 default: 'clean redo undo | bold italic strikethrough heading | image link | numlist bullist code quote | preview fullscreen'
             },
 
+            placeholder: {
+                type: String,
+                default: ''
+            },
 
             extend: {
                 type: Object
@@ -199,7 +199,7 @@
                 preview: false,
                 fullScreen: false,
                 html: '',
-                toolbars: [],                
+                toolbars: [],
 
             }
         },
@@ -207,8 +207,8 @@
         computed: {
             styles() {
                 return {
-                    width: isNaN(this.width) ? this.width : this.width + '%',
-                    height: isNaN(this.height) ? this.height : this.height + '%'
+                    width: !/^\d+$/.test(this.width) ? this.width : `${this.width}px`,
+                    height: !/^\d+$/.test(this.height) ? this.height : `${this.height}px`
                 }
             },
 
@@ -517,7 +517,7 @@
 
                 if (this.__rendered) return;
 
-                var buttons = Object.assign({}, this.buttons, this.extend);                
+                var buttons = Object.assign({}, this.buttons, this.extend);
 
                 var shortcuts = {};
 
@@ -540,11 +540,12 @@
 
                 });
 
-                
+
                 var o = Object.assign({ mode: 'markdown', extraKeys: shortcuts }, this.options);
 
                 var ed = this.editor = CodeMirror.fromTextArea(document.getElementById(this.id), o);
                 ed.setValue(this.value);
+                ed.setSize(this.width, this.height);
                 ed.on("change", (ed) => {
                     this.$emit('input', ed.getValue());
                 });
@@ -557,10 +558,9 @@
             this.build();
         },
 
-      
-        destroyed() {
 
-            this.editor = null;
+        destroy() {
+            this.editor.toTextArea();
         }
 
     }
