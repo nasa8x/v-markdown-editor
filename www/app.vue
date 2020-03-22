@@ -5,17 +5,23 @@
             <header>
                 <h1>v-markdown-editor</h1>
                 <h4>Markdown Editor component for Vue.js</h4>
-            </header>         
+            </header>
 
-            <div class="form-group">
-                <markdown-editor ref="md" placeholder="Enter markdown content..." v-model="value"></markdown-editor>
+            <div class="form-group">              
+
+                <markdown-editor ref="md" placeholder="Enter markdown content..." v-model="value">
+                </markdown-editor>
+
             </div>
+
 
             <div class="form-group">
                 <button @click="val" class="btn btn-primary">Change</button>
                 <button @click="replace" class="btn btn-primary">Handle</button>
+                
             </div>
 
+          
             <div class="form-group">
                 <pre><code>{{value}}</code></pre>
             </div>
@@ -29,15 +35,15 @@
 
 
 
-            <pre><code>&#x3C;markdown-editor theme=&#x22;success&#x22;&#x3E;&#x3C;/markdown-editor&#x3E;</code></pre>            
+            <pre><code>&#x3C;markdown-editor theme=&#x22;success&#x22;&#x3E;&#x3C;/markdown-editor&#x3E;</code></pre>
 
-            <div class="form-group">                
+            <div class="form-group">
                 <markdown-editor theme="success"></markdown-editor>
             </div>
 
 
-            <pre><code>&#x3C;markdown-editor height="auto" toolbar=&#x27;&#x27;&#x3E;&#x3C;/markdown-editor&#x3E;</code></pre>    
-            <div class="form-group">                
+            <pre><code>&#x3C;markdown-editor height="auto" toolbar=&#x27;&#x27;&#x3E;&#x3C;/markdown-editor&#x3E;</code></pre>
+            <div class="form-group">
                 <markdown-editor height="auto" toolbar=''></markdown-editor>
             </div>
 
@@ -86,7 +92,12 @@
         methods: {
             val() {
                 this.value = "jjkjlkjljlkjlkjlkjlkj"
-            },           
+            },
+
+            showw() {
+                this.value = "JCLAKJCL09890809809809WDIUWHDH";
+                $('#modal').modal('show');
+            },
 
             replace() {
                 this.$refs.md.editor.replaceSelection("Handle editor");

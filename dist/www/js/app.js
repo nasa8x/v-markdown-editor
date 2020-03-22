@@ -588,7 +588,9 @@
             options: {
               type: Object,
               "default": function _default() {
-                return {};
+                return {
+                  lineWrapping: true
+                };
               }
             }
           },
@@ -612,7 +614,7 @@
           watch: {
             value: function value(val) {
               if (val != this.editor.getValue()) {
-                this.editor.setValue(val);
+                this.editor.setValue(val); // this.editor.focus();
               }
             }
           },
@@ -693,8 +695,9 @@
                 ed.replaceSelection(start + text + end);
                 startPoint.ch += start.length;
                 endPoint.ch = startPoint.ch + text.length;
-              } // ed.setSelection(startPoint, endPoint);
+              }
 
+              ed.setSelection(startPoint, endPoint);
             },
             _toggleLine: function _toggleLine(name) {
               var ed = this.editor;
@@ -806,8 +809,9 @@
                 if (startPoint !== endPoint) {
                   endPoint.ch += start.length;
                 }
-              } //ed.setSelection(startPoint, endPoint);
+              }
 
+              ed.setSelection(startPoint, endPoint);
             },
             drawImage: function drawImage(obj) {
               var stat = this.state();
@@ -914,6 +918,8 @@
                   ed.replaceSelection(markdownparser__WEBPACK_IMPORTED_MODULE_0___default.a.parse(text));
                   break;
               }
+
+              ed.focus();
             },
             build: function build() {
               var _this = this;
@@ -1543,6 +1549,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1559,6 +1571,10 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     val: function val() {
       this.value = "jjkjlkjljlkjlkjlkjlkj";
+    },
+    showw: function showw() {
+      this.value = "JCLAKJCL09890809809809WDIUWHDH";
+      $('#modal').modal('show');
     },
     replace: function replace() {
       this.$refs.md.editor.replaceSelection("Handle editor");

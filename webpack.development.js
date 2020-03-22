@@ -306,19 +306,19 @@ module.exports = function (env) {
                 new HtmlWebpackExternalsPlugin({
                     // hash: true,
                     externals: [
-                        // {
-                        //     module: 'jquery',
-                        //     entry: 'https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js',
-                        //     global: 'jQuery'
-                        // },
-                        // {
-                        //     module: 'Popper',
-                        //     entry: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js'
-                        // },
-                        // {
-                        //     module: 'boostrap',
-                        //     entry: 'https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js'
-                        // },
+                        {
+                            module: 'jquery',
+                            entry: 'https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js',
+                            global: 'jQuery'
+                        },
+                        {
+                            module: 'Popper',
+                            entry: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js'
+                        },
+                        {
+                            module: 'boostrap',
+                            entry: 'https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js'
+                        },
                         {
                             module: 'vue',
                             global: 'Vue',

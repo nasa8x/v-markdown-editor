@@ -186,7 +186,7 @@
                 type: Object,
                 default: function () {
                     return {
-
+                        lineWrapping: true
                     }
                 }
             },
@@ -218,6 +218,7 @@
             value(val) {
                 if (val != this.editor.getValue()) {
                     this.editor.setValue(val);
+                    // this.editor.focus();
                 }
             }
         },
@@ -300,7 +301,7 @@
                     endPoint.ch = startPoint.ch + text.length;
                 }
 
-                // ed.setSelection(startPoint, endPoint);
+                ed.setSelection(startPoint, endPoint);
             },
 
             _toggleLine(name) {
@@ -407,7 +408,7 @@
                         endPoint.ch += start.length;
                     }
                 }
-                //ed.setSelection(startPoint, endPoint);
+                ed.setSelection(startPoint, endPoint);
 
 
             },
@@ -510,6 +511,8 @@
                         break;
 
                 }
+
+                ed.focus();
 
             },
 

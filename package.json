@@ -1,7 +1,7 @@
 {
   "name": "v-markdown-editor",
   "description": "Vue Markdown Editor component for Vue.js",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "author": "Nasa8x",
   "main": "./dist/v-markdown-editor.js",
   "scripts": {

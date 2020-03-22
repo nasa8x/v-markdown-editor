@@ -71,10 +71,15 @@
     height: auto !important;
     z-index: 9;
 }
+/* 
+.v-md-wrapper .CodeMirror-scroll *{
+    white-space: pre-wrap;
+} */
 
+/* 
 .v-md-wrapper .CodeMirror-line {
     white-space: unset !important;
-}
+} */ 
 
 /* 
 .v-md-container .cm-scroller{
