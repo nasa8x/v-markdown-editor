@@ -1,4 +1,4 @@
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'codemirror/lib/codemirror.css';
 import './index.css';
 import Editor from './editor.vue';
