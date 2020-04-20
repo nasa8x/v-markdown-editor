@@ -1,7 +1,7 @@
 <template>
     <div :class="['v-md-container', css,{'v-md-auto-resize': height=='auto', 'v-md-fullscreen': fullScreen }]">
         <div class="v-md-toolbar" v-if="toolbars.length>0">
-            <div class="btn-group mr-3" role="group" v-for="group in toolbars">
+            <div class="btn-group mr-3 mb-1" role="group" v-for="group in toolbars">
                 <button type="button" :title="i.title" :class="'btn btn-'+theme" v-on:click="command(i.cmd)"
                     :disabled="preview && !i.ready" v-for="i in group"><i :class="i.ico"></i></button>
             </div>
