@@ -34,7 +34,8 @@
     "codemirror": "^5.52.0",
     "markdownparser": "^1.1.2",
     "marked": "^0.8.0",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "@fortawesome/fontawesome-free": "^5.13.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
