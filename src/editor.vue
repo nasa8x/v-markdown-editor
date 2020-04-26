@@ -428,7 +428,9 @@
                 var ed = this.editor;
                 var text = ed.getSelection();
 
-                this.$root.$emit('markdown-editor:' + key, this);
+                // this.$root.$emit('markdown-editor:' + key, this);
+
+                this.$emit('command:' + key, this);
 
                 switch (key) {
                     case 'undo':
@@ -550,7 +552,9 @@
                 ed.setValue(this.value);
                 ed.setSize(this.width, this.height);
                 ed.on("change", (ed) => {
-                    this.$emit('input', ed.getValue());
+                    var val = ed.getValue();
+                    this.$emit('change', val);
+                    this.$emit('input', val);
                 });
 
                 this.__rendered = true;
@@ -560,7 +564,6 @@
         mounted() {
             this.build();
         },
-
 
         destroy() {
             this.editor.toTextArea();
