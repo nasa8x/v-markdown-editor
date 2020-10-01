@@ -1,5 +1,5 @@
 # Vue Markdown Editor component for Vue.js
-v-markdown-editor is a simple Markdown editor component for Vue wrapper codemirror
+v-markdown-editor is a simple Markdown editor component for Vue Wrapper CodeMirror.
 
 ![Markdown Editor Preview](https://i.imgur.com/jdhT2Yf.png)
 
