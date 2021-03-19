@@ -15989,7 +15989,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       }
 
-      if (modeCfg.strikethrough) {
+      
         if (ch === '~' && stream.eatWhile(ch)) {
           if (state.strikethrough) {
             // Remove strikethrough
@@ -16015,7 +16015,7 @@ __webpack_require__.r(__webpack_exports__);
             }
           }
         }
-      }
+      
 
       if (modeCfg.emoji && ch === ":" && stream.match(/^(?:[a-z_\d+][a-z_\d+-]*|\-[a-z_\d+][a-z_\d+-]*):/)) {
         state.emoji = true;
