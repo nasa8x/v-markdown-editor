@@ -464,23 +464,11 @@
 
 
                     case 'image':
-
-                        var url = prompt("Please enter image url", "https://");
-                        if (this.isUrl(url)) {
-                            var title = !this.isEmpty(text) ? text : "This is image title";
-                            this.drawImage({ title: title, url: url });
-                        }
+                        this.drawImage({ title: "Image title", url: "https://" });
                         break;
 
                     case 'link':
-
-                        var url = prompt("Please enter link", "https://");
-                        if (this.isUrl(url)) {
-                            var title = !this.isEmpty(text) ? text : url;
-                            this.drawLink({ title: title, url: url });
-
-                        }
-
+                        this.drawLink({ title: "Title link", url: "https://" });
                         break;
 
                     case 'quote':
