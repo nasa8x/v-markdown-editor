@@ -33,7 +33,7 @@
     "@codemirror/next": "^0.4.0",
     "codemirror": "^5.53.2",
     "markdownparser": "^1.1.2",
-    "marked": "^1.0.0",
+    "marked": "^4.0.10",
     "vue": "^2.6.11"
   },
   "devDependencies": {
